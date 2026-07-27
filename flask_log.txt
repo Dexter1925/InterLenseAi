@@ -1,0 +1,140 @@
+=== Server Started ===
+[2026-07-24T16:35:27.978Z] python3 not found. Using python command instead.
+[2026-07-24T16:35:27.980Z] Checking if Python dependencies are already installed using 'python'...
+[2026-07-24T16:35:27.981Z] Running: python -c import flask
+[2026-07-24T16:35:29.414Z] [python CLOSED] code: 0
+[2026-07-24T16:35:29.414Z] >>> Flask is already present. Bypassing installation! <<<
+[2026-07-24T16:35:29.415Z] Launching Python Flask Server on Port 5000 using 'python'...
+[2026-07-24T16:35:30.872Z] [Flask STDOUT] * Serving Flask app 'app'
+[2026-07-24T16:35:30.872Z] [Flask STDOUT] * Debug mode: on
+[2026-07-24T16:35:30.998Z] [Flask STDERR] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.193:5000
+[2026-07-24T16:35:30.998Z] [Flask STDERR] Press CTRL+C to quit
+[2026-07-24T16:35:31.053Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T16:35:32.966Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T16:35:32.985Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T16:35:36.805Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:05:36] "GET / HTTP/1.1" 302 -
+[2026-07-24T16:35:36.903Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:05:36] "GET /login HTTP/1.1" 200 -
+[2026-07-24T16:35:45.842Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:05:45] "GET / HTTP/1.1" 302 -
+[2026-07-24T16:35:46.071Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:05:46] "GET /login HTTP/1.1" 200 -
+[2026-07-24T16:35:47.624Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:05:47] "
+[2026-07-24T16:35:47.629Z] [Flask STDERR] GET /favicon.ico HTTP/1.1" 404 -
+[2026-07-24T16:51:13.662Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:21:13] "GET /register HTTP/1.1" 200 -
+[2026-07-24T16:51:38.166Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:21:38] "POST /register HTTP/1.1
+[2026-07-24T16:51:38.169Z] [Flask STDERR] " 302 -
+[2026-07-24T16:51:38.491Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:21:38] "GET /login HTTP/1.1" 200 -
+[2026-07-24T16:51:51.099Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:21:51] "POST /login HTTP/1.1
+[2026-07-24T16:51:51.101Z] [Flask STDERR] " 302 -
+[2026-07-24T16:51:51.608Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:21:51] "GET /student/dashboard HTTP/1.1" 200 -
+[2026-07-24T16:52:15.266Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:22:15] "GET /student/presentation-feedback HTTP/1.1" 200 -
+[2026-07-24T16:52:20.803Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:22:20] "GET /student/dashboard HTTP/1.1" 200 -
+[2026-07-24T16:53:08.059Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:23:08] "GET /student/dashboard HTTP/1.1" 200 -
+[2026-07-24T16:53:19.500Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:23:19] "POST /api/chatbot/message HTTP/1.1" 200 -
+[2026-07-24T16:53:30.131Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:23:30] "POST /api/chatbot/message HTTP/1.1" 200 -
+[2026-07-24T16:53:52.522Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:23:52] "POST /api/chatbot/message HTTP/1.1" 200 -
+[2026-07-24T16:54:06.914Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:24:06] "POST /api/chatbot/message HTTP/1.1" 200 -
+[2026-07-24T16:54:16.864Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:24:16] "POST /api/chatbot/message HTTP/1.1" 200 -
+[2026-07-24T16:56:49.012Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:26:49] "GET /student/presentation-feedback HTTP/1.1" 200 -
+[2026-07-24T16:56:58.228Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:26:58] "GET /student/dashboard HTTP/1.1" 200 -
+[2026-07-24T16:58:42.929Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:28:42] "GET /logout HTTP/1.1" 302 -
+[2026-07-24T16:58:43.193Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:28:43] "GET /login HTTP/1.1" 200 -
+[2026-07-24T16:59:15.367Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:29:15] "POST /login HTTP/1.1" 200 -
+[2026-07-24T16:59:23.247Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:29:23] "GET /register HTTP/1.1" 200 -
+[2026-07-24T17:00:36.743Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:30:36] "POST /register HTTP/1.1
+[2026-07-24T17:00:36.744Z] [Flask STDERR] " 302 -
+[2026-07-24T17:00:36.800Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:30:36] "GET /login HTTP/1.1" 200 -
+[2026-07-24T17:01:02.324Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:31:02] "POST /login HTTP/1.1" 200 -
+[2026-07-24T17:01:19.791Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:31:19] "POST /login HTTP/1.1" 200 -
+[2026-07-24T17:01:49.497Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:31:49] "POST /login HTTP/1.1" 200 -
+[2026-07-24T17:09:00.084Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:39:00] "POST /login HTTP/1.1" 200 -
+[2026-07-24T17:09:06.883Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:39:06] "GET /register HTTP/1.1" 200 -
+[2026-07-24T17:09:32.115Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:39:32] "
+[2026-07-24T17:09:32.116Z] [Flask STDERR] POST /register HTTP/1.1
+[2026-07-24T17:09:32.117Z] [Flask STDERR] " 302 -
+[2026-07-24T17:09:32.125Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:39:32] "GET /login HTTP/1.1" 200 -
+[2026-07-24T17:09:54.344Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:39:54] "POST /login HTTP/1.1" 200 -
+[2026-07-24T17:10:23.846Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:40:23] "POST /login HTTP/1.1" 302 -
+[2026-07-24T17:10:24.273Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:40:24] "GET /faculty/dashboard HTTP/1.1" 200 -
+[2026-07-24T17:13:21.747Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:43:21] "GET /api/faculty/request-center HTTP/1.1" 200 -
+[2026-07-24T17:13:26.387Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:43:26] "GET /faculty/presentation-evaluations HTTP/1.1" 200 -
+[2026-07-24T17:13:48.908Z] [Flask STDERR] 127.0.0.1 - - [24/Jul/2026 22:43:48] "GET /faculty/dashboard HTTP/1.1" 200 -
+[2026-07-24T19:14:23.156Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\database.py', reloading
+[2026-07-24T19:14:23.581Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:14:24.991Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:14:25.000Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:15:06.187Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 00:45:06] "GET /login HTTP/1.1" 200 -
+[2026-07-24T19:15:56.280Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 00:45:56] "
+[2026-07-24T19:15:56.281Z] [Flask STDERR] GET / HTTP/1.1
+[2026-07-24T19:15:56.282Z] [Flask STDERR] " 302 -
+[2026-07-24T19:15:56.580Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 00:45:56] "GET /login HTTP/1.1" 200 -
+[2026-07-24T19:16:27.939Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 00:46:27] "POST /login HTTP/1.1
+[2026-07-24T19:16:27.941Z] [Flask STDERR] " 302 -
+[2026-07-24T19:16:28.331Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 00:46:28] "GET /faculty/dashboard HTTP/1.1" 200 -
+[2026-07-24T19:17:54.186Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 00:47:54] "POST /evaluator/grade/4 HTTP/1.1" 302 -
+[2026-07-24T19:17:54.441Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 00:47:54] "GET /faculty/dashboard?classroom_id=8 HTTP/1.1" 200 -
+[2026-07-24T19:21:30.229Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\app.py', reloading
+[2026-07-24T19:21:30.902Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:21:33.116Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:21:33.127Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:21:48.637Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\app.py', reloading
+[2026-07-24T19:21:48.638Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\app.py', reloading
+[2026-07-24T19:21:49.536Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:21:50.894Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:21:50.904Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:22:25.917Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\ml_module.py', reloading
+[2026-07-24T19:22:26.325Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:22:27.811Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:22:27.822Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:24:57.443Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\chatbot.py', reloading
+[2026-07-24T19:24:57.806Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:25:00.351Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:25:00.364Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:25:14.080Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\app.py', reloading
+[2026-07-24T19:25:14.081Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\app.py', reloading
+[2026-07-24T19:25:14.627Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:25:16.241Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:25:16.249Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:25:26.620Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\app.py', reloading
+[2026-07-24T19:25:27.442Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:25:28.921Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:25:28.931Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:25:44.340Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\app.py', reloading
+[2026-07-24T19:25:45.244Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:25:47.164Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:25:47.172Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:30:33.689Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 01:00:33] "GET /faculty/dashboard?classroom_id=8 HTTP/1.1" 200 -
+[2026-07-24T19:34:49.795Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 01:04:49] "GET /faculty/dashboard?classroom_id=8 HTTP/1.1" 200 -
+[2026-07-24T19:36:19.864Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 01:06:19] "GET /faculty/presentation-evaluations HTTP/1.1" 200 -
+[2026-07-24T19:37:07.070Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 01:07:07] "GET /faculty/presentation-evaluations?student_id=&status=&date= HTTP/1.1" 200 -
+[2026-07-24T19:37:27.973Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 01:07:27] "GET /faculty/presentation-evaluations?student_id=&status=SUBMITTED&date=2026-07-28 HTTP/1.1" 200 -
+[2026-07-24T19:37:46.933Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 01:07:46] "GET /faculty/presentation-evaluations?student_id=&status=SUBMITTED&date= HTTP/1.1" 200 -
+[2026-07-24T19:37:52.138Z] [Flask STDERR] 127.0.0.1 - - [25/Jul/2026 01:07:52] "GET /faculty/dashboard HTTP/1.1" 200 -
+[2026-07-24T19:41:07.395Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\generate_powerbi_demo.py', reloading
+[2026-07-24T19:41:07.397Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\generate_powerbi_demo.py', reloading
+[2026-07-24T19:41:08.204Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:41:09.516Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:41:09.522Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:41:14.877Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.498Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.515Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.583Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.584Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.585Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.586Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.638Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.639Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.641Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.642Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:41:15.779Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:41:17.671Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:41:17.677Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:42:25.113Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\generate_powerbi_demo.py', reloading
+[2026-07-24T19:42:26.195Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:42:28.195Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:42:28.205Z] [Flask STDERR] * Debugger PIN: 130-938-371
+[2026-07-24T19:43:51.938Z] [Flask STDERR] * Detected change in 'D:\\final attempt\\InternLens_PowerBI_Showcase.zip', reloading
+[2026-07-24T19:43:52.389Z] [Flask STDERR] * Restarting with watchdog (windowsapi)
+[2026-07-24T19:43:53.469Z] [Flask STDERR] * Debugger is active!
+[2026-07-24T19:43:53.474Z] [Flask STDERR] * Debugger PIN: 130-938-371
