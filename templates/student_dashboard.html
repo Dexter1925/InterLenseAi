@@ -1,0 +1,650 @@
+{% extends "base.html" %}
+
+{% block title %}Student Hub - InternLens AI{% endblock %}
+
+{% block styles %}
+<style>
+    /* Chatbot widget custom style */
+    .chatbot-messages {
+        height: 250px;
+        overflow-y: auto;
+        border: 1px solid var(--card-border);
+        background-color: #0c0e15;
+        padding: 1rem;
+    }
+    .chat-bubble {
+        max-width: 80%;
+        padding: 0.5rem 0.8rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .chat-bubble.bot {
+        background-color: #171c2a;
+        color: #ffffff;
+        border-left: 3px solid var(--brand-primary);
+    }
+    .chat-bubble.user {
+        background-color: rgba(242, 125, 38, 0.1);
+        color: var(--brand-primary);
+        align-self: flex-end;
+        border-right: 3px solid var(--brand-primary);
+    }
+    /* Drag-and-drop file uploader style */
+    .dropzone-container {
+        border-style: dashed !important;
+        border-width: 1px !important;
+        border-color: var(--card-border) !important;
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        transition: all 0.2s ease-in-out;
+    }
+    .dropzone-container:hover {
+        border-color: var(--brand-primary) !important;
+        background-color: rgba(242, 125, 38, 0.02) !important;
+    }
+    .dropzone-container.dragover {
+        border-color: var(--brand-primary) !important;
+        background-color: rgba(242, 125, 38, 0.08) !important;
+        box-shadow: 0 0 12px rgba(242, 125, 38, 0.1) !important;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-end mb-3"><a class="btn btn-outline-brand text-xs" href="{{ url_for('presentation_feedback') }}"><i data-lucide="message-square" class="d-inline-block align-middle me-1" style="width:14px;"></i> Presentation Feedback</a></div>
+<div class="row g-4">
+    <!-- LEFT PANEL: Capability Indicators, Success Model, and Trends -->
+    <div class="col-12 col-lg-5 space-y-4">
+        
+        <!-- Capability score overall badge -->
+        <div class="glass-card mb-4 text-center">
+            <span class="text-[9px] text-zinc-500 font-mono uppercase tracking-[0.2em] d-block mb-1">Overall Capability Rating</span>
+            <div class="display-3 fw-black text-white my-2 mono">{{ cap_score }}<span class="text-brand-primary text-xl">%</span></div>
+            
+            <div class="w-100 bg-zinc-950 p-2 border border-zinc-850 mb-3 d-flex justify-content-around">
+                <div>
+                    <div class="text-[9px] text-zinc-500 uppercase">Risk Index</div>
+                    <span class="badge {% if risk_level == 'Red' %}bg-danger/20 text-danger border-danger/30{% elif risk_level == 'Yellow' %}bg-warning/20 text-warning border-warning/30{% else %}badge-brand{% endif %} rounded-none text-[9px] font-bold">{{ risk_level }}</span>
+                </div>
+                <div class="border-start border-zinc-800"></div>
+                <div>
+                    <div class="text-[9px] text-zinc-500 uppercase">Success Predictor</div>
+                    <span class="text-xs text-white font-mono font-black">{{ success_prob }}%</span>
+                </div>
+            </div>
+
+            <div class="space-y-3 text-start">
+                <div>
+                    <div class="d-flex justify-content-between text-[10px] text-zinc-400 uppercase font-bold mb-1">
+                        <span>Attendance (30%)</span>
+                        <span class="font-mono text-white">{{ score_components.attendance }}%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary" style="width: {{ score_components.attendance }}%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between text-[10px] text-zinc-400 uppercase font-bold mb-1">
+                        <span>Task Completion (25%)</span>
+                        <span class="font-mono text-white">{{ score_components.task }}%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: {{ score_components.task }}%; background-color: var(--brand-secondary);"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between text-[10px] text-zinc-400 uppercase font-bold mb-1">
+                        <span>Evaluation Marks (25%)</span>
+                        <span class="font-mono text-white">{{ score_components.marks }}%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width: {{ score_components.marks }}%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between text-[10px] text-zinc-400 uppercase font-bold mb-1">
+                        <span>Submission Timeliness (10%)</span>
+                        <span class="font-mono text-white">{{ score_components.timeliness }}%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" style="width: {{ score_components.timeliness }}%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between text-[10px] text-zinc-400 uppercase font-bold mb-1">
+                        <span>Engagement Quotient (10%)</span>
+                        <span class="font-mono text-white">{{ score_components.engagement }}%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" style="width: {{ score_components.engagement }}%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ML SUCCESS PREDICTION MODULE GRAPH -->
+        <div class="glass-card mb-4">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3"><i data-lucide="cpu" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>ML SUCCESS PREDICTOR</h5>
+            <p class="text-[11px] text-zinc-400 leading-relaxed mb-3">
+                Calculated dynamically via a <strong>Random Forest Regressor</strong> trained on peer cohort historical logs. Success factors weigh active engagement and prompt grading metrics.
+            </p>
+            <div class="bg-black/40 border border-zinc-800 p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-xs text-zinc-400 uppercase font-bold">Predicted Graduation success:</span>
+                    <span class="text-sm text-brand-primary fw-black font-mono">{{ success_prob }}%</span>
+                </div>
+                <div class="progress mt-2" style="height: 12px;">
+                    <div class="progress-bar progress-bar-primary progress-bar-striped" style="width: {{ success_prob }}%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TREND CHART -->
+        <div class="glass-card mb-4">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3"><i data-lucide="trending-up" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>INTERNSHIP PERFORMANCE TRENDS</h5>
+            <div style="position: relative; height:200px;">
+                <canvas id="performanceChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT PANEL: Classrooms, Assigned Tasks, Upload Actions, Chatbot -->
+    <div class="col-12 col-lg-7 space-y-4">
+        
+        <!-- Join classroom -->
+        <div class="glass-card mb-4">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3"><i data-lucide="book-open" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>Join New Classroom</h5>
+            <form action="{{ url_for('join_classroom') }}" method="POST" class="row g-2">
+                <div class="col-8 col-sm-9">
+                    <input type="text" name="code" class="form-control text-xs uppercase" placeholder="e.g. NEURAL101" required>
+                </div>
+                <div class="col-4 col-sm-3">
+                    <button type="submit" class="btn btn-brand w-100 text-xs py-2.5">JOIN LAB</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Assigned active tasks lists -->
+        <div class="glass-card mb-4">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3"><i data-lucide="activity" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>ASSIGNED LAB WORK</h5>
+            
+            {% if tasks %}
+                <div class="space-y-4">
+                    {% for t in tasks %}
+                    <div class="p-3 border border-zinc-800 bg-black/20">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 class="text-white text-xs fw-black uppercase m-0">{{ t.title }}</h6>
+                            <span class="text-[9px] text-zinc-500 font-mono uppercase">Due: {{ t.due_date }}</span>
+                        </div>
+                        <p class="text-[11px] text-zinc-400 mb-3">{{ t.description or 'No assignment specifications defined.' }}</p>
+                        {% if t.assignment_image %}
+                        <a href="{{ url_for('secure_task_image', task_code=t.task_code, filename=t.assignment_image) }}" target="_blank" class="d-inline-block mb-3">
+                            <img src="{{ url_for('secure_task_image', task_code=t.task_code, filename=t.assignment_image) }}" alt="Assignment reference image" class="img-fluid border border-zinc-800" style="max-height:180px; max-width:100%; object-fit:contain;">
+                        </a>
+                        {% endif %}
+                        
+                        <div class="d-flex justify-content-between align-items-center border-top border-zinc-800 pt-2 mt-2">
+                            <div>
+                                <span class="text-[10px] text-zinc-500 uppercase font-mono">Status:</span>
+                                {% if t.status == 'APPROVED' %}
+                                    <span class="badge bg-success/20 text-success border border-success/30 rounded-none text-[8px] ms-1 font-mono">APPROVED ({{ t.marks }}/100)</span>
+                                {% elif t.status == 'PENDING' %}
+                                    <span class="badge bg-warning/20 text-warning border border-warning/30 rounded-none text-[8px] ms-1 font-mono">EVALUATION IN PROGRESS</span>
+                                {% else %}
+                                    <span class="badge bg-danger/20 text-danger border border-danger/30 rounded-none text-[8px] ms-1 font-mono">SUBMISSION PENDING</span>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        {% if t.status != 'APPROVED' %}
+                        <!-- Interactive Drag & Drop Upload Zone -->
+                        <div class="mt-3">
+                            <div id="dropzone-{{ t.id }}" 
+                                 class="dropzone-container p-3 text-center cursor-pointer position-relative"
+                                 ondragover="handleDragOver(event, {{ t.id }})" 
+                                 ondragleave="handleDragLeave(event, {{ t.id }})" 
+                                 ondrop="handleDrop(event, {{ t.id }})"
+                                 onclick="triggerFileInput({{ t.id }})">
+                                
+                                <form action="{{ url_for('submit_task', task_id=t.id) }}" method="POST" enctype="multipart/form-data" id="upload-form-{{ t.id }}" onclick="event.stopPropagation()">
+                                    <input type="file" name="file" id="file-input-{{ t.id }}" class="d-none" accept=".pdf,.doc,.docx,.zip,.ppt,.pptx,.csv,.png,.jpg,.jpeg,.webp" onchange="handleFileSelect(event, {{ t.id }})">
+                                    
+                                    <!-- Default Prompt State -->
+                                    <div id="prompt-state-{{ t.id }}">
+                                        <i data-lucide="upload-cloud" class="text-zinc-600 mb-2 mx-auto" style="width: 24px; height: 24px;"></i>
+                                        <p class="text-[11px] text-zinc-300 font-bold m-0 uppercase tracking-wider">Drag & Drop assignment file here</p>
+                                        <p class="text-[10px] text-zinc-500 m-0 mt-1 font-mono">or click to browse local directory</p>
+                                        <div class="mt-2 d-flex justify-content-center gap-1 flex-wrap">
+                                            <span class="badge bg-zinc-950 text-zinc-500 border border-zinc-900 text-[8px] font-mono">PDF</span>
+                                            <span class="badge bg-zinc-950 text-zinc-500 border border-zinc-900 text-[8px] font-mono">DOCX</span>
+                                            <span class="badge bg-zinc-950 text-zinc-500 border border-zinc-900 text-[8px] font-mono">ZIP</span>
+                                            <span class="badge bg-zinc-950 text-zinc-500 border border-zinc-900 text-[8px] font-mono">PPT</span>
+                                            <span class="badge bg-zinc-950 text-zinc-500 border border-zinc-900 text-[8px] font-mono">CSV</span>
+                                            <span class="badge bg-zinc-950 text-zinc-500 border border-zinc-900 text-[8px] font-mono">PHOTO</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- File Selected State -->
+                                    <div id="selected-state-{{ t.id }}" class="d-none text-start p-1">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i data-lucide="file-check" class="text-brand-primary" style="width: 20px; height: 20px;"></i>
+                                                <div>
+                                                    <span class="text-white text-xs font-bold font-mono d-block text-truncate" id="file-name-{{ t.id }}" style="max-width: 250px;">filename.pdf</span>
+                                                    <span class="text-[9px] text-zinc-500 font-mono uppercase" id="file-size-{{ t.id }}">0.0 MB</span>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-dark border border-zinc-800 text-[9px] py-1 px-2 hover:bg-zinc-900" onclick="clearSelectedFile(event, {{ t.id }})">
+                                                Clear
+                                            </button>
+                                        </div>
+                                        
+                                        <!-- Progress Bar -->
+                                        <div id="upload-progress-container-{{ t.id }}" class="mt-3 d-none">
+                                            <div class="d-flex justify-content-between text-[9px] text-zinc-400 uppercase font-bold font-mono mb-1">
+                                                <span>Transmitting deliverable...</span>
+                                                <span id="upload-progress-percent-{{ t.id }}">0%</span>
+                                            </div>
+                                            <div class="progress" style="height: 6px;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-brand" id="upload-progress-bar-{{ t.id }}" style="width: 0%"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-3 border-top border-zinc-900 pt-2 text-end">
+                                            <button type="button" id="submit-btn-{{ t.id }}" class="btn btn-brand text-xs py-1.5 px-3 uppercase tracking-wider font-bold" onclick="uploadAndSubmit(event, {{ t.id }})">
+                                                Transmit Deliverable
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="text-center py-4 bg-black/20 border border-dashed border-zinc-800">
+                    <p class="text-xs text-zinc-600 font-mono italic uppercase m-0">No active deliverables in classroom</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Chatbot widget panel -->
+        <div class="glass-card mb-4">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3"><i data-lucide="message-square" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>RULE-BASED VIRTUAL ADVISOR</h5>
+            <p class="text-[11px] text-zinc-500 uppercase font-mono mb-2">Choose an option or type your question</p>
+            
+            <div class="chatbot-messages d-flex flex-column rounded-0" id="chatbox">
+                <div class="chat-bubble bot">
+                    Hello {{ current_user.public_id }}! I can help with deadlines, performance, extensions, and leave or illness requests.
+                </div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+                <button type="button" class="btn btn-sm btn-outline-brand text-xs" onclick="sendPreset('Show my deadlines')">Deadlines</button>
+                <button type="button" class="btn btn-sm btn-outline-brand text-xs" onclick="sendPreset('Explain my performance')">Performance</button>
+                <button type="button" class="btn btn-sm btn-outline-brand text-xs" onclick="sendPreset('Request extension')">Extension</button>
+                <button type="button" class="btn btn-sm btn-brand text-xs" onclick="sendPreset('Start leave request')">Leave / illness</button>
+            </div>
+            
+            <div class="d-flex gap-2 mt-3">
+                <input type="text" id="chat-input" class="form-control text-xs" placeholder="Ask a question or report an issue..." onkeydown="if(event.key === 'Enter') sendMessage()">
+                <button onclick="sendMessage()" class="btn btn-brand py-2 text-xs">Transmit</button>
+            </div>
+        </div>
+
+        <!-- Leave Request Status Card -->
+        <div class="glass-card mb-4">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3">
+                <i data-lucide="shield-alert" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>LEAVE REQUEST STATUS
+            </h5>
+            
+            {% if leave_requests %}
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover text-xs mb-0">
+                        <thead>
+                            <tr class="border-bottom border-zinc-800 text-[10px] text-zinc-400 uppercase tracking-wider font-bold">
+                                <th>Assignment</th>
+                                <th>Reason</th>
+                                <th>Status</th>
+                                <th>Submitted Date</th>
+                                <th>Due Date / Decision</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for lr in leave_requests %}
+                            <tr class="border-bottom border-zinc-850">
+                                <td>
+                                    <strong class="text-white">{{ lr.task_title }}</strong>
+                                    <div class="text-[10px] text-zinc-500 font-mono mt-0.5">Faculty: {{ lr.faculty_name }}</div>
+                                </td>
+                                <td>
+                                    <span>{{ lr.reason }}</span>
+                                    {% if lr.chatbot_summary %}
+                                    <div class="text-[10px] text-zinc-500 mt-1 italic">Summary: {{ lr.chatbot_summary }}</div>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if lr.status == 'Approved' %}
+                                        <span class="badge bg-success/20 text-success border border-success/30 rounded-none text-[8px] font-mono">APPROVED</span>
+                                    {% elif lr.status == 'Rejected' %}
+                                        <span class="badge bg-danger/20 text-danger border border-danger/30 rounded-none text-[8px] font-mono">REJECTED</span>
+                                    {% else %}
+                                        <span class="badge bg-warning/20 text-warning border border-warning/30 rounded-none text-[8px] font-mono">PENDING REVIEW</span>
+                                    {% endif %}
+                                </td>
+                                <td class="mono text-zinc-500">{{ lr.created_at }}</td>
+                                <td>
+                                    {% if lr.status == 'Approved' %}
+                                        <div class="text-[10px] text-success font-mono font-bold">New Due: {{ lr.updated_due_date }}</div>
+                                    {% else %}
+                                        <div class="text-[10px] text-zinc-500 font-mono">Original: {{ lr.original_due_date }}</div>
+                                    {% endif %}
+                                    {% if lr.faculty_remark %}
+                                        <div class="text-[9px] text-zinc-400 mt-1 bg-black/30 p-1 border border-zinc-900">
+                                            <strong>Faculty Remark:</strong> {{ lr.faculty_remark }}
+                                        </div>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% if lr.status == 'Pending Faculty Review' %}
+                            <tr>
+                                <td colspan="5" class="bg-black/10 py-2 border-bottom border-zinc-850">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 px-2">
+                                        <div class="text-[10px] text-zinc-400">
+                                            {% if lr.proof_file %}
+                                                <span class="text-success"><i data-lucide="file-check" class="d-inline-block align-middle me-1" style="width:12px;"></i> Proof Attached: <a href="{{ url_for('download_file', filename=lr.proof_file) }}" class="text-brand-secondary font-mono">{{ lr.proof_file }}</a></span>
+                                            {% else %}
+                                                <span class="text-warning"><i data-lucide="help-circle" class="d-inline-block align-middle me-1" style="width:12px;"></i> Supporting proof is recommended.</span>
+                                            {% endif %}
+                                        </div>
+                                        <form action="{{ url_for('upload_leave_proof', req_id=lr.request_id) }}" method="POST" enctype="multipart/form-data" class="d-flex align-items-center gap-2">
+                                            <input type="file" name="proof" class="form-control form-control-sm text-[9px] py-0.5" style="max-width: 180px;" required accept=".pdf,.png,.jpg,.jpeg,.zip">
+                                            <button type="submit" class="btn btn-outline-brand btn-sm text-[9px] py-1">Upload Proof</button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <div class="text-center py-4 bg-black/20 border border-dashed border-zinc-800">
+                    <p class="text-xs text-zinc-600 font-mono italic uppercase m-0">No active leave or absence requests logged</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Submissions Log list -->
+        <div class="glass-card">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3"><i data-lucide="history" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>SUBMISSION REPOSITORY</h5>
+            <div class="table-responsive">
+                <table class="table table-dark table-hover text-xs mb-0">
+                    <thead>
+                        <tr class="border-bottom border-zinc-800 text-[10px] text-zinc-400 uppercase tracking-wider font-bold">
+                            <th>Deliverable</th>
+                            <th>File</th>
+                            <th>Time Submitted</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if submissions %}
+                            {% for s in submissions %}
+                            <tr class="border-bottom border-zinc-850">
+                                <td>{{ s.task_title }}</td>
+                                <td class="mono font-bold">{% if s.stored_file_name %}<a class="text-brand-secondary" target="_blank" href="{{ url_for('secure_submission_file', filename=s.stored_file_name) }}">{{ s.file_name }}</a>{% else %}{{ s.file_name }}{% endif %}</td>
+                                <td class="mono text-zinc-500">{{ s.submitted_at }}</td>
+                                <td class="mono text-brand-primary fw-black">{% if s.marks is not none %}{{ s.marks }}{% else %}--{% endif %}</td>
+                                <td>
+                                    {% if s.status == 'APPROVED' %}
+                                        <span class="text-success uppercase font-bold text-[9px]"><i data-lucide="check" class="d-inline-block align-middle" style="width:12px;"></i> APPROVED</span>
+                                    {% elif s.status == 'PENDING' %}
+                                        <span class="text-warning uppercase font-bold text-[9px]"><i data-lucide="clock" class="d-inline-block align-middle" style="width:12px;"></i> PENDING</span>
+                                    {% else %}
+                                        <span class="text-danger uppercase font-bold text-[9px]"><i data-lucide="x" class="d-inline-block align-middle" style="width:12px;"></i> REJECTED</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% if s.evaluator_comment %}
+                            <tr>
+                                <td colspan="5" class="bg-black/30 p-2 text-[10px] text-zinc-500">
+                                    <strong>Faculty feedback:</strong> "{{ s.evaluator_comment }}"
+                                </td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td colspan="5" class="text-center py-4 text-zinc-500 italic">No archive records found</td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // 1. Chatbot logic
+    function appendMessage(text, role) {
+        const box = document.getElementById("chatbox");
+        const bubble = document.createElement("div");
+        bubble.className = `chat-bubble ${role}`;
+        bubble.textContent = text;
+        box.appendChild(bubble);
+        box.scrollTop = box.scrollHeight;
+    }
+
+    async function sendMessage() {
+        const inp = document.getElementById("chat-input");
+        const text = inp.value.trim();
+        if(!text) return;
+        
+        appendMessage(text, "user");
+        inp.value = "";
+        
+        try {
+            const res = await fetch("/api/chatbot/message", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: text })
+            });
+            const data = await res.json();
+            appendMessage(data.reply, "bot");
+        } catch(e) {
+            appendMessage("Transmission error: connection timed out.", "bot");
+        }
+    }
+
+    function sendPreset(text) {
+        document.getElementById("chat-input").value = text;
+        sendMessage();
+    }
+
+    // 2. Performance Trends line chart using Chart.js
+    const ctx = document.getElementById('performanceChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
+            datasets: [{
+                label: 'Capability Rating (%)',
+                data: [60, 65, 70, 72, 75, {{ cap_score }}],
+                borderColor: '#f27d26',
+                borderWidth: 2,
+                backgroundColor: 'rgba(242, 125, 38, 0.05)',
+                fill: true,
+                tension: 0.3
+            }, {
+                label: 'Attendance Factor (%)',
+                data: [100, 100, 90, 80, 80, {{ score_components.attendance }}],
+                borderColor: '#00d2ff',
+                borderWidth: 1.5,
+                backgroundColor: 'transparent',
+                borderDash: [5, 5],
+                tension: 0.1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: { color: '#8c9ba5', font: { family: 'JetBrains Mono', size: 9 } }
+                }
+            },
+            scales: {
+                x: {
+                    grid: { color: '#1d2333' },
+                    ticks: { color: '#8c9ba5', font: { family: 'JetBrains Mono', size: 9 } }
+                },
+                y: {
+                    min: 0,
+                    max: 100,
+                    grid: { color: '#1d2333' },
+                    ticks: { color: '#8c9ba5', font: { family: 'JetBrains Mono', size: 9 } }
+                }
+            }
+        }
+    });
+
+    // 3. Dynamic Drag & Drop File Upload Handlers
+    function handleDragOver(e, taskId) {
+        e.preventDefault();
+        e.stopPropagation();
+        const dropzone = document.getElementById(`dropzone-${taskId}`);
+        if (dropzone) {
+            dropzone.classList.add('dragover');
+        }
+    }
+
+    function handleDragLeave(e, taskId) {
+        e.preventDefault();
+        e.stopPropagation();
+        const dropzone = document.getElementById(`dropzone-${taskId}`);
+        if (dropzone) {
+            dropzone.classList.remove('dragover');
+        }
+    }
+
+    function handleDrop(e, taskId) {
+        e.preventDefault();
+        e.stopPropagation();
+        const dropzone = document.getElementById(`dropzone-${taskId}`);
+        if (dropzone) {
+            dropzone.classList.remove('dragover');
+        }
+
+        const dt = e.dataTransfer;
+        const files = dt.files;
+        if (files && files.length > 0) {
+            const fileInput = document.getElementById(`file-input-${taskId}`);
+            fileInput.files = files;
+            validateAndShowFile(files[0], taskId);
+        }
+    }
+
+    function triggerFileInput(taskId) {
+        document.getElementById(`file-input-${taskId}`).click();
+    }
+
+    function handleFileSelect(e, taskId) {
+        const files = e.target.files;
+        if (files && files.length > 0) {
+            validateAndShowFile(files[0], taskId);
+        }
+    }
+
+    function validateAndShowFile(file, taskId) {
+        const allowedExts = ["pdf", "doc", "docx", "zip", "ppt", "pptx", "csv", "png", "jpg", "jpeg", "webp"];
+        const ext = file.name.split('.').pop().toLowerCase();
+        
+        // Allowed format validation check
+        if (!allowedExts.includes(ext)) {
+            alert(`Invalid file format "${ext}". Allowed: PDF, DOC/DOCX, ZIP, PPT, CSV, PNG, JPG, JPEG, WEBP.`);
+            document.getElementById(`file-input-${taskId}`).value = '';
+            return;
+        }
+
+        // Max Size validation check (16MB)
+        const maxSize = 16 * 1024 * 1024;
+        if (file.size > maxSize) {
+            alert(`File size exceeds 16 MB limit (${(file.size / (1024 * 1024)).toFixed(2)} MB). Please optimize file weight.`);
+            document.getElementById(`file-input-${taskId}`).value = '';
+            return;
+        }
+
+        // Display state transition
+        document.getElementById(`prompt-state-${taskId}`).classList.add('d-none');
+        document.getElementById(`selected-state-${taskId}`).classList.remove('d-none');
+        
+        // Show file meta
+        document.getElementById(`file-name-${taskId}`).textContent = file.name;
+        const sizeInMb = file.size / (1024 * 1024);
+        const sizeStr = sizeInMb >= 0.1 ? `${sizeInMb.toFixed(2)} MB` : `${(file.size / 1024).toFixed(2)} KB`;
+        document.getElementById(`file-size-${taskId}`).textContent = sizeStr;
+        
+        // Re-render Lucide icons
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+    }
+
+    function clearSelectedFile(e, taskId) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Reset file input element
+        document.getElementById(`file-input-${taskId}`).value = '';
+        
+        // Toggle states
+        document.getElementById(`prompt-state-${taskId}`).classList.remove('d-none');
+        document.getElementById(`selected-state-${taskId}`).classList.add('d-none');
+        document.getElementById(`upload-progress-container-${taskId}`).classList.add('d-none');
+    }
+
+    function uploadAndSubmit(e, taskId) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const form = document.getElementById(`upload-form-${taskId}`);
+        const fileInput = document.getElementById(`file-input-${taskId}`);
+        
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert("No file selected.");
+            return;
+        }
+
+        // Activate progress animation
+        const progressContainer = document.getElementById(`upload-progress-container-${taskId}`);
+        const progressBar = document.getElementById(`upload-progress-bar-${taskId}`);
+        const progressPercent = document.getElementById(`upload-progress-percent-${taskId}`);
+        const submitBtn = document.getElementById(`submit-btn-${taskId}`);
+
+        progressContainer.classList.remove('d-none');
+        submitBtn.disabled = true;
+        submitBtn.textContent = "TRANSMITTING...";
+
+        let percent = 0;
+        const interval = setInterval(() => {
+            percent += 20;
+            if (percent >= 100) {
+                percent = 100;
+                clearInterval(interval);
+                // Submit multi-part form to backend
+                form.submit();
+            }
+            progressBar.style.width = `${percent}%`;
+            progressPercent.textContent = `${percent}%`;
+        }, 120);
+    }
+</script>
+{% endblock %}

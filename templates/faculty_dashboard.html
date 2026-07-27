@@ -1,0 +1,672 @@
+{% extends "base.html" %}
+
+{% block title %}Faculty Command - InternLens AI{% endblock %}
+
+{% block content %}
+<div class="row g-4 align-items-center mb-4">
+    <!-- Title and Classroom selector -->
+    <div class="col-12 col-md-6">
+        <h2 class="text-white fw-black uppercase tracking-wider m-0">Faculty Intelligence Console</h2>
+        <p class="text-xs text-zinc-500 uppercase font-mono m-0">COHORT PROGRESS & PREDICTIONS CORE</p>
+    </div>
+    
+    <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center gap-2">
+        {% if classrooms %}
+        <form method="GET" action="{{ url_for('faculty_dashboard') }}" class="d-flex align-items-center gap-2">
+            <select name="classroom_id" class="form-select text-xs font-bold uppercase tracking-wider bg-dark text-white border-zinc-800" onchange="this.form.submit()">
+                {% for c in classrooms %}
+                <option value="{{ c.id }}" {% if selected_classroom_id == c.id|string %}selected{% endif %}>{{ c.name }} [{{ c.code }}]</option>
+                {% endfor %}
+            </select>
+        </form>
+        {% endif %}
+        
+        <button class="btn btn-brand text-xs py-2" data-bs-toggle="modal" data-bs-target="#createClassroomModal">
+            <i data-lucide="plus" class="d-inline-block align-middle me-1" style="width:14px;"></i> Create Classroom
+        </button>
+        <button class="btn btn-outline-brand text-xs py-2" type="button" onclick="loadRequestCenter()">Request Center</button>
+        <a class="btn btn-brand text-xs py-2" href="{{ url_for('presentation_evaluations') }}">Presentation Evaluation</a>
+    </div>
+</div>
+
+<div class="row g-4 mt-1" id="request-center" hidden>
+    <div class="col-12"><div class="glass-card">
+        <div class="d-flex justify-content-between"><h5 class="text-xs text-white uppercase tracking-widest fw-black">Faculty Request Center</h5><span class="mono text-brand-primary">{{ current_user.public_id }}</span></div>
+        <div id="request-center-content" class="text-xs text-zinc-500">Loading requests…</div>
+    </div></div>
+</div>
+
+<div class="row g-4">
+    <!-- AT-RISK STUDENTS BANNER ALERTS -->
+    <div class="col-12 col-lg-8">
+        <div class="glass-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="text-xs text-white uppercase tracking-widest fw-black m-0">
+                    <i data-lucide="alert-triangle" class="text-danger me-2 d-inline-block align-middle" style="width:16px;"></i>AT-RISK STUDENT ALERTS
+                </h5>
+                <span class="badge bg-danger/20 text-danger border border-danger/20 rounded-none text-[8px]">CRITICAL BARRIERS DETECTED</span>
+            </div>
+
+            {% if alerts %}
+                <div class="row g-3">
+                    {% for a in alerts %}
+                    <div class="col-12">
+                        <div class="p-3 border rounded-none bg-danger/5 {% if a.risk_level == 'Red' %}border-danger/30{% else %}border-warning/30{% endif %} d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-white text-xs fw-black uppercase m-0">{{ a.student_username }}</h6>
+                                <p class="text-[11px] text-zinc-400 m-0">Alert status: <strong>{{ a.risk_level }} Risk</strong></p>
+                                <p class="text-[10px] text-danger font-mono m-0 mt-1">Reason: {{ a.reason }}</p>
+                            </div>
+                            <span class="badge {% if a.risk_level == 'Red' %}bg-danger text-black{% else %}bg-warning text-black{% endif %} rounded-none text-[8px] font-black uppercase">{{ a.risk_level }} ALERT</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="text-center py-4 bg-black/20 border border-dashed border-zinc-800">
+                    <p class="text-xs text-zinc-600 font-mono italic uppercase m-0">No active student alerts. All metrics are normal.</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- COHORT RISK DISTRIBUTION -->
+    <div class="col-12 col-lg-4">
+        <div class="glass-card">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3">COHORT RISK DISTRIBUTION</h5>
+            <div style="position: relative; height: 140px;">
+                <canvas id="riskDistributionChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4 mt-1">
+    <!-- STUDENT CAPABILITY & PREDICTION DATA TABLE -->
+    <div class="col-12 col-xl-8">
+        <div class="glass-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="text-xs text-white uppercase tracking-widest fw-black m-0">STUDENT COHORT REGISTRY</h5>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-brand text-[9px] py-1 px-2" data-bs-toggle="modal" data-bs-target="#assignStudentModal">Enroll Student</button>
+                    {% if selected_classroom_id %}
+                    <a href="{{ url_for('generate_report', classroom_id=selected_classroom_id) }}" class="btn btn-brand text-[9px] py-1 px-2" target="_blank">Export PDF Report</a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-dark table-hover text-xs mb-0">
+                    <thead>
+                        <tr class="border-bottom border-zinc-800 text-[10px] text-zinc-400 uppercase tracking-wider font-bold">
+                            <th>Student ID</th>
+                            <th>Student</th>
+                            <th>Capability Score</th>
+                            <th>Attendance Component</th>
+                            <th>Success Probability</th>
+                            <th>Risk Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if students %}
+                            {% for s in students %}
+                            <tr class="border-bottom border-zinc-850">
+                                <td class="mono text-brand-primary fw-black">{{ s.public_id }}</td>
+                                <td class="font-bold text-white uppercase">{{ s.username }}</td>
+                                <td class="mono text-brand-primary fw-black font-semibold">{{ s.capability_score }}%</td>
+                                <td class="mono text-zinc-400">{{ s.attendance }}%</td>
+                                <td class="mono text-brand-secondary fw-black">{{ s.success_probability }}%</td>
+                                <td>
+                                    <span class="badge {% if s.risk_level == 'High Risk' %}bg-danger/20 text-danger border-danger/30{% elif s.risk_level == 'Medium Risk' %}bg-warning/20 text-warning border-warning/30{% else %}badge-brand{% endif %} rounded-none text-[8px] font-bold">{{ s.risk_level }}</span>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td colspan="6" class="text-center py-4 text-zinc-500 italic">No students currently assigned to this classroom. Use Enroll Student to add.</td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- CREATE ASSIGNMENTS & DISPATCH -->
+    <div class="col-12 col-xl-4">
+        <div class="glass-card">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3"><i data-lucide="plus-circle" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>DISPATCH ASSIGNMENTS</h5>
+            {% if selected_classroom_id %}
+            <form action="{{ url_for('create_task') }}" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="classroom_id" value="{{ selected_classroom_id }}">
+                
+                <div class="mb-3">
+                    <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Student ID <span class="text-zinc-600">(optional: cohort task)</span></label>
+                    <input type="text" name="student_id" class="form-control text-xs text-uppercase" placeholder="STU-XXXXXX">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Assignment Title</label>
+                    <input type="text" name="title" class="form-control text-xs" placeholder="e.g. API Refactor" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Specification Outline</label>
+                    <textarea name="description" class="form-control text-xs" rows="3" placeholder="Provide description of task scope..."></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Assignment Photo <span class="text-zinc-600">(optional)</span></label>
+                    <input type="file" name="assignment_photo" class="form-control text-xs" accept="image/png,image/jpeg,image/webp">
+                    <p class="text-[10px] text-zinc-500 mt-1 mb-0">Attach a reference image, brief, diagram, or photo (PNG, JPG, JPEG, WEBP).</p>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Evaluation Deadline</label>
+                    <input type="datetime-local" name="due_date" class="form-control text-xs" required>
+                </div>
+                
+                <button type="submit" class="btn btn-brand w-100 py-2.5 text-xs">Dispatch Task</button>
+            </form>
+            {% else %}
+            <p class="text-xs text-zinc-500 italic">Please create a classroom first before dispatching tasks.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="row g-4 mt-1 mb-5">
+    <!-- FACULTY SUBMISSION REVIEW QUEUE -->
+    <div class="col-12 col-lg-6">
+        <div class="glass-card h-100">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3"><i data-lucide="layers" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>SUBMISSION PROGRESS LOGS</h5>
+            
+            <div class="table-responsive">
+                <table class="table table-dark table-hover text-xs mb-0">
+                    <thead>
+                        <tr class="border-bottom border-zinc-800 text-[10px] text-zinc-400 uppercase tracking-wider font-bold">
+                            <th>Student</th>
+                            <th>Deliverable</th>
+                            <th>Grade</th>
+                            <th>Status / Faculty review</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if submissions %}
+                            {% for s in submissions %}
+                            <tr class="border-bottom border-zinc-850">
+                                <td class="font-bold text-white uppercase">{{ s.student_username }}</td>
+                                <td>{{ s.task_title }}<br><span class="text-zinc-500 mono text-[9px]">{{ s.file_name }}</span></td>
+                                <td class="mono text-brand-primary fw-black">{% if s.marks is not none %}{{ s.marks }}{% else %}--{% endif %}</td>
+                                <td>
+                                    {% if s.status == 'APPROVED' %}
+                                        <span class="badge bg-success/15 text-success rounded-none text-[8px] border border-success/20">APPROVED</span>
+                                    {% elif s.status == 'PENDING' %}
+                                        <span class="badge bg-warning/15 text-warning rounded-none text-[8px] border border-warning/20">EVALUATION IN PROGRESS</span>
+                                    {% else %}
+                                        <span class="badge bg-danger/15 text-danger rounded-none text-[8px] border border-danger/20">REJECTED</span>
+                                    {% endif %}
+                                    {% if s.status == 'PENDING' %}
+                                    <form action="{{ url_for('grade_submission', submission_id=s.id) }}" method="POST" class="d-flex gap-1 mt-2">
+                                        <input type="number" name="marks" min="0" max="100" class="form-control form-control-sm text-xs" placeholder="Mark" required>
+                                        <input type="text" name="comment" class="form-control form-control-sm text-xs" placeholder="AI-informed feedback">
+                                        <button type="submit" name="status" value="APPROVED" class="btn btn-success btn-sm text-[9px]">Approve</button>
+                                    </form>
+                                    {% endif %}
+                                    {% if s.stored_file_name %}
+                                    <a class="btn btn-outline-brand btn-sm text-[9px] mt-2" target="_blank" href="{{ url_for('secure_submission_file', filename=s.stored_file_name) }}">{% if s.is_image %}View photo{% else %}Open file{% endif %}</a>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td colspan="4" class="text-center py-4 text-zinc-500 italic">No submissions logged for grading in this classroom.</td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHATBOT RULES CONSOLE -->
+    <div class="col-12 col-lg-6">
+        <div class="glass-card h-100">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3"><i data-lucide="settings" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>CHATBOT ADMINISTRATIVE CONSOLE</h5>
+            <p class="text-[11px] text-zinc-400 leading-relaxed mb-3">
+                Review active system rule templates matching student barriers to advisor reminders. Escalations dynamically update risk colors.
+            </p>
+            
+            <div class="space-y-2 text-xs">
+                <div class="p-2 border border-zinc-800 bg-black/40">
+                    <span class="badge bg-info/20 text-info border border-info/20 rounded-none text-[8px] font-mono">RULE 1</span>
+                    <strong class="text-white d-block mt-1">Unsubmitted Work Reminders</strong>
+                    <p class="text-[10px] text-zinc-500 m-0">IF task due date passed and submission missing THEN dispatch overdue flags.</p>
+                </div>
+                <div class="p-2 border border-zinc-800 bg-black/40 mt-2">
+                    <span class="badge bg-danger/20 text-danger border border-danger/20 rounded-none text-[8px] font-mono">RULE 3 & 4</span>
+                    <strong class="text-white d-block mt-1">Escalate Extension / Barrier Issues</strong>
+                    <p class="text-[10px] text-zinc-500 m-0">IF student reports barrier OR asks for extension THEN alert faculty dashboard and log request.</p>
+                </div>
+                <div class="p-2 border border-zinc-800 bg-black/40 mt-2">
+                    <span class="badge bg-warning/20 text-warning border border-warning/20 rounded-none text-[8px] font-mono">RULE 6</span>
+                    <strong class="text-white d-block mt-1">Capability Score Risk Flag</strong>
+                    <p class="text-[10px] text-zinc-500 m-0">IF overall Capability rating drops below 40% THEN trigger automated high risk alert.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4 mt-1 mb-5">
+    <div class="col-12">
+        <div class="glass-card">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3">
+                <i data-lucide="shield-alert" class="text-brand-primary me-2 d-inline-block align-middle" style="width:16px;"></i>MEDICAL & LEAVE REQUEST CENTER
+            </h5>
+            <p class="text-[11px] text-zinc-400 leading-relaxed mb-3">
+                Review AI-prioritized student absence and extension requests. Approved requests automatically adjust assignment due dates. Rejected requests apply a Capability Score penalty.
+            </p>
+            
+            <!-- Filters & Search -->
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-brand text-xs filter-btn active-filter" onclick="filterLeaveRequests('all')">All</button>
+                    <button class="btn btn-sm btn-outline-brand text-xs filter-btn" onclick="filterLeaveRequests('Pending Faculty Review')">Pending</button>
+                    <button class="btn btn-sm btn-outline-brand text-xs filter-btn" onclick="filterLeaveRequests('Approved')">Approved</button>
+                    <button class="btn btn-sm btn-outline-brand text-xs filter-btn" onclick="filterLeaveRequests('Rejected')">Rejected</button>
+                </div>
+                <div>
+                    <input type="text" id="student-search-input" class="form-control form-control-sm text-xs" style="max-width: 250px;" placeholder="Search Student ID (e.g. STU-1)..." onkeyup="searchStudentLeaves()">
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-dark table-hover text-xs mb-0" id="leave-requests-table">
+                    <thead>
+                        <tr class="border-bottom border-zinc-800 text-[10px] text-zinc-400 uppercase tracking-wider font-bold">
+                            <th>Student ID</th>
+                            <th>Student Name</th>
+                            <th>Target Task</th>
+                            <th>Reason</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if leave_requests %}
+                            {% for lr in leave_requests %}
+                            <tr class="border-bottom border-zinc-850 leave-request-row" data-status="{{ lr.status }}" data-student-id="{{ lr.student_public_id }}">
+                                <td class="font-bold text-white font-mono uppercase">{{ lr.student_public_id }}</td>
+                                <td class="text-zinc-300 font-bold">{{ lr.student_name }}</td>
+                                <td>{{ lr.task_title }}</td>
+                                <td>
+                                    <div class="max-w-[200px] truncate" title="{{ lr.reason }}">{{ lr.reason }}</div>
+                                </td>
+                                <td>
+                                    {% if lr.priority == 'High' %}
+                                        <span class="badge bg-danger/20 text-danger border border-danger/30 rounded-none text-[8px] font-mono">HIGH</span>
+                                    {% elif lr.priority == 'Medium' %}
+                                        <span class="badge bg-warning/20 text-warning border border-warning/30 rounded-none text-[8px] font-mono">MEDIUM</span>
+                                    {% else %}
+                                        <span class="badge bg-info/20 text-info border border-info/30 rounded-none text-[8px] font-mono">LOW</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if lr.status == 'Approved' %}
+                                        <span class="badge bg-success/20 text-success border border-success/30 rounded-none text-[8px] font-mono">APPROVED</span>
+                                    {% elif lr.status == 'Rejected' %}
+                                        <span class="badge bg-danger/20 text-danger border border-danger/30 rounded-none text-[8px] font-mono">REJECTED</span>
+                                    {% else %}
+                                        <span class="badge bg-warning/20 text-warning border border-warning/30 rounded-none text-[8px] font-mono">PENDING REVIEW</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-brand btn-sm text-[10px] py-0.5 px-2" onclick="openLeaveModal({{ lr|tojson|safe }})">Review</button>
+                                    {% if lr.status == 'Pending Faculty Review' %}
+                                    <div class="d-flex flex-wrap gap-1 mt-2">
+                                        <form action="{{ url_for('decide_leave_request_new', req_id=lr.request_id) }}" method="POST">
+                                            <button type="submit" name="status" value="Approved" class="btn btn-success btn-sm text-[9px] py-0.5 px-2">Approve</button>
+                                        </form>
+                                        <form action="{{ url_for('decide_leave_request_new', req_id=lr.request_id) }}" method="POST">
+                                            <button type="submit" name="status" value="Rejected" class="btn btn-outline-danger btn-sm text-[9px] py-0.5 px-2">Reject</button>
+                                        </form>
+                                    </div>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr id="no-leaves-row">
+                                <td colspan="7" class="text-center py-4 text-zinc-500 italic">No leave or absence requests logged.</td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal: Review Leave Request -->
+<div class="modal fade" id="reviewLeaveModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content text-bg-dark border border-zinc-800 rounded-0" style="background-color: var(--card-bg) !important;">
+            <div class="modal-header border-bottom border-zinc-800 p-4">
+                <h5 class="modal-title text-brand-primary fw-black uppercase tracking-wider text-sm d-flex align-items-center">
+                    <i data-lucide="clipboard-list" class="me-2" style="width: 18px;"></i> Review Student Absence Request
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="leave-decision-form" method="POST">
+                <div class="modal-body p-4 text-xs">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 border-end border-zinc-800 pr-md-4">
+                            <h6 class="text-xs text-white uppercase font-black tracking-wider mb-3">Student & Request Profile</h6>
+                            <table class="table table-dark table-sm border-0 text-[11px] mb-3">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-zinc-500 font-mono w-1/3">Student ID:</td>
+                                        <td class="font-bold text-white font-mono" id="modal-student-id"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-zinc-500 font-mono">Student Name:</td>
+                                        <td class="font-bold text-zinc-200" id="modal-student-name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-zinc-500 font-mono">Target Task:</td>
+                                        <td class="text-zinc-200" id="modal-task-title"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-zinc-500 font-mono">Submitted Date:</td>
+                                        <td class="text-zinc-400 font-mono" id="modal-submitted-date"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="p-3 border border-zinc-800 bg-black/30 mb-3">
+                                <label class="text-[10px] text-zinc-500 uppercase font-mono tracking-widest d-block mb-1">Student Reported Reason</label>
+                                <p class="text-zinc-200 font-bold m-0" id="modal-student-reason"></p>
+                            </div>
+
+                            <div class="p-3 border border-zinc-800 bg-brand-primary/5 mb-3">
+                                <label class="text-[10px] text-brand-primary uppercase font-mono tracking-widest d-block mb-1">🤖 AI-Generated Conversation Summary</label>
+                                <p class="text-zinc-300 italic m-0" id="modal-ai-summary"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 pl-md-4">
+                            <h6 class="text-xs text-white uppercase font-black tracking-wider mb-3">Decision & Extension Panel</h6>
+
+                            <div class="row g-2 mb-3">
+                                <div class="col-6">
+                                    <div class="p-2 border border-zinc-800 bg-black/20 text-center">
+                                        <div class="text-[9px] text-zinc-500 uppercase font-mono">AI Suggestion</div>
+                                        <div class="text-sm font-bold text-brand-secondary" id="modal-ai-extension"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-2 border border-zinc-800 bg-black/20 text-center">
+                                        <div class="text-[9px] text-zinc-500 uppercase font-mono">Priority Rating</div>
+                                        <div id="modal-priority-badge"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3" id="modal-proof-container">
+                                <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Supporting Proof Document</label>
+                                <div id="modal-proof-link-area"></div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Adjust Due Date (Approved only)</label>
+                                <input type="datetime-local" id="modal-updated-due-date" name="updated_due_date" class="form-control text-xs">
+                                <div class="text-[9px] text-zinc-500 font-mono mt-1">Current Due Date: <span id="modal-current-due-date"></span></div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Faculty remarks & Feedback</label>
+                                <textarea id="modal-faculty-remark" name="faculty_remark" class="form-control text-xs" rows="3" placeholder="Provide justification or adjustments..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-zinc-800 p-4 d-flex justify-content-between">
+                    <div>
+                        <span class="text-[10px] text-zinc-500">Decision status will sync to capability marks.</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="submit" name="status" value="Rejected" class="btn btn-danger text-xs px-3">Reject excuse</button>
+                        <button type="submit" name="status" value="Approved" class="btn btn-brand text-xs px-3">Approve request</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function filterLeaveRequests(status) {
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.remove('btn-brand', 'active-filter');
+            btn.classList.add('btn-outline-brand');
+        });
+        const activeBtn = event.currentTarget;
+        activeBtn.classList.remove('btn-outline-brand');
+        activeBtn.classList.add('btn-brand', 'active-filter');
+
+        const rows = document.querySelectorAll('.leave-request-row');
+        let visibleCount = 0;
+        rows.forEach(row => {
+            const rowStatus = row.getAttribute('data-status');
+            if (status === 'all' || rowStatus === status) {
+                row.style.display = '';
+                visibleCount++;
+            } else {
+                row.style.display = 'none';
+            }
+        });
+
+        const noLeavesRow = document.getElementById('no-leaves-row');
+        if (visibleCount === 0) {
+            if (!noLeavesRow) {
+                const tbody = document.querySelector('#leave-requests-table tbody');
+                const emptyRow = document.createElement('tr');
+                emptyRow.id = 'no-leaves-row';
+                emptyRow.innerHTML = `<td colspan="7" class="text-center py-4 text-zinc-500 italic">No leave or absence requests found matching this filter.</td>`;
+                tbody.appendChild(emptyRow);
+            } else {
+                noLeavesRow.style.display = '';
+                noLeavesRow.querySelector('td').innerText = 'No leave or absence requests found matching this filter.';
+            }
+        } else if (noLeavesRow) {
+            noLeavesRow.style.display = 'none';
+        }
+    }
+
+    function searchStudentLeaves() {
+        const query = document.getElementById('student-search-input').value.toLowerCase().trim();
+        const rows = document.querySelectorAll('.leave-request-row');
+        const activeFilter = document.querySelector('.active-filter');
+        const filterVal = activeFilter ? activeFilter.innerText.trim() : 'All';
+        
+        let visibleCount = 0;
+        rows.forEach(row => {
+            const rowStatus = row.getAttribute('data-status');
+            const studentId = row.getAttribute('data-student-id').toLowerCase();
+            const matchesFilter = filterVal === 'All' || 
+                                 (filterVal === 'Pending' && rowStatus === 'Pending Faculty Review') ||
+                                 (filterVal === 'Approved' && rowStatus === 'Approved') ||
+                                 (filterVal === 'Rejected' && rowStatus === 'Rejected');
+            
+            if (matchesFilter && studentId.includes(query)) {
+                row.style.display = '';
+                visibleCount++;
+            } else {
+                row.style.display = 'none';
+            }
+        });
+
+        const noLeavesRow = document.getElementById('no-leaves-row');
+        if (visibleCount === 0) {
+            if (!noLeavesRow) {
+                const tbody = document.querySelector('#leave-requests-table tbody');
+                const emptyRow = document.createElement('tr');
+                emptyRow.id = 'no-leaves-row';
+                emptyRow.innerHTML = `<td colspan="7" class="text-center py-4 text-zinc-500 italic">No leave or absence requests found matching search query.</td>`;
+                tbody.appendChild(emptyRow);
+            } else {
+                noLeavesRow.style.display = '';
+                noLeavesRow.querySelector('td').innerText = 'No leave or absence requests found matching search query.';
+            }
+        } else if (noLeavesRow) {
+            noLeavesRow.style.display = 'none';
+        }
+    }
+
+    function openLeaveModal(lr) {
+        document.getElementById('modal-student-id').innerText = lr.student_public_id;
+        document.getElementById('modal-student-name').innerText = lr.student_name;
+        document.getElementById('modal-task-title').innerText = lr.task_title;
+        document.getElementById('modal-submitted-date').innerText = lr.created_at;
+        document.getElementById('modal-student-reason').innerText = lr.reason;
+        document.getElementById('modal-ai-summary').innerText = lr.chatbot_summary || 'No AI summary generated.';
+        document.getElementById('modal-ai-extension').innerText = lr.ai_suggested_extension || 'No recommendation';
+        document.getElementById('modal-current-due-date').innerText = lr.original_due_date;
+        document.getElementById('modal-faculty-remark').value = lr.faculty_remark || '';
+        
+        const badgeArea = document.getElementById('modal-priority-badge');
+        if (lr.priority === 'High') {
+            badgeArea.innerHTML = `<span class="badge bg-danger/20 text-danger border border-danger/30 rounded-none text-[10px] font-mono px-2 py-1">HIGH</span>`;
+        } else if (lr.priority === 'Medium') {
+            badgeArea.innerHTML = `<span class="badge bg-warning/20 text-warning border border-warning/30 rounded-none text-[10px] font-mono px-2 py-1">MEDIUM</span>`;
+        } else {
+            badgeArea.innerHTML = `<span class="badge bg-info/20 text-info border border-info/30 rounded-none text-[10px] font-mono px-2 py-1">LOW</span>`;
+        }
+
+        const proofArea = document.getElementById('modal-proof-link-area');
+        if (lr.proof_file) {
+            proofArea.innerHTML = `
+                <div class="d-flex align-items-center gap-2 p-2 border border-zinc-800 bg-black/40">
+                    <i data-lucide="file-check" class="text-success" style="width: 14px;"></i>
+                    <a href="/uploads/` + lr.proof_file + `" target="_blank" class="text-brand-secondary font-mono hover:underline">` + lr.proof_file + `</a>
+                </div>
+            `;
+        } else {
+            proofArea.innerHTML = `
+                <div class="text-zinc-500 italic p-2 border border-zinc-850 bg-black/10">
+                    No supporting proof document uploaded by student.
+                </div>
+            `;
+        }
+
+        document.getElementById('leave-decision-form').action = '/api/faculty/leave-requests/' + lr.request_id;
+        
+        const dueInput = document.getElementById('modal-updated-due-date');
+        if (lr.updated_due_date) {
+            dueInput.value = lr.updated_due_date.replace(" ", "T");
+        } else if (lr.original_due_date) {
+            dueInput.value = lr.original_due_date.replace(" ", "T");
+        } else {
+            dueInput.value = '';
+        }
+
+        setTimeout(() => {
+            if (window.lucide) window.lucide.createIcons();
+        }, 100);
+
+        const modal = new bootstrap.Modal(document.getElementById('reviewLeaveModal'));
+        modal.show();
+    }
+</script>
+
+<!-- Modal: Create Classroom -->
+<div class="modal fade" id="createClassroomModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-bg-dark border border-zinc-800 rounded-0" style="background-color: var(--card-bg) !important;">
+            <div class="modal-header border-bottom border-zinc-800 p-4">
+                <h5 class="modal-title text-brand-primary fw-black uppercase tracking-wider text-sm">Provision New Classroom Lab</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="{{ url_for('create_classroom') }}" method="POST">
+                <div class="modal-body p-4">
+                    <div class="mb-3">
+                        <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Classroom Lab Name</label>
+                        <input type="text" name="name" class="form-control text-xs" placeholder="e.g. Neural-Ops Systems Lab 2" required>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-zinc-800 p-4">
+                    <button type="submit" class="btn btn-brand text-xs">Provision Lab</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal: Enroll Student -->
+<div class="modal fade" id="assignStudentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-bg-dark border border-zinc-800 rounded-0" style="background-color: var(--card-bg) !important;">
+            <div class="modal-header border-bottom border-zinc-800 p-4">
+                <h5 class="modal-title text-brand-primary fw-black uppercase tracking-wider text-sm">Enroll Registered Student</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="{{ url_for('assign_student') }}" method="POST">
+                <input type="hidden" name="classroom_id" value="{{ selected_classroom_id }}">
+                <div class="modal-body p-4">
+                    <div class="mb-3">
+                        <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Student ID</label>
+                        <input type="text" name="student_id" class="form-control text-xs text-uppercase" placeholder="STU-XXXXXX" required>
+                        <p class="text-[10px] text-zinc-500 mt-1 uppercase">Use the permanent Student ID to add a registered learner.</p>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-zinc-800 p-4">
+                    <button type="submit" class="btn btn-brand text-xs">Enroll Student</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    async function loadRequestCenter() {
+        const section = document.getElementById('request-center');
+        const content = document.getElementById('request-center-content');
+        section.hidden = false;
+        const response = await fetch('/api/faculty/request-center');
+        const requests = await response.json();
+        content.innerHTML = requests.length ? requests.map(r => `<div class="border-top border-zinc-800 py-2 d-flex flex-wrap gap-2 align-items-center"><span class="mono text-brand-primary">${r.request_id}</span><strong>${r.student_public_id}</strong><span>${r.request_type}</span><span class="text-zinc-500">${r.description}</span><span class="badge bg-warning text-dark">${r.status}</span>${r.status === 'Pending' ? `<button class="btn btn-success btn-sm text-[9px]" onclick="decideLeave('${r.request_id}', 'Approved')">Approve</button><button class="btn btn-outline-danger btn-sm text-[9px]" onclick="decideLeave('${r.request_id}', 'Rejected')">Reject</button>` : ''}</div>`).join('') : '<p class="m-0">No leave or illness requests.</p>';
+    }
+    async function decideLeave(id, status) {
+        const response = await fetch(`/api/faculty/leave-requests/${id}`, {method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({status})});
+        if (response.ok) loadRequestCenter(); else alert('Unable to update request.');
+    }
+    // Risk Distribution Pie Chart
+    const ctx = document.getElementById('riskDistributionChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Low Risk (Green)', 'Medium Risk (Yellow)', 'High Risk (Red)'],
+            datasets: [{
+                data: [{{ risk_stats.Low }}, {{ risk_stats.Medium }}, {{ risk_stats.High }}],
+                backgroundColor: ['#f27d26', '#e0a106', '#dc3545'],
+                borderWidth: 1,
+                borderColor: '#11141d'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'right',
+                    labels: { color: '#8c9ba5', font: { family: 'JetBrains Mono', size: 9 } }
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

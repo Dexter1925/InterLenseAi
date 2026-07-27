@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}InternLens AI{% endblock %}</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg-color: #090b0f;
+            --card-bg: #11141d;
+            --card-border: #1d2333;
+            --brand-primary: #f27d26;
+            --brand-secondary: #00d2ff;
+            --text-color: #f1f2f6;
+            --text-muted: #8c9ba5;
+            --font-sans: 'Inter', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-display: 'Space Grotesk', sans-serif;
+        }
+        body.light-mode {
+            --bg-color: #f5f7fb;
+            --card-bg: rgba(255, 255, 255, .9);
+            --card-border: #d9e0eb;
+            --text-color: #172033;
+            --text-muted: #5f6c80;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Typography custom styles */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+        }
+
+        .mono {
+            font-family: var(--font-mono);
+        }
+
+        /* Custom Sidebar & Dashboard Header layout */
+        .sidebar {
+            background-color: var(--card-bg);
+            border-right: 1px solid var(--card-border);
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            z-index: 100;
+            padding-top: 1.5rem;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .sidebar-brand {
+            padding: 0 1.5rem 1.5rem;
+            border-bottom: 1px solid var(--card-border);
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-link {
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar-link:hover, .sidebar-link.active {
+            color: #ffffff;
+            background-color: rgba(242, 125, 38, 0.05);
+            border-left-color: var(--brand-primary);
+        }
+
+        /* Card custom aesthetics */
+        .glass-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 4px;
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: border-color 0.2s ease;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(242, 125, 38, 0.3);
+        }
+
+        /* Progress bars custom design */
+        .progress {
+            background-color: #171b26;
+            border: 1px solid var(--card-border);
+            height: 8px;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-bar-primary {
+            background-color: var(--brand-primary);
+        }
+
+        /* Form Controls Custom Style */
+        .form-control, .form-select {
+            background-color: #151824;
+            border: 1px solid var(--card-border);
+            color: #ffffff;
+            border-radius: 4px;
+            padding: 0.6rem 0.9rem;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background-color: #1a1e2d;
+            border-color: var(--brand-primary);
+            box-shadow: 0 0 0 0.25rem rgba(242, 125, 38, 0.15);
+            color: #ffffff;
+        }
+
+        /* Custom buttons styling */
+        .btn-brand {
+            background-color: var(--brand-primary);
+            color: #000000;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            border-radius: 2px;
+            border: 1px solid var(--brand-primary);
+            padding: 0.6rem 1.2rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-brand:hover {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            color: #000000;
+        }
+
+        .btn-outline-brand {
+            background-color: transparent;
+            color: var(--brand-primary);
+            border: 1px solid var(--brand-primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            border-radius: 2px;
+            padding: 0.6rem 1.2rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-outline-brand:hover {
+            background-color: var(--brand-primary);
+            color: #000000;
+        }
+
+        .badge-brand {
+            background-color: rgba(242, 125, 38, 0.15);
+            color: var(--brand-primary);
+            border: 1px solid rgba(242, 125, 38, 0.2);
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 0.35em 0.65em;
+            border-radius: 2px;
+        }
+
+        /* Header actions */
+        .header-nav {
+            border-bottom: 1px solid var(--card-border);
+            padding: 1rem 2rem;
+            background-color: var(--bg-color);
+            position: sticky;
+            top: 0;
+            z-index: 90;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Dropdowns custom design */
+        .dropdown-menu {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .dropdown-item {
+            color: var(--text-color);
+            font-size: 0.85rem;
+            padding: 0.6rem 1.2rem;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgba(242, 125, 38, 0.08);
+            color: #ffffff;
+        }
+
+        @media (max-width: 991.98px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            .sidebar.show {
+                transform: translateX(0);
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    {% block styles %}{% endblock %}
+</head>
+<body>
+
+    {% if current_user %}
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <h4 class="m-0 text-white flex align-items-center gap-2">
+                <i data-lucide="shield-alert" class="text-brand-primary" style="width: 24px; height: 24px;"></i>
+                <span class="fw-black uppercase tracking-tight text-brand-primary" style="font-size: 1.1rem; letter-spacing: 0.05em;">InternLens AI</span>
+            </h4>
+        </div>
+        <div class="d-flex flex-column h-100 justify-content-between pb-5">
+            <div>
+                {% if current_user.role == 'student' %}
+                <a href="{{ url_for('student_dashboard') }}" class="sidebar-link active">
+                    <i data-lucide="layout-dashboard"></i> Student Hub
+                </a>
+                <a href="{{ url_for('presentation_feedback') }}" class="sidebar-link">
+                    <i data-lucide="message-square"></i> Presentation Feedback
+                </a>
+                {% elif current_user.role == 'faculty' %}
+                <a href="{{ url_for('faculty_dashboard') }}" class="sidebar-link active">
+                    <i data-lucide="graduation-cap"></i> Faculty Command
+                </a>
+                <a href="{{ url_for('presentation_evaluations') }}" class="sidebar-link">
+                    <i data-lucide="presentation"></i> Presentation Evaluation
+                </a>
+                {% endif %}
+                
+                <a href="#notifications-offcanvas" data-bs-toggle="offcanvas" class="sidebar-link">
+                    <i data-lucide="bell"></i> System Alerts
+                </a>
+                <button type="button" class="sidebar-link border-0 w-100 text-start" onclick="toggleTheme()"><i data-lucide="sun-moon"></i> Light / Dark Mode</button>
+            </div>
+            
+            <div class="px-3">
+                <div class="p-3 border border-zinc-800 rounded-none bg-black/40 mb-3">
+                    <div class="text-[9px] text-zinc-500 uppercase tracking-widest font-bold">Logged as:</div>
+                    <div class="text-xs text-white font-black uppercase">{{ current_user.username }}</div>
+                    <div class="text-[10px] text-brand-primary font-mono uppercase">{{ current_user.public_id }} · {{ current_user.role }}</div>
+                </div>
+                <a href="{{ url_for('logout') }}" class="btn btn-outline-brand w-full d-block text-center py-2 text-xs">
+                    <i data-lucide="log-out" class="d-inline-block align-middle me-1" style="width: 14px;"></i> Log Out
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Main Container -->
+    <div class="{% if current_user %}main-content{% else %}container{% endif %}">
+        {% if current_user %}
+        <!-- Header Controls -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <button class="btn btn-dark d-lg-none" type="button" onclick="document.getElementById('sidebar').classList.toggle('show')">
+                <i data-lucide="menu"></i>
+            </button>
+            <div>
+                <span class="text-[10px] text-zinc-500 font-mono uppercase">System Active • UTC-7</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <!-- Notifications dropdown trigger -->
+                <button class="btn btn-outline-dark text-zinc-400 border-zinc-800 p-2 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#notifications-offcanvas">
+                    <i data-lucide="bell" style="width: 18px; height: 18px;"></i>
+                    {% if notifications %}
+                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-brand-primary border border-black rounded-full" style="width: 8px; height: 8px;"></span>
+                    {% endif %}
+                </button>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Flash messages flash banners -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category if category != 'error' else 'danger' }} alert-dismissible fade show border-0 rounded-0 bg-dark text-white shadow mb-4" role="alert" style="border-left: 4px solid var(--brand-primary) !important;">
+                        <div class="d-flex align-items-center gap-2">
+                            <i data-lucide="info" class="text-brand-primary" style="width: 18px;"></i>
+                            <span class="text-xs font-black uppercase tracking-wider">{{ message }}</span>
+                        </div>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <!-- Child Page Body Content Injection -->
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- System Notifications Offcanvas panel -->
+    {% if current_user %}
+    <div class="offcanvas offcanvas-end text-bg-dark border-start border-zinc-800 bg-zinc-950" tabindex="-1" id="notifications-offcanvas" style="background-color: var(--card-bg) !important;">
+        <div class="offcanvas-header border-b border-zinc-800 p-4">
+            <h5 class="offcanvas-title text-brand-primary fw-black uppercase tracking-wider" style="font-size: 0.95rem;">System Logs & Alerts</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-4">
+            {% if notifications %}
+                <div class="list-group list-group-flush">
+                    {% for n in notifications %}
+                    <div class="list-group-item bg-transparent text-white border-bottom border-zinc-800 py-3 px-0">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="badge {% if n.type == 'alert' %}bg-danger/20 text-danger border-danger/30{% else %}badge-brand{% endif %} rounded-none text-[8px] font-mono">{{ n.type }}</span>
+                            <span class="text-[9px] text-zinc-500 font-mono">{{ n.created_at }}</span>
+                        </div>
+                        <p class="text-xs m-0 text-zinc-300 font-medium">{{ n.message }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="text-center py-5">
+                    <i data-lucide="check-circle" class="text-zinc-600 mb-2" style="width: 32px; height: 32px;"></i>
+                    <p class="text-xs text-zinc-500 uppercase tracking-widest font-bold">No active alerts</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        if (localStorage.getItem('internlens-theme') === 'light') document.body.classList.add('light-mode');
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            localStorage.setItem('internlens-theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+        }
+        // Initialize Lucide icons on page load
+        lucide.createIcons();
+    </script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

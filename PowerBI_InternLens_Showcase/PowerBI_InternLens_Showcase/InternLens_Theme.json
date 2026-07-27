@@ -1,0 +1,41 @@
+{
+  "name": "InternLens Intelligence",
+  "dataColors": [
+    "#F27D26",
+    "#00D2FF",
+    "#28C76F",
+    "#F6C344",
+    "#EA5455",
+    "#8F5FE8"
+  ],
+  "background": "#090B0F",
+  "foreground": "#F1F2F6",
+  "tableAccent": "#F27D26",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#F1F2F6"
+              }
+            },
+            "fontFamily": "Inter"
+          }
+        ],
+        "labels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#CBD5E1"
+              }
+            },
+            "fontFamily": "Inter"
+          }
+        ]
+      }
+    }
+  }
+}

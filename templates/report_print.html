@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InternLens AI - Cohort Performance dossier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Inter', sans-serif;
+            padding: 3rem;
+        }
+        .header-box {
+            border-bottom: 2px solid #000000;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .meta-table th {
+            color: #555555;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+        .meta-table td {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .report-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+            body {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="no-print d-flex justify-content-between align-items-center mb-4 p-3 bg-light border">
+        <span class="text-muted text-xs">Print Preview Terminal. Press 'Print Dossier' to save or export as PDF.</span>
+        <button onclick="window.print()" class="btn btn-dark btn-sm fw-bold">PRINT DOSSIER / SAVE PDF</button>
+    </div>
+
+    <div class="header-box d-flex justify-content-between align-items-end">
+        <div>
+            <h1 class="report-title m-0">INTERNLENS PERFORMANCE INTELLIGENCE</h1>
+            <p class="text-muted text-xs uppercase tracking-widest m-0">COHORT PROGRESS PORTFOLIO & AUDIT DOSSIER</p>
+        </div>
+        <div class="text-end">
+            <span class="text-muted text-xs d-block">GENERATED DATE</span>
+            <strong class="mono text-sm">{{ generated_at }}</strong>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-6">
+            <table class="table table-borderless table-sm meta-table">
+                <tr>
+                    <th>Classroom Lab:</th>
+                    <td>{{ classroom.name }}</td>
+                </tr>
+                <tr>
+                    <th>Roster Code:</th>
+                    <td class="mono">{{ classroom.code }}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-6 text-end">
+            <table class="table table-borderless table-sm meta-table">
+                <tr>
+                    <th>Host Facility:</th>
+                    <td>Neural-Ops Systems Corp.</td>
+                </tr>
+                <tr>
+                    <th>Platform Scope:</th>
+                    <td>Final-Year Internship Intelligence</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <h4 class="fw-bold uppercase mb-3 text-sm">ENROLLED STUDENT PROFILE METRICS</h4>
+    <table class="table table-bordered table-striped text-xs">
+        <thead class="table-dark">
+            <tr>
+                <th>Student Candidate</th>
+                <th>Roster Email</th>
+                <th>Capability Rating</th>
+                <th>Attendance Score</th>
+                <th>ML Success Predictor</th>
+                <th>Assessed Risk Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for s in students %}
+            <tr>
+                <td class="fw-bold text-uppercase">{{ s.username }}</td>
+                <td class="mono text-muted">{{ s.email }}</td>
+                <td class="mono fw-bold text-primary">{{ s.capability_score }}%</td>
+                <td class="mono">{{ s.attendance }}%</td>
+                <td class="mono fw-bold text-success">{{ s.success_probability }}%</td>
+                <td class="fw-bold">{{ s.risk_level }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="border-top pt-3 mt-5">
+        <p class="text-muted text-xs text-center">
+            InternLens AI Performance Intelligence Portfolio. Encoded via RFC 2246 parameters. Verification key: [ILAI-RF-99].
+        </p>
+    </div>
+
+    <script>
+        // Auto trigger browser print console on page render
+        window.addEventListener('DOMContentLoaded', () => {
+            // Un-comment to auto trigger print dialog if desired
+            // window.print();
+        });
+    </script>
+</body>
+</html>

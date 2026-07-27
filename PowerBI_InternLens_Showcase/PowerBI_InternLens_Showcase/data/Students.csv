@@ -1,0 +1,81 @@
+StudentID,StudentName,Program,Semester,ClassroomID,AttendancePct,RiskBand,PlacementEligible
+STU-0001,Student 01,B.Tech IT,2,CLS-02,67.7,Medium,Yes
+STU-0002,Student 02,BCA,3,CLS-03,89.8,Low,Yes
+STU-0003,Student 03,MCA,4,CLS-04,94.7,Low,Yes
+STU-0004,Student 04,B.Tech CSE,5,CLS-05,81.1,Low,Yes
+STU-0005,Student 05,B.Tech IT,6,CLS-06,81.1,Low,Yes
+STU-0006,Student 06,BCA,7,CLS-01,74.4,Medium,Yes
+STU-0007,Student 07,MCA,8,CLS-02,81.3,Low,Yes
+STU-0008,Student 08,B.Tech CSE,1,CLS-03,75.0,Medium,Yes
+STU-0009,Student 09,B.Tech IT,2,CLS-04,80.0,Medium,Yes
+STU-0010,Student 10,BCA,3,CLS-05,71.5,Medium,Yes
+STU-0011,Student 11,MCA,4,CLS-06,65.7,High,Yes
+STU-0012,Student 12,B.Tech CSE,5,CLS-01,81.7,Medium,Yes
+STU-0013,Student 13,B.Tech IT,6,CLS-02,82.3,Low,Yes
+STU-0014,Student 14,BCA,7,CLS-03,92.1,Low,Yes
+STU-0015,Student 15,MCA,8,CLS-04,82.6,Medium,Yes
+STU-0016,Student 16,B.Tech CSE,1,CLS-05,82.4,Low,Yes
+STU-0017,Student 17,B.Tech IT,2,CLS-06,55.0,High,No
+STU-0018,Student 18,BCA,3,CLS-01,82.6,Low,Yes
+STU-0019,Student 19,MCA,4,CLS-02,68.4,Medium,Yes
+STU-0020,Student 20,B.Tech CSE,5,CLS-03,73.5,Medium,Yes
+STU-0021,Student 21,B.Tech IT,6,CLS-04,92.5,Low,Yes
+STU-0022,Student 22,BCA,7,CLS-05,73.4,Medium,Yes
+STU-0023,Student 23,MCA,8,CLS-06,91.3,Low,Yes
+STU-0024,Student 24,B.Tech CSE,1,CLS-01,87.9,Low,Yes
+STU-0025,Student 25,B.Tech IT,2,CLS-02,82.6,Low,Yes
+STU-0026,Student 26,BCA,3,CLS-03,54.9,High,No
+STU-0027,Student 27,MCA,4,CLS-04,80.4,Medium,Yes
+STU-0028,Student 28,B.Tech CSE,5,CLS-05,85.1,Low,Yes
+STU-0029,Student 29,B.Tech IT,6,CLS-06,96.4,Low,Yes
+STU-0030,Student 30,BCA,7,CLS-01,91.9,Low,Yes
+STU-0031,Student 31,MCA,8,CLS-02,63.4,Medium,No
+STU-0032,Student 32,B.Tech CSE,1,CLS-03,49.8,High,No
+STU-0033,Student 33,B.Tech IT,2,CLS-04,80.4,Medium,Yes
+STU-0034,Student 34,BCA,3,CLS-05,72.4,Medium,Yes
+STU-0035,Student 35,MCA,4,CLS-06,81.1,Low,Yes
+STU-0036,Student 36,B.Tech CSE,5,CLS-01,88.4,Low,Yes
+STU-0037,Student 37,B.Tech IT,6,CLS-02,97.5,Low,Yes
+STU-0038,Student 38,BCA,7,CLS-03,55.9,High,No
+STU-0039,Student 39,MCA,8,CLS-04,72.5,Medium,Yes
+STU-0040,Student 40,B.Tech CSE,1,CLS-05,64.1,Medium,No
+STU-0041,Student 41,B.Tech IT,2,CLS-06,81.9,Low,Yes
+STU-0042,Student 42,BCA,3,CLS-01,89.6,Low,Yes
+STU-0043,Student 43,MCA,4,CLS-02,71.8,Medium,Yes
+STU-0044,Student 44,B.Tech CSE,5,CLS-03,91.5,Low,Yes
+STU-0045,Student 45,B.Tech IT,6,CLS-04,68.9,Medium,Yes
+STU-0046,Student 46,BCA,7,CLS-05,81.8,Medium,Yes
+STU-0047,Student 47,MCA,8,CLS-06,84.0,Low,Yes
+STU-0048,Student 48,B.Tech CSE,1,CLS-01,52.6,High,No
+STU-0049,Student 49,B.Tech IT,2,CLS-02,88.7,Low,Yes
+STU-0050,Student 50,BCA,3,CLS-03,60.7,High,No
+STU-0051,Student 51,MCA,4,CLS-04,83.3,Low,Yes
+STU-0052,Student 52,B.Tech CSE,5,CLS-05,88.7,Low,Yes
+STU-0053,Student 53,B.Tech IT,6,CLS-06,44.4,High,No
+STU-0054,Student 54,BCA,7,CLS-01,94.4,Low,Yes
+STU-0055,Student 55,MCA,8,CLS-02,84.9,Low,Yes
+STU-0056,Student 56,B.Tech CSE,1,CLS-03,55.7,High,No
+STU-0057,Student 57,B.Tech IT,2,CLS-04,92.8,Low,Yes
+STU-0058,Student 58,BCA,3,CLS-05,94.5,Low,Yes
+STU-0059,Student 59,MCA,4,CLS-06,68.3,Medium,Yes
+STU-0060,Student 60,B.Tech CSE,5,CLS-01,90.9,Low,Yes
+STU-0061,Student 61,B.Tech IT,6,CLS-02,74.8,Medium,Yes
+STU-0062,Student 62,BCA,7,CLS-03,75.8,Medium,Yes
+STU-0063,Student 63,MCA,8,CLS-04,55.1,High,No
+STU-0064,Student 64,B.Tech CSE,1,CLS-05,82.7,Low,Yes
+STU-0065,Student 65,B.Tech IT,2,CLS-06,96.6,Low,Yes
+STU-0066,Student 66,BCA,3,CLS-01,60.7,High,No
+STU-0067,Student 67,MCA,4,CLS-02,54.1,High,No
+STU-0068,Student 68,B.Tech CSE,5,CLS-03,80.9,Low,Yes
+STU-0069,Student 69,B.Tech IT,6,CLS-04,97.4,Low,Yes
+STU-0070,Student 70,BCA,7,CLS-05,76.2,Medium,Yes
+STU-0071,Student 71,MCA,8,CLS-06,93.9,Low,Yes
+STU-0072,Student 72,B.Tech CSE,1,CLS-01,52.2,High,No
+STU-0073,Student 73,B.Tech IT,2,CLS-02,61.7,High,No
+STU-0074,Student 74,BCA,3,CLS-03,87.8,Low,Yes
+STU-0075,Student 75,MCA,4,CLS-04,76.0,Medium,Yes
+STU-0076,Student 76,B.Tech CSE,5,CLS-05,94.9,Low,Yes
+STU-0077,Student 77,B.Tech IT,6,CLS-06,83.7,Low,Yes
+STU-0078,Student 78,BCA,7,CLS-01,82.8,Low,Yes
+STU-0079,Student 79,MCA,8,CLS-02,52.6,High,No
+STU-0080,Student 80,B.Tech CSE,1,CLS-03,80.2,Medium,Yes

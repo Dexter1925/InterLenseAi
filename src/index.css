@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;900&family=Geist+Mono:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", "Sora", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  
+  --color-brand-bg: #0A0A0A;
+  --color-brand-surface: #141416;
+  --color-brand-surface-high: #1E1E21;
+  --color-brand-primary: #F27D26;
+  --color-brand-secondary: #FFFFFF;
+  --color-brand-tertiary: #F27D26;
+}
+
+/* Hard high-contrast panels for Bold Typography theme */
+.glass-panel {
+  background: rgba(20, 20, 22, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-floating {
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Custom outline text effect as seen in design HTML */
+.text-stroke-sm {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+}
+
+.text-stroke-md {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.45);
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(242, 125, 38, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(242, 125, 38, 0.6);
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; filter: blur(8px); }
+  50% { opacity: 1; filter: blur(12px); }
+}
+
+.ai-pulse {
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+

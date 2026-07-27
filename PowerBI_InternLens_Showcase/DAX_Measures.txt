@@ -1,0 +1,7 @@
+Total Students = DISTINCTCOUNT(Students[StudentID])
+Average Success Probability = AVERAGE(Predictions[AcademicSuccessProbability])
+Average Placement Probability = AVERAGE(Predictions[PlacementProbability])
+At Risk Students = CALCULATE([Total Students], Students[RiskBand] = "High")
+Approved Leave Rate = DIVIDE(CALCULATE(COUNTROWS(LeaveRequests), LeaveRequests[Status] = "Approved"), COUNTROWS(LeaveRequests))
+Average Presentation Score = AVERAGE(PresentationEvaluations[Score])
+On-Time Submission Rate = DIVIDE(CALCULATE(COUNTROWS(Submissions), Submissions[Status] = "Approved"), COUNTROWS(Submissions))

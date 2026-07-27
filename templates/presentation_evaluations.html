@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Presentation Evaluation - InternLens AI{% endblock %}
+{% block content %}
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+    <div><h2 class="text-white fw-black uppercase tracking-wider m-0">Presentation Evaluation</h2><p class="text-xs text-zinc-500 uppercase font-mono m-0">Secure faculty assessment workspace</p></div>
+    <a class="btn btn-outline-brand text-xs" href="{{ url_for('faculty_dashboard') }}">Back to Faculty Command</a>
+</div>
+<div class="row g-4">
+  <div class="col-12 col-xl-7"><div class="glass-card">
+    <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3">New evaluation</h5>
+    <form method="POST" id="evaluation-form">
+      <div class="row g-2 align-items-end mb-3"><div class="col-md-8"><label class="form-label text-[10px] uppercase font-black text-zinc-400">Student ID only</label><input name="student_id" id="student-id" class="form-control text-uppercase" placeholder="STU-XXXXXX" autocomplete="off" required></div><div class="col-md-4"><button type="button" id="validate-student" class="btn btn-outline-brand w-100">Validate ID</button></div></div>
+      <div id="student-result" class="small mb-3 text-zinc-500">Validate the Student ID before entering an evaluation.</div>
+      <fieldset id="evaluation-fields" disabled>
+        <div id="criteria-list"></div><button class="btn btn-outline-brand text-xs mb-3" type="button" id="add-criterion">+ Add criterion</button>
+        <div class="mb-3"><label class="form-label text-[10px] uppercase font-black text-zinc-400">Improvement note</label><textarea class="form-control" rows="4" name="improvement_note" maxlength="4000" required placeholder="Feedback and actionable suggestions for the next presentation..."></textarea></div>
+        <div class="form-check form-switch mb-3"><input class="form-check-input" type="checkbox" id="show-marks" name="show_marks"><label class="form-check-label text-xs" for="show-marks">Show marks to student</label><div class="text-[10px] text-zinc-500">Feedback, criteria, and reasons remain visible; marks are visible only when enabled.</div></div>
+        <button class="btn btn-brand w-100" id="submit-evaluation" type="submit">Submit evaluation</button>
+      </fieldset>
+    </form>
+  </div></div>
+  <div class="col-12 col-xl-5"><div class="glass-card h-100">
+    <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3">Evaluation history</h5>
+    <form class="row g-2 mb-3" method="GET"><div class="col-12"><input class="form-control text-uppercase text-xs" name="student_id" value="{{ filters.student_id }}" placeholder="Search Student ID"></div><div class="col-6"><select class="form-select text-xs" name="status"><option value="">All statuses</option><option value="SUBMITTED" {% if filters.status == 'SUBMITTED' %}selected{% endif %}>Submitted</option></select></div><div class="col-6"><input class="form-control text-xs" type="date" name="date" value="{{ filters.date }}"></div><div class="col-12"><button class="btn btn-outline-brand text-xs w-100">Filter history</button></div></form>
+    <div class="table-responsive"><table class="table table-dark table-hover text-xs"><thead><tr><th>Evaluation</th><th>Student</th><th>Date</th><th>Marks</th></tr></thead><tbody>{% for e in history %}<tr><td class="mono text-brand-primary">{{ e.evaluation_id }}</td><td>{{ e.student_public_id }}<br><span class="text-zinc-500">{{ e.student_name }}</span></td><td>{{ e.evaluated_at }}</td><td>{% if e.show_marks %}<span class="text-success">Visible</span>{% else %}<span class="text-warning">Hidden</span>{% endif %}</td></tr>{% else %}<tr><td colspan="4" class="text-center text-zinc-500 py-3">No matching evaluations.</td></tr>{% endfor %}</tbody></table></div>
+  </div></div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+const fields = document.getElementById('evaluation-fields'), list = document.getElementById('criteria-list');
+function criterionRow() { const row = document.createElement('div'); row.className='border border-zinc-800 p-3 mb-2 bg-black/20'; row.innerHTML=`<div class="d-flex justify-content-between mb-2"><span class="text-[10px] text-zinc-400 uppercase">Criterion</span><button type="button" class="btn-close btn-close-white remove-criterion" aria-label="Remove"></button></div><div class="row g-2"><div class="col-md-5"><input class="form-control text-xs" name="criterion[]" maxlength="120" placeholder="e.g. Content clarity" required></div><div class="col-md-2"><input class="form-control text-xs" name="marks[]" type="number" min="0" max="100" step="0.01" placeholder="Mark" required></div><div class="col-md-5"><input class="form-control text-xs" name="marks_reason[]" maxlength="1500" placeholder="Reason for this mark" required></div></div>`; row.querySelector('.remove-criterion').onclick=()=>{if(list.children.length>1)row.remove()}; list.appendChild(row); }
+criterionRow(); document.getElementById('add-criterion').onclick=criterionRow;
+document.getElementById('validate-student').onclick=async()=>{const id=document.getElementById('student-id').value.trim().toUpperCase(), result=document.getElementById('student-result'); fields.disabled=true; if(!id){result.textContent='Enter a Student ID.';result.className='small mb-3 text-danger';return;} result.textContent='Validating Student ID…'; try {const r=await fetch('{{ url_for("validate_presentation_student") }}',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({student_id:id})}); const data=await r.json(); if(!r.ok)throw new Error(data.error); document.getElementById('student-id').value=data.student_id; result.textContent=`Validated: ${data.student_name} (${data.student_id})`; result.className='small mb-3 text-success'; fields.disabled=false;}catch(e){result.textContent=e.message||'Unable to validate Student ID.';result.className='small mb-3 text-danger';}};
+document.getElementById('evaluation-form').onsubmit=()=>{document.getElementById('submit-evaluation').disabled=true;document.getElementById('submit-evaluation').textContent='Submitting securely…'};
+</script>
+{% endblock %}

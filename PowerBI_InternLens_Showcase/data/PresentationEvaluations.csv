@@ -1,0 +1,1201 @@
+EvaluationID,StudentID,FacultyID,EvaluationDate,Criterion,Score,ShowMarks,ImprovementNote
+PRE-0001-1,STU-0001,FAC-002,2026-02-05,Content clarity,65.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0001-1,STU-0001,FAC-002,2026-02-05,Technical depth,77.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0001-1,STU-0001,FAC-002,2026-02-05,Delivery & confidence,65.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0001-1,STU-0001,FAC-002,2026-02-05,Visual design,71.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0001-1,STU-0001,FAC-002,2026-02-05,Question handling,79.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0001-2,STU-0001,FAC-002,2026-03-12,Content clarity,60.4,No,Improve pacing and use one clearer real-world example.
+PRE-0001-2,STU-0001,FAC-002,2026-03-12,Technical depth,49.7,No,Improve pacing and use one clearer real-world example.
+PRE-0001-2,STU-0001,FAC-002,2026-03-12,Delivery & confidence,42.4,No,Improve pacing and use one clearer real-world example.
+PRE-0001-2,STU-0001,FAC-002,2026-03-12,Visual design,44.0,No,Improve pacing and use one clearer real-world example.
+PRE-0001-2,STU-0001,FAC-002,2026-03-12,Question handling,52.7,No,Improve pacing and use one clearer real-world example.
+PRE-0001-3,STU-0001,FAC-002,2026-04-16,Content clarity,52.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0001-3,STU-0001,FAC-002,2026-04-16,Technical depth,63.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0001-3,STU-0001,FAC-002,2026-04-16,Delivery & confidence,50.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0001-3,STU-0001,FAC-002,2026-04-16,Visual design,61.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0001-3,STU-0001,FAC-002,2026-04-16,Question handling,51.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0002-1,STU-0002,FAC-003,2026-02-05,Content clarity,73.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0002-1,STU-0002,FAC-003,2026-02-05,Technical depth,67.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0002-1,STU-0002,FAC-003,2026-02-05,Delivery & confidence,79.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0002-1,STU-0002,FAC-003,2026-02-05,Visual design,65.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0002-1,STU-0002,FAC-003,2026-02-05,Question handling,67.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0002-2,STU-0002,FAC-003,2026-03-12,Content clarity,69.0,No,Improve pacing and use one clearer real-world example.
+PRE-0002-2,STU-0002,FAC-003,2026-03-12,Technical depth,66.4,No,Improve pacing and use one clearer real-world example.
+PRE-0002-2,STU-0002,FAC-003,2026-03-12,Delivery & confidence,75.6,No,Improve pacing and use one clearer real-world example.
+PRE-0002-2,STU-0002,FAC-003,2026-03-12,Visual design,80.8,No,Improve pacing and use one clearer real-world example.
+PRE-0002-2,STU-0002,FAC-003,2026-03-12,Question handling,68.8,No,Improve pacing and use one clearer real-world example.
+PRE-0002-3,STU-0002,FAC-003,2026-04-16,Content clarity,57.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0002-3,STU-0002,FAC-003,2026-04-16,Technical depth,65.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0002-3,STU-0002,FAC-003,2026-04-16,Delivery & confidence,74.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0002-3,STU-0002,FAC-003,2026-04-16,Visual design,77.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0002-3,STU-0002,FAC-003,2026-04-16,Question handling,70.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0003-1,STU-0003,FAC-004,2026-02-05,Content clarity,61.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0003-1,STU-0003,FAC-004,2026-02-05,Technical depth,62.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0003-1,STU-0003,FAC-004,2026-02-05,Delivery & confidence,58.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0003-1,STU-0003,FAC-004,2026-02-05,Visual design,72.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0003-1,STU-0003,FAC-004,2026-02-05,Question handling,67.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0003-2,STU-0003,FAC-004,2026-03-12,Content clarity,51.4,No,Improve pacing and use one clearer real-world example.
+PRE-0003-2,STU-0003,FAC-004,2026-03-12,Technical depth,62.8,No,Improve pacing and use one clearer real-world example.
+PRE-0003-2,STU-0003,FAC-004,2026-03-12,Delivery & confidence,54.7,No,Improve pacing and use one clearer real-world example.
+PRE-0003-2,STU-0003,FAC-004,2026-03-12,Visual design,58.1,No,Improve pacing and use one clearer real-world example.
+PRE-0003-2,STU-0003,FAC-004,2026-03-12,Question handling,52.2,No,Improve pacing and use one clearer real-world example.
+PRE-0003-3,STU-0003,FAC-004,2026-04-16,Content clarity,63.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0003-3,STU-0003,FAC-004,2026-04-16,Technical depth,56.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0003-3,STU-0003,FAC-004,2026-04-16,Delivery & confidence,69.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0003-3,STU-0003,FAC-004,2026-04-16,Visual design,61.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0003-3,STU-0003,FAC-004,2026-04-16,Question handling,65.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0004-1,STU-0004,FAC-005,2026-02-05,Content clarity,65.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0004-1,STU-0004,FAC-005,2026-02-05,Technical depth,60.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0004-1,STU-0004,FAC-005,2026-02-05,Delivery & confidence,63.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0004-1,STU-0004,FAC-005,2026-02-05,Visual design,64.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0004-1,STU-0004,FAC-005,2026-02-05,Question handling,63.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0004-2,STU-0004,FAC-005,2026-03-12,Content clarity,65.3,No,Improve pacing and use one clearer real-world example.
+PRE-0004-2,STU-0004,FAC-005,2026-03-12,Technical depth,59.5,No,Improve pacing and use one clearer real-world example.
+PRE-0004-2,STU-0004,FAC-005,2026-03-12,Delivery & confidence,58.8,No,Improve pacing and use one clearer real-world example.
+PRE-0004-2,STU-0004,FAC-005,2026-03-12,Visual design,58.2,No,Improve pacing and use one clearer real-world example.
+PRE-0004-2,STU-0004,FAC-005,2026-03-12,Question handling,55.2,No,Improve pacing and use one clearer real-world example.
+PRE-0004-3,STU-0004,FAC-005,2026-04-16,Content clarity,64.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0004-3,STU-0004,FAC-005,2026-04-16,Technical depth,81.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0004-3,STU-0004,FAC-005,2026-04-16,Delivery & confidence,70.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0004-3,STU-0004,FAC-005,2026-04-16,Visual design,75.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0004-3,STU-0004,FAC-005,2026-04-16,Question handling,83.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0005-1,STU-0005,FAC-006,2026-02-05,Content clarity,81.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0005-1,STU-0005,FAC-006,2026-02-05,Technical depth,84.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0005-1,STU-0005,FAC-006,2026-02-05,Delivery & confidence,76.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0005-1,STU-0005,FAC-006,2026-02-05,Visual design,83.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0005-1,STU-0005,FAC-006,2026-02-05,Question handling,78.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0005-2,STU-0005,FAC-006,2026-03-12,Content clarity,76.3,No,Improve pacing and use one clearer real-world example.
+PRE-0005-2,STU-0005,FAC-006,2026-03-12,Technical depth,74.0,No,Improve pacing and use one clearer real-world example.
+PRE-0005-2,STU-0005,FAC-006,2026-03-12,Delivery & confidence,75.9,No,Improve pacing and use one clearer real-world example.
+PRE-0005-2,STU-0005,FAC-006,2026-03-12,Visual design,83.5,No,Improve pacing and use one clearer real-world example.
+PRE-0005-2,STU-0005,FAC-006,2026-03-12,Question handling,77.5,No,Improve pacing and use one clearer real-world example.
+PRE-0005-3,STU-0005,FAC-006,2026-04-16,Content clarity,94.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0005-3,STU-0005,FAC-006,2026-04-16,Technical depth,78.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0005-3,STU-0005,FAC-006,2026-04-16,Delivery & confidence,91.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0005-3,STU-0005,FAC-006,2026-04-16,Visual design,78.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0005-3,STU-0005,FAC-006,2026-04-16,Question handling,93.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0006-1,STU-0006,FAC-001,2026-02-05,Content clarity,50.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0006-1,STU-0006,FAC-001,2026-02-05,Technical depth,57.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0006-1,STU-0006,FAC-001,2026-02-05,Delivery & confidence,60.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0006-1,STU-0006,FAC-001,2026-02-05,Visual design,56.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0006-1,STU-0006,FAC-001,2026-02-05,Question handling,47.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0006-2,STU-0006,FAC-001,2026-03-12,Content clarity,55.9,No,Improve pacing and use one clearer real-world example.
+PRE-0006-2,STU-0006,FAC-001,2026-03-12,Technical depth,64.6,No,Improve pacing and use one clearer real-world example.
+PRE-0006-2,STU-0006,FAC-001,2026-03-12,Delivery & confidence,60.4,No,Improve pacing and use one clearer real-world example.
+PRE-0006-2,STU-0006,FAC-001,2026-03-12,Visual design,67.9,No,Improve pacing and use one clearer real-world example.
+PRE-0006-2,STU-0006,FAC-001,2026-03-12,Question handling,57.8,No,Improve pacing and use one clearer real-world example.
+PRE-0006-3,STU-0006,FAC-001,2026-04-16,Content clarity,60.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0006-3,STU-0006,FAC-001,2026-04-16,Technical depth,46.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0006-3,STU-0006,FAC-001,2026-04-16,Delivery & confidence,52.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0006-3,STU-0006,FAC-001,2026-04-16,Visual design,46.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0006-3,STU-0006,FAC-001,2026-04-16,Question handling,46.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0007-1,STU-0007,FAC-002,2026-02-05,Content clarity,81.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0007-1,STU-0007,FAC-002,2026-02-05,Technical depth,86.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0007-1,STU-0007,FAC-002,2026-02-05,Delivery & confidence,79.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0007-1,STU-0007,FAC-002,2026-02-05,Visual design,93.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0007-1,STU-0007,FAC-002,2026-02-05,Question handling,88.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0007-2,STU-0007,FAC-002,2026-03-12,Content clarity,64.9,No,Improve pacing and use one clearer real-world example.
+PRE-0007-2,STU-0007,FAC-002,2026-03-12,Technical depth,60.3,No,Improve pacing and use one clearer real-world example.
+PRE-0007-2,STU-0007,FAC-002,2026-03-12,Delivery & confidence,60.3,No,Improve pacing and use one clearer real-world example.
+PRE-0007-2,STU-0007,FAC-002,2026-03-12,Visual design,59.4,No,Improve pacing and use one clearer real-world example.
+PRE-0007-2,STU-0007,FAC-002,2026-03-12,Question handling,69.9,No,Improve pacing and use one clearer real-world example.
+PRE-0007-3,STU-0007,FAC-002,2026-04-16,Content clarity,92.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0007-3,STU-0007,FAC-002,2026-04-16,Technical depth,77.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0007-3,STU-0007,FAC-002,2026-04-16,Delivery & confidence,94.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0007-3,STU-0007,FAC-002,2026-04-16,Visual design,82.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0007-3,STU-0007,FAC-002,2026-04-16,Question handling,92.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0008-1,STU-0008,FAC-003,2026-02-05,Content clarity,58.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0008-1,STU-0008,FAC-003,2026-02-05,Technical depth,56.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0008-1,STU-0008,FAC-003,2026-02-05,Delivery & confidence,55.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0008-1,STU-0008,FAC-003,2026-02-05,Visual design,51.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0008-1,STU-0008,FAC-003,2026-02-05,Question handling,66.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0008-2,STU-0008,FAC-003,2026-03-12,Content clarity,65.1,No,Improve pacing and use one clearer real-world example.
+PRE-0008-2,STU-0008,FAC-003,2026-03-12,Technical depth,73.2,No,Improve pacing and use one clearer real-world example.
+PRE-0008-2,STU-0008,FAC-003,2026-03-12,Delivery & confidence,75.2,No,Improve pacing and use one clearer real-world example.
+PRE-0008-2,STU-0008,FAC-003,2026-03-12,Visual design,69.0,No,Improve pacing and use one clearer real-world example.
+PRE-0008-2,STU-0008,FAC-003,2026-03-12,Question handling,65.2,No,Improve pacing and use one clearer real-world example.
+PRE-0008-3,STU-0008,FAC-003,2026-04-16,Content clarity,66.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0008-3,STU-0008,FAC-003,2026-04-16,Technical depth,65.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0008-3,STU-0008,FAC-003,2026-04-16,Delivery & confidence,57.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0008-3,STU-0008,FAC-003,2026-04-16,Visual design,69.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0008-3,STU-0008,FAC-003,2026-04-16,Question handling,71.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0009-1,STU-0009,FAC-004,2026-02-05,Content clarity,54.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0009-1,STU-0009,FAC-004,2026-02-05,Technical depth,44.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0009-1,STU-0009,FAC-004,2026-02-05,Delivery & confidence,53.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0009-1,STU-0009,FAC-004,2026-02-05,Visual design,44.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0009-1,STU-0009,FAC-004,2026-02-05,Question handling,49.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0009-2,STU-0009,FAC-004,2026-03-12,Content clarity,47.9,No,Improve pacing and use one clearer real-world example.
+PRE-0009-2,STU-0009,FAC-004,2026-03-12,Technical depth,55.4,No,Improve pacing and use one clearer real-world example.
+PRE-0009-2,STU-0009,FAC-004,2026-03-12,Delivery & confidence,57.4,No,Improve pacing and use one clearer real-world example.
+PRE-0009-2,STU-0009,FAC-004,2026-03-12,Visual design,47.0,No,Improve pacing and use one clearer real-world example.
+PRE-0009-2,STU-0009,FAC-004,2026-03-12,Question handling,59.3,No,Improve pacing and use one clearer real-world example.
+PRE-0009-3,STU-0009,FAC-004,2026-04-16,Content clarity,69.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0009-3,STU-0009,FAC-004,2026-04-16,Technical depth,64.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0009-3,STU-0009,FAC-004,2026-04-16,Delivery & confidence,76.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0009-3,STU-0009,FAC-004,2026-04-16,Visual design,71.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0009-3,STU-0009,FAC-004,2026-04-16,Question handling,80.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0010-1,STU-0010,FAC-005,2026-02-05,Content clarity,84.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0010-1,STU-0010,FAC-005,2026-02-05,Technical depth,87.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0010-1,STU-0010,FAC-005,2026-02-05,Delivery & confidence,82.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0010-1,STU-0010,FAC-005,2026-02-05,Visual design,85.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0010-1,STU-0010,FAC-005,2026-02-05,Question handling,78.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0010-2,STU-0010,FAC-005,2026-03-12,Content clarity,73.4,No,Improve pacing and use one clearer real-world example.
+PRE-0010-2,STU-0010,FAC-005,2026-03-12,Technical depth,65.2,No,Improve pacing and use one clearer real-world example.
+PRE-0010-2,STU-0010,FAC-005,2026-03-12,Delivery & confidence,78.7,No,Improve pacing and use one clearer real-world example.
+PRE-0010-2,STU-0010,FAC-005,2026-03-12,Visual design,70.9,No,Improve pacing and use one clearer real-world example.
+PRE-0010-2,STU-0010,FAC-005,2026-03-12,Question handling,67.9,No,Improve pacing and use one clearer real-world example.
+PRE-0010-3,STU-0010,FAC-005,2026-04-16,Content clarity,81.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0010-3,STU-0010,FAC-005,2026-04-16,Technical depth,87.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0010-3,STU-0010,FAC-005,2026-04-16,Delivery & confidence,76.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0010-3,STU-0010,FAC-005,2026-04-16,Visual design,77.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0010-3,STU-0010,FAC-005,2026-04-16,Question handling,78.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0011-1,STU-0011,FAC-006,2026-02-05,Content clarity,48.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0011-1,STU-0011,FAC-006,2026-02-05,Technical depth,44.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0011-1,STU-0011,FAC-006,2026-02-05,Delivery & confidence,52.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0011-1,STU-0011,FAC-006,2026-02-05,Visual design,41.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0011-1,STU-0011,FAC-006,2026-02-05,Question handling,59.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0011-2,STU-0011,FAC-006,2026-03-12,Content clarity,40.8,No,Improve pacing and use one clearer real-world example.
+PRE-0011-2,STU-0011,FAC-006,2026-03-12,Technical depth,49.4,No,Improve pacing and use one clearer real-world example.
+PRE-0011-2,STU-0011,FAC-006,2026-03-12,Delivery & confidence,44.2,No,Improve pacing and use one clearer real-world example.
+PRE-0011-2,STU-0011,FAC-006,2026-03-12,Visual design,50.8,No,Improve pacing and use one clearer real-world example.
+PRE-0011-2,STU-0011,FAC-006,2026-03-12,Question handling,51.1,No,Improve pacing and use one clearer real-world example.
+PRE-0011-3,STU-0011,FAC-006,2026-04-16,Content clarity,71.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0011-3,STU-0011,FAC-006,2026-04-16,Technical depth,58.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0011-3,STU-0011,FAC-006,2026-04-16,Delivery & confidence,75.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0011-3,STU-0011,FAC-006,2026-04-16,Visual design,59.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0011-3,STU-0011,FAC-006,2026-04-16,Question handling,60.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0012-1,STU-0012,FAC-001,2026-02-05,Content clarity,61.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0012-1,STU-0012,FAC-001,2026-02-05,Technical depth,59.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0012-1,STU-0012,FAC-001,2026-02-05,Delivery & confidence,57.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0012-1,STU-0012,FAC-001,2026-02-05,Visual design,49.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0012-1,STU-0012,FAC-001,2026-02-05,Question handling,47.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0012-2,STU-0012,FAC-001,2026-03-12,Content clarity,82.6,No,Improve pacing and use one clearer real-world example.
+PRE-0012-2,STU-0012,FAC-001,2026-03-12,Technical depth,73.6,No,Improve pacing and use one clearer real-world example.
+PRE-0012-2,STU-0012,FAC-001,2026-03-12,Delivery & confidence,71.8,No,Improve pacing and use one clearer real-world example.
+PRE-0012-2,STU-0012,FAC-001,2026-03-12,Visual design,75.6,No,Improve pacing and use one clearer real-world example.
+PRE-0012-2,STU-0012,FAC-001,2026-03-12,Question handling,73.6,No,Improve pacing and use one clearer real-world example.
+PRE-0012-3,STU-0012,FAC-001,2026-04-16,Content clarity,54.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0012-3,STU-0012,FAC-001,2026-04-16,Technical depth,59.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0012-3,STU-0012,FAC-001,2026-04-16,Delivery & confidence,57.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0012-3,STU-0012,FAC-001,2026-04-16,Visual design,59.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0012-3,STU-0012,FAC-001,2026-04-16,Question handling,54.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0013-1,STU-0013,FAC-002,2026-02-05,Content clarity,71.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0013-1,STU-0013,FAC-002,2026-02-05,Technical depth,76.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0013-1,STU-0013,FAC-002,2026-02-05,Delivery & confidence,73.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0013-1,STU-0013,FAC-002,2026-02-05,Visual design,72.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0013-1,STU-0013,FAC-002,2026-02-05,Question handling,74.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0013-2,STU-0013,FAC-002,2026-03-12,Content clarity,70.0,No,Improve pacing and use one clearer real-world example.
+PRE-0013-2,STU-0013,FAC-002,2026-03-12,Technical depth,70.9,No,Improve pacing and use one clearer real-world example.
+PRE-0013-2,STU-0013,FAC-002,2026-03-12,Delivery & confidence,81.0,No,Improve pacing and use one clearer real-world example.
+PRE-0013-2,STU-0013,FAC-002,2026-03-12,Visual design,70.0,No,Improve pacing and use one clearer real-world example.
+PRE-0013-2,STU-0013,FAC-002,2026-03-12,Question handling,76.2,No,Improve pacing and use one clearer real-world example.
+PRE-0013-3,STU-0013,FAC-002,2026-04-16,Content clarity,76.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0013-3,STU-0013,FAC-002,2026-04-16,Technical depth,76.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0013-3,STU-0013,FAC-002,2026-04-16,Delivery & confidence,76.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0013-3,STU-0013,FAC-002,2026-04-16,Visual design,66.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0013-3,STU-0013,FAC-002,2026-04-16,Question handling,67.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0014-1,STU-0014,FAC-003,2026-02-05,Content clarity,81.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0014-1,STU-0014,FAC-003,2026-02-05,Technical depth,87.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0014-1,STU-0014,FAC-003,2026-02-05,Delivery & confidence,77.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0014-1,STU-0014,FAC-003,2026-02-05,Visual design,76.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0014-1,STU-0014,FAC-003,2026-02-05,Question handling,72.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0014-2,STU-0014,FAC-003,2026-03-12,Content clarity,81.8,No,Improve pacing and use one clearer real-world example.
+PRE-0014-2,STU-0014,FAC-003,2026-03-12,Technical depth,74.3,No,Improve pacing and use one clearer real-world example.
+PRE-0014-2,STU-0014,FAC-003,2026-03-12,Delivery & confidence,74.0,No,Improve pacing and use one clearer real-world example.
+PRE-0014-2,STU-0014,FAC-003,2026-03-12,Visual design,78.5,No,Improve pacing and use one clearer real-world example.
+PRE-0014-2,STU-0014,FAC-003,2026-03-12,Question handling,87.7,No,Improve pacing and use one clearer real-world example.
+PRE-0014-3,STU-0014,FAC-003,2026-04-16,Content clarity,62.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0014-3,STU-0014,FAC-003,2026-04-16,Technical depth,58.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0014-3,STU-0014,FAC-003,2026-04-16,Delivery & confidence,67.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0014-3,STU-0014,FAC-003,2026-04-16,Visual design,75.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0014-3,STU-0014,FAC-003,2026-04-16,Question handling,61.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0015-1,STU-0015,FAC-004,2026-02-05,Content clarity,79.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0015-1,STU-0015,FAC-004,2026-02-05,Technical depth,64.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0015-1,STU-0015,FAC-004,2026-02-05,Delivery & confidence,62.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0015-1,STU-0015,FAC-004,2026-02-05,Visual design,64.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0015-1,STU-0015,FAC-004,2026-02-05,Question handling,72.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0015-2,STU-0015,FAC-004,2026-03-12,Content clarity,84.2,No,Improve pacing and use one clearer real-world example.
+PRE-0015-2,STU-0015,FAC-004,2026-03-12,Technical depth,72.1,No,Improve pacing and use one clearer real-world example.
+PRE-0015-2,STU-0015,FAC-004,2026-03-12,Delivery & confidence,82.0,No,Improve pacing and use one clearer real-world example.
+PRE-0015-2,STU-0015,FAC-004,2026-03-12,Visual design,69.9,No,Improve pacing and use one clearer real-world example.
+PRE-0015-2,STU-0015,FAC-004,2026-03-12,Question handling,74.7,No,Improve pacing and use one clearer real-world example.
+PRE-0015-3,STU-0015,FAC-004,2026-04-16,Content clarity,76.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0015-3,STU-0015,FAC-004,2026-04-16,Technical depth,76.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0015-3,STU-0015,FAC-004,2026-04-16,Delivery & confidence,80.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0015-3,STU-0015,FAC-004,2026-04-16,Visual design,84.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0015-3,STU-0015,FAC-004,2026-04-16,Question handling,80.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0016-1,STU-0016,FAC-005,2026-02-05,Content clarity,70.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0016-1,STU-0016,FAC-005,2026-02-05,Technical depth,72.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0016-1,STU-0016,FAC-005,2026-02-05,Delivery & confidence,74.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0016-1,STU-0016,FAC-005,2026-02-05,Visual design,63.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0016-1,STU-0016,FAC-005,2026-02-05,Question handling,75.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0016-2,STU-0016,FAC-005,2026-03-12,Content clarity,47.1,No,Improve pacing and use one clearer real-world example.
+PRE-0016-2,STU-0016,FAC-005,2026-03-12,Technical depth,54.1,No,Improve pacing and use one clearer real-world example.
+PRE-0016-2,STU-0016,FAC-005,2026-03-12,Delivery & confidence,45.9,No,Improve pacing and use one clearer real-world example.
+PRE-0016-2,STU-0016,FAC-005,2026-03-12,Visual design,46.6,No,Improve pacing and use one clearer real-world example.
+PRE-0016-2,STU-0016,FAC-005,2026-03-12,Question handling,59.2,No,Improve pacing and use one clearer real-world example.
+PRE-0016-3,STU-0016,FAC-005,2026-04-16,Content clarity,49.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0016-3,STU-0016,FAC-005,2026-04-16,Technical depth,60.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0016-3,STU-0016,FAC-005,2026-04-16,Delivery & confidence,66.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0016-3,STU-0016,FAC-005,2026-04-16,Visual design,54.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0016-3,STU-0016,FAC-005,2026-04-16,Question handling,57.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0017-1,STU-0017,FAC-006,2026-02-05,Content clarity,61.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0017-1,STU-0017,FAC-006,2026-02-05,Technical depth,56.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0017-1,STU-0017,FAC-006,2026-02-05,Delivery & confidence,70.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0017-1,STU-0017,FAC-006,2026-02-05,Visual design,72.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0017-1,STU-0017,FAC-006,2026-02-05,Question handling,57.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0017-2,STU-0017,FAC-006,2026-03-12,Content clarity,76.9,No,Improve pacing and use one clearer real-world example.
+PRE-0017-2,STU-0017,FAC-006,2026-03-12,Technical depth,68.2,No,Improve pacing and use one clearer real-world example.
+PRE-0017-2,STU-0017,FAC-006,2026-03-12,Delivery & confidence,70.2,No,Improve pacing and use one clearer real-world example.
+PRE-0017-2,STU-0017,FAC-006,2026-03-12,Visual design,69.9,No,Improve pacing and use one clearer real-world example.
+PRE-0017-2,STU-0017,FAC-006,2026-03-12,Question handling,77.3,No,Improve pacing and use one clearer real-world example.
+PRE-0017-3,STU-0017,FAC-006,2026-04-16,Content clarity,52.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0017-3,STU-0017,FAC-006,2026-04-16,Technical depth,56.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0017-3,STU-0017,FAC-006,2026-04-16,Delivery & confidence,59.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0017-3,STU-0017,FAC-006,2026-04-16,Visual design,51.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0017-3,STU-0017,FAC-006,2026-04-16,Question handling,58.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0018-1,STU-0018,FAC-001,2026-02-05,Content clarity,91.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0018-1,STU-0018,FAC-001,2026-02-05,Technical depth,97.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0018-1,STU-0018,FAC-001,2026-02-05,Delivery & confidence,88.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0018-1,STU-0018,FAC-001,2026-02-05,Visual design,88.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0018-1,STU-0018,FAC-001,2026-02-05,Question handling,85.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0018-2,STU-0018,FAC-001,2026-03-12,Content clarity,68.7,No,Improve pacing and use one clearer real-world example.
+PRE-0018-2,STU-0018,FAC-001,2026-03-12,Technical depth,77.7,No,Improve pacing and use one clearer real-world example.
+PRE-0018-2,STU-0018,FAC-001,2026-03-12,Delivery & confidence,66.3,No,Improve pacing and use one clearer real-world example.
+PRE-0018-2,STU-0018,FAC-001,2026-03-12,Visual design,81.7,No,Improve pacing and use one clearer real-world example.
+PRE-0018-2,STU-0018,FAC-001,2026-03-12,Question handling,83.7,No,Improve pacing and use one clearer real-world example.
+PRE-0018-3,STU-0018,FAC-001,2026-04-16,Content clarity,73.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0018-3,STU-0018,FAC-001,2026-04-16,Technical depth,59.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0018-3,STU-0018,FAC-001,2026-04-16,Delivery & confidence,66.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0018-3,STU-0018,FAC-001,2026-04-16,Visual design,62.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0018-3,STU-0018,FAC-001,2026-04-16,Question handling,73.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0019-1,STU-0019,FAC-002,2026-02-05,Content clarity,75.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0019-1,STU-0019,FAC-002,2026-02-05,Technical depth,79.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0019-1,STU-0019,FAC-002,2026-02-05,Delivery & confidence,86.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0019-1,STU-0019,FAC-002,2026-02-05,Visual design,72.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0019-1,STU-0019,FAC-002,2026-02-05,Question handling,84.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0019-2,STU-0019,FAC-002,2026-03-12,Content clarity,80.2,No,Improve pacing and use one clearer real-world example.
+PRE-0019-2,STU-0019,FAC-002,2026-03-12,Technical depth,80.5,No,Improve pacing and use one clearer real-world example.
+PRE-0019-2,STU-0019,FAC-002,2026-03-12,Delivery & confidence,89.4,No,Improve pacing and use one clearer real-world example.
+PRE-0019-2,STU-0019,FAC-002,2026-03-12,Visual design,85.5,No,Improve pacing and use one clearer real-world example.
+PRE-0019-2,STU-0019,FAC-002,2026-03-12,Question handling,72.4,No,Improve pacing and use one clearer real-world example.
+PRE-0019-3,STU-0019,FAC-002,2026-04-16,Content clarity,67.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0019-3,STU-0019,FAC-002,2026-04-16,Technical depth,73.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0019-3,STU-0019,FAC-002,2026-04-16,Delivery & confidence,84.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0019-3,STU-0019,FAC-002,2026-04-16,Visual design,78.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0019-3,STU-0019,FAC-002,2026-04-16,Question handling,69.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0020-1,STU-0020,FAC-003,2026-02-05,Content clarity,76.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0020-1,STU-0020,FAC-003,2026-02-05,Technical depth,66.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0020-1,STU-0020,FAC-003,2026-02-05,Delivery & confidence,69.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0020-1,STU-0020,FAC-003,2026-02-05,Visual design,76.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0020-1,STU-0020,FAC-003,2026-02-05,Question handling,76.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0020-2,STU-0020,FAC-003,2026-03-12,Content clarity,38.2,No,Improve pacing and use one clearer real-world example.
+PRE-0020-2,STU-0020,FAC-003,2026-03-12,Technical depth,45.5,No,Improve pacing and use one clearer real-world example.
+PRE-0020-2,STU-0020,FAC-003,2026-03-12,Delivery & confidence,45.0,No,Improve pacing and use one clearer real-world example.
+PRE-0020-2,STU-0020,FAC-003,2026-03-12,Visual design,53.6,No,Improve pacing and use one clearer real-world example.
+PRE-0020-2,STU-0020,FAC-003,2026-03-12,Question handling,43.6,No,Improve pacing and use one clearer real-world example.
+PRE-0020-3,STU-0020,FAC-003,2026-04-16,Content clarity,45.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0020-3,STU-0020,FAC-003,2026-04-16,Technical depth,57.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0020-3,STU-0020,FAC-003,2026-04-16,Delivery & confidence,50.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0020-3,STU-0020,FAC-003,2026-04-16,Visual design,48.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0020-3,STU-0020,FAC-003,2026-04-16,Question handling,53.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0021-1,STU-0021,FAC-004,2026-02-05,Content clarity,68.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0021-1,STU-0021,FAC-004,2026-02-05,Technical depth,76.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0021-1,STU-0021,FAC-004,2026-02-05,Delivery & confidence,67.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0021-1,STU-0021,FAC-004,2026-02-05,Visual design,79.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0021-1,STU-0021,FAC-004,2026-02-05,Question handling,72.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0021-2,STU-0021,FAC-004,2026-03-12,Content clarity,94.2,No,Improve pacing and use one clearer real-world example.
+PRE-0021-2,STU-0021,FAC-004,2026-03-12,Technical depth,86.0,No,Improve pacing and use one clearer real-world example.
+PRE-0021-2,STU-0021,FAC-004,2026-03-12,Delivery & confidence,79.4,No,Improve pacing and use one clearer real-world example.
+PRE-0021-2,STU-0021,FAC-004,2026-03-12,Visual design,86.1,No,Improve pacing and use one clearer real-world example.
+PRE-0021-2,STU-0021,FAC-004,2026-03-12,Question handling,83.2,No,Improve pacing and use one clearer real-world example.
+PRE-0021-3,STU-0021,FAC-004,2026-04-16,Content clarity,83.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0021-3,STU-0021,FAC-004,2026-04-16,Technical depth,72.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0021-3,STU-0021,FAC-004,2026-04-16,Delivery & confidence,87.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0021-3,STU-0021,FAC-004,2026-04-16,Visual design,72.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0021-3,STU-0021,FAC-004,2026-04-16,Question handling,77.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0022-1,STU-0022,FAC-005,2026-02-05,Content clarity,66.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0022-1,STU-0022,FAC-005,2026-02-05,Technical depth,71.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0022-1,STU-0022,FAC-005,2026-02-05,Delivery & confidence,75.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0022-1,STU-0022,FAC-005,2026-02-05,Visual design,79.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0022-1,STU-0022,FAC-005,2026-02-05,Question handling,60.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0022-2,STU-0022,FAC-005,2026-03-12,Content clarity,81.3,No,Improve pacing and use one clearer real-world example.
+PRE-0022-2,STU-0022,FAC-005,2026-03-12,Technical depth,68.4,No,Improve pacing and use one clearer real-world example.
+PRE-0022-2,STU-0022,FAC-005,2026-03-12,Delivery & confidence,70.4,No,Improve pacing and use one clearer real-world example.
+PRE-0022-2,STU-0022,FAC-005,2026-03-12,Visual design,75.3,No,Improve pacing and use one clearer real-world example.
+PRE-0022-2,STU-0022,FAC-005,2026-03-12,Question handling,80.7,No,Improve pacing and use one clearer real-world example.
+PRE-0022-3,STU-0022,FAC-005,2026-04-16,Content clarity,74.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0022-3,STU-0022,FAC-005,2026-04-16,Technical depth,77.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0022-3,STU-0022,FAC-005,2026-04-16,Delivery & confidence,70.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0022-3,STU-0022,FAC-005,2026-04-16,Visual design,60.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0022-3,STU-0022,FAC-005,2026-04-16,Question handling,70.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0023-1,STU-0023,FAC-006,2026-02-05,Content clarity,91.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0023-1,STU-0023,FAC-006,2026-02-05,Technical depth,84.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0023-1,STU-0023,FAC-006,2026-02-05,Delivery & confidence,83.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0023-1,STU-0023,FAC-006,2026-02-05,Visual design,92.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0023-1,STU-0023,FAC-006,2026-02-05,Question handling,91.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0023-2,STU-0023,FAC-006,2026-03-12,Content clarity,70.9,No,Improve pacing and use one clearer real-world example.
+PRE-0023-2,STU-0023,FAC-006,2026-03-12,Technical depth,68.6,No,Improve pacing and use one clearer real-world example.
+PRE-0023-2,STU-0023,FAC-006,2026-03-12,Delivery & confidence,71.1,No,Improve pacing and use one clearer real-world example.
+PRE-0023-2,STU-0023,FAC-006,2026-03-12,Visual design,60.7,No,Improve pacing and use one clearer real-world example.
+PRE-0023-2,STU-0023,FAC-006,2026-03-12,Question handling,65.8,No,Improve pacing and use one clearer real-world example.
+PRE-0023-3,STU-0023,FAC-006,2026-04-16,Content clarity,75.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0023-3,STU-0023,FAC-006,2026-04-16,Technical depth,74.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0023-3,STU-0023,FAC-006,2026-04-16,Delivery & confidence,76.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0023-3,STU-0023,FAC-006,2026-04-16,Visual design,74.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0023-3,STU-0023,FAC-006,2026-04-16,Question handling,76.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0024-1,STU-0024,FAC-001,2026-02-05,Content clarity,76.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0024-1,STU-0024,FAC-001,2026-02-05,Technical depth,72.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0024-1,STU-0024,FAC-001,2026-02-05,Delivery & confidence,72.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0024-1,STU-0024,FAC-001,2026-02-05,Visual design,63.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0024-1,STU-0024,FAC-001,2026-02-05,Question handling,79.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0024-2,STU-0024,FAC-001,2026-03-12,Content clarity,66.4,No,Improve pacing and use one clearer real-world example.
+PRE-0024-2,STU-0024,FAC-001,2026-03-12,Technical depth,66.1,No,Improve pacing and use one clearer real-world example.
+PRE-0024-2,STU-0024,FAC-001,2026-03-12,Delivery & confidence,67.3,No,Improve pacing and use one clearer real-world example.
+PRE-0024-2,STU-0024,FAC-001,2026-03-12,Visual design,70.8,No,Improve pacing and use one clearer real-world example.
+PRE-0024-2,STU-0024,FAC-001,2026-03-12,Question handling,63.1,No,Improve pacing and use one clearer real-world example.
+PRE-0024-3,STU-0024,FAC-001,2026-04-16,Content clarity,68.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0024-3,STU-0024,FAC-001,2026-04-16,Technical depth,58.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0024-3,STU-0024,FAC-001,2026-04-16,Delivery & confidence,52.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0024-3,STU-0024,FAC-001,2026-04-16,Visual design,66.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0024-3,STU-0024,FAC-001,2026-04-16,Question handling,71.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0025-1,STU-0025,FAC-002,2026-02-05,Content clarity,86.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0025-1,STU-0025,FAC-002,2026-02-05,Technical depth,82.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0025-1,STU-0025,FAC-002,2026-02-05,Delivery & confidence,73.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0025-1,STU-0025,FAC-002,2026-02-05,Visual design,70.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0025-1,STU-0025,FAC-002,2026-02-05,Question handling,74.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0025-2,STU-0025,FAC-002,2026-03-12,Content clarity,59.0,No,Improve pacing and use one clearer real-world example.
+PRE-0025-2,STU-0025,FAC-002,2026-03-12,Technical depth,49.8,No,Improve pacing and use one clearer real-world example.
+PRE-0025-2,STU-0025,FAC-002,2026-03-12,Delivery & confidence,50.7,No,Improve pacing and use one clearer real-world example.
+PRE-0025-2,STU-0025,FAC-002,2026-03-12,Visual design,50.8,No,Improve pacing and use one clearer real-world example.
+PRE-0025-2,STU-0025,FAC-002,2026-03-12,Question handling,60.9,No,Improve pacing and use one clearer real-world example.
+PRE-0025-3,STU-0025,FAC-002,2026-04-16,Content clarity,77.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0025-3,STU-0025,FAC-002,2026-04-16,Technical depth,68.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0025-3,STU-0025,FAC-002,2026-04-16,Delivery & confidence,64.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0025-3,STU-0025,FAC-002,2026-04-16,Visual design,74.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0025-3,STU-0025,FAC-002,2026-04-16,Question handling,80.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0026-1,STU-0026,FAC-003,2026-02-05,Content clarity,39.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0026-1,STU-0026,FAC-003,2026-02-05,Technical depth,50.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0026-1,STU-0026,FAC-003,2026-02-05,Delivery & confidence,50.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0026-1,STU-0026,FAC-003,2026-02-05,Visual design,44.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0026-1,STU-0026,FAC-003,2026-02-05,Question handling,42.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0026-2,STU-0026,FAC-003,2026-03-12,Content clarity,56.5,No,Improve pacing and use one clearer real-world example.
+PRE-0026-2,STU-0026,FAC-003,2026-03-12,Technical depth,40.8,No,Improve pacing and use one clearer real-world example.
+PRE-0026-2,STU-0026,FAC-003,2026-03-12,Delivery & confidence,54.6,No,Improve pacing and use one clearer real-world example.
+PRE-0026-2,STU-0026,FAC-003,2026-03-12,Visual design,46.5,No,Improve pacing and use one clearer real-world example.
+PRE-0026-2,STU-0026,FAC-003,2026-03-12,Question handling,50.2,No,Improve pacing and use one clearer real-world example.
+PRE-0026-3,STU-0026,FAC-003,2026-04-16,Content clarity,46.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0026-3,STU-0026,FAC-003,2026-04-16,Technical depth,42.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0026-3,STU-0026,FAC-003,2026-04-16,Delivery & confidence,60.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0026-3,STU-0026,FAC-003,2026-04-16,Visual design,56.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0026-3,STU-0026,FAC-003,2026-04-16,Question handling,55.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0027-1,STU-0027,FAC-004,2026-02-05,Content clarity,67.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0027-1,STU-0027,FAC-004,2026-02-05,Technical depth,64.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0027-1,STU-0027,FAC-004,2026-02-05,Delivery & confidence,79.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0027-1,STU-0027,FAC-004,2026-02-05,Visual design,76.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0027-1,STU-0027,FAC-004,2026-02-05,Question handling,63.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0027-2,STU-0027,FAC-004,2026-03-12,Content clarity,91.6,No,Improve pacing and use one clearer real-world example.
+PRE-0027-2,STU-0027,FAC-004,2026-03-12,Technical depth,86.0,No,Improve pacing and use one clearer real-world example.
+PRE-0027-2,STU-0027,FAC-004,2026-03-12,Delivery & confidence,82.5,No,Improve pacing and use one clearer real-world example.
+PRE-0027-2,STU-0027,FAC-004,2026-03-12,Visual design,85.9,No,Improve pacing and use one clearer real-world example.
+PRE-0027-2,STU-0027,FAC-004,2026-03-12,Question handling,85.5,No,Improve pacing and use one clearer real-world example.
+PRE-0027-3,STU-0027,FAC-004,2026-04-16,Content clarity,67.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0027-3,STU-0027,FAC-004,2026-04-16,Technical depth,69.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0027-3,STU-0027,FAC-004,2026-04-16,Delivery & confidence,73.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0027-3,STU-0027,FAC-004,2026-04-16,Visual design,73.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0027-3,STU-0027,FAC-004,2026-04-16,Question handling,68.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0028-1,STU-0028,FAC-005,2026-02-05,Content clarity,91.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0028-1,STU-0028,FAC-005,2026-02-05,Technical depth,78.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0028-1,STU-0028,FAC-005,2026-02-05,Delivery & confidence,93.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0028-1,STU-0028,FAC-005,2026-02-05,Visual design,79.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0028-1,STU-0028,FAC-005,2026-02-05,Question handling,92.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0028-2,STU-0028,FAC-005,2026-03-12,Content clarity,67.0,No,Improve pacing and use one clearer real-world example.
+PRE-0028-2,STU-0028,FAC-005,2026-03-12,Technical depth,67.4,No,Improve pacing and use one clearer real-world example.
+PRE-0028-2,STU-0028,FAC-005,2026-03-12,Delivery & confidence,85.2,No,Improve pacing and use one clearer real-world example.
+PRE-0028-2,STU-0028,FAC-005,2026-03-12,Visual design,72.1,No,Improve pacing and use one clearer real-world example.
+PRE-0028-2,STU-0028,FAC-005,2026-03-12,Question handling,80.8,No,Improve pacing and use one clearer real-world example.
+PRE-0028-3,STU-0028,FAC-005,2026-04-16,Content clarity,78.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0028-3,STU-0028,FAC-005,2026-04-16,Technical depth,63.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0028-3,STU-0028,FAC-005,2026-04-16,Delivery & confidence,78.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0028-3,STU-0028,FAC-005,2026-04-16,Visual design,63.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0028-3,STU-0028,FAC-005,2026-04-16,Question handling,75.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0029-1,STU-0029,FAC-006,2026-02-05,Content clarity,80.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0029-1,STU-0029,FAC-006,2026-02-05,Technical depth,74.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0029-1,STU-0029,FAC-006,2026-02-05,Delivery & confidence,69.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0029-1,STU-0029,FAC-006,2026-02-05,Visual design,70.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0029-1,STU-0029,FAC-006,2026-02-05,Question handling,68.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0029-2,STU-0029,FAC-006,2026-03-12,Content clarity,82.6,No,Improve pacing and use one clearer real-world example.
+PRE-0029-2,STU-0029,FAC-006,2026-03-12,Technical depth,78.7,No,Improve pacing and use one clearer real-world example.
+PRE-0029-2,STU-0029,FAC-006,2026-03-12,Delivery & confidence,83.8,No,Improve pacing and use one clearer real-world example.
+PRE-0029-2,STU-0029,FAC-006,2026-03-12,Visual design,80.2,No,Improve pacing and use one clearer real-world example.
+PRE-0029-2,STU-0029,FAC-006,2026-03-12,Question handling,70.3,No,Improve pacing and use one clearer real-world example.
+PRE-0029-3,STU-0029,FAC-006,2026-04-16,Content clarity,74.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0029-3,STU-0029,FAC-006,2026-04-16,Technical depth,56.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0029-3,STU-0029,FAC-006,2026-04-16,Delivery & confidence,65.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0029-3,STU-0029,FAC-006,2026-04-16,Visual design,73.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0029-3,STU-0029,FAC-006,2026-04-16,Question handling,59.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0030-1,STU-0030,FAC-001,2026-02-05,Content clarity,65.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0030-1,STU-0030,FAC-001,2026-02-05,Technical depth,83.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0030-1,STU-0030,FAC-001,2026-02-05,Delivery & confidence,81.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0030-1,STU-0030,FAC-001,2026-02-05,Visual design,80.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0030-1,STU-0030,FAC-001,2026-02-05,Question handling,64.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0030-2,STU-0030,FAC-001,2026-03-12,Content clarity,70.1,No,Improve pacing and use one clearer real-world example.
+PRE-0030-2,STU-0030,FAC-001,2026-03-12,Technical depth,71.6,No,Improve pacing and use one clearer real-world example.
+PRE-0030-2,STU-0030,FAC-001,2026-03-12,Delivery & confidence,65.7,No,Improve pacing and use one clearer real-world example.
+PRE-0030-2,STU-0030,FAC-001,2026-03-12,Visual design,78.6,No,Improve pacing and use one clearer real-world example.
+PRE-0030-2,STU-0030,FAC-001,2026-03-12,Question handling,63.4,No,Improve pacing and use one clearer real-world example.
+PRE-0030-3,STU-0030,FAC-001,2026-04-16,Content clarity,70.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0030-3,STU-0030,FAC-001,2026-04-16,Technical depth,66.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0030-3,STU-0030,FAC-001,2026-04-16,Delivery & confidence,68.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0030-3,STU-0030,FAC-001,2026-04-16,Visual design,70.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0030-3,STU-0030,FAC-001,2026-04-16,Question handling,63.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0031-1,STU-0031,FAC-002,2026-02-05,Content clarity,59.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0031-1,STU-0031,FAC-002,2026-02-05,Technical depth,64.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0031-1,STU-0031,FAC-002,2026-02-05,Delivery & confidence,64.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0031-1,STU-0031,FAC-002,2026-02-05,Visual design,65.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0031-1,STU-0031,FAC-002,2026-02-05,Question handling,65.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0031-2,STU-0031,FAC-002,2026-03-12,Content clarity,78.3,No,Improve pacing and use one clearer real-world example.
+PRE-0031-2,STU-0031,FAC-002,2026-03-12,Technical depth,72.8,No,Improve pacing and use one clearer real-world example.
+PRE-0031-2,STU-0031,FAC-002,2026-03-12,Delivery & confidence,72.7,No,Improve pacing and use one clearer real-world example.
+PRE-0031-2,STU-0031,FAC-002,2026-03-12,Visual design,76.6,No,Improve pacing and use one clearer real-world example.
+PRE-0031-2,STU-0031,FAC-002,2026-03-12,Question handling,77.9,No,Improve pacing and use one clearer real-world example.
+PRE-0031-3,STU-0031,FAC-002,2026-04-16,Content clarity,67.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0031-3,STU-0031,FAC-002,2026-04-16,Technical depth,55.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0031-3,STU-0031,FAC-002,2026-04-16,Delivery & confidence,67.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0031-3,STU-0031,FAC-002,2026-04-16,Visual design,57.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0031-3,STU-0031,FAC-002,2026-04-16,Question handling,51.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0032-1,STU-0032,FAC-003,2026-02-05,Content clarity,59.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0032-1,STU-0032,FAC-003,2026-02-05,Technical depth,53.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0032-1,STU-0032,FAC-003,2026-02-05,Delivery & confidence,60.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0032-1,STU-0032,FAC-003,2026-02-05,Visual design,50.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0032-1,STU-0032,FAC-003,2026-02-05,Question handling,54.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0032-2,STU-0032,FAC-003,2026-03-12,Content clarity,86.3,No,Improve pacing and use one clearer real-world example.
+PRE-0032-2,STU-0032,FAC-003,2026-03-12,Technical depth,88.0,No,Improve pacing and use one clearer real-world example.
+PRE-0032-2,STU-0032,FAC-003,2026-03-12,Delivery & confidence,78.2,No,Improve pacing and use one clearer real-world example.
+PRE-0032-2,STU-0032,FAC-003,2026-03-12,Visual design,89.8,No,Improve pacing and use one clearer real-world example.
+PRE-0032-2,STU-0032,FAC-003,2026-03-12,Question handling,73.8,No,Improve pacing and use one clearer real-world example.
+PRE-0032-3,STU-0032,FAC-003,2026-04-16,Content clarity,56.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0032-3,STU-0032,FAC-003,2026-04-16,Technical depth,60.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0032-3,STU-0032,FAC-003,2026-04-16,Delivery & confidence,59.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0032-3,STU-0032,FAC-003,2026-04-16,Visual design,61.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0032-3,STU-0032,FAC-003,2026-04-16,Question handling,49.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0033-1,STU-0033,FAC-004,2026-02-05,Content clarity,59.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0033-1,STU-0033,FAC-004,2026-02-05,Technical depth,59.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0033-1,STU-0033,FAC-004,2026-02-05,Delivery & confidence,57.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0033-1,STU-0033,FAC-004,2026-02-05,Visual design,65.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0033-1,STU-0033,FAC-004,2026-02-05,Question handling,65.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0033-2,STU-0033,FAC-004,2026-03-12,Content clarity,80.2,No,Improve pacing and use one clearer real-world example.
+PRE-0033-2,STU-0033,FAC-004,2026-03-12,Technical depth,77.3,No,Improve pacing and use one clearer real-world example.
+PRE-0033-2,STU-0033,FAC-004,2026-03-12,Delivery & confidence,91.3,No,Improve pacing and use one clearer real-world example.
+PRE-0033-2,STU-0033,FAC-004,2026-03-12,Visual design,83.3,No,Improve pacing and use one clearer real-world example.
+PRE-0033-2,STU-0033,FAC-004,2026-03-12,Question handling,79.6,No,Improve pacing and use one clearer real-world example.
+PRE-0033-3,STU-0033,FAC-004,2026-04-16,Content clarity,63.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0033-3,STU-0033,FAC-004,2026-04-16,Technical depth,76.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0033-3,STU-0033,FAC-004,2026-04-16,Delivery & confidence,73.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0033-3,STU-0033,FAC-004,2026-04-16,Visual design,75.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0033-3,STU-0033,FAC-004,2026-04-16,Question handling,61.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0034-1,STU-0034,FAC-005,2026-02-05,Content clarity,79.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0034-1,STU-0034,FAC-005,2026-02-05,Technical depth,86.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0034-1,STU-0034,FAC-005,2026-02-05,Delivery & confidence,77.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0034-1,STU-0034,FAC-005,2026-02-05,Visual design,76.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0034-1,STU-0034,FAC-005,2026-02-05,Question handling,77.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0034-2,STU-0034,FAC-005,2026-03-12,Content clarity,64.9,No,Improve pacing and use one clearer real-world example.
+PRE-0034-2,STU-0034,FAC-005,2026-03-12,Technical depth,56.9,No,Improve pacing and use one clearer real-world example.
+PRE-0034-2,STU-0034,FAC-005,2026-03-12,Delivery & confidence,62.9,No,Improve pacing and use one clearer real-world example.
+PRE-0034-2,STU-0034,FAC-005,2026-03-12,Visual design,56.4,No,Improve pacing and use one clearer real-world example.
+PRE-0034-2,STU-0034,FAC-005,2026-03-12,Question handling,67.7,No,Improve pacing and use one clearer real-world example.
+PRE-0034-3,STU-0034,FAC-005,2026-04-16,Content clarity,70.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0034-3,STU-0034,FAC-005,2026-04-16,Technical depth,71.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0034-3,STU-0034,FAC-005,2026-04-16,Delivery & confidence,78.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0034-3,STU-0034,FAC-005,2026-04-16,Visual design,75.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0034-3,STU-0034,FAC-005,2026-04-16,Question handling,81.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0035-1,STU-0035,FAC-006,2026-02-05,Content clarity,79.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0035-1,STU-0035,FAC-006,2026-02-05,Technical depth,91.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0035-1,STU-0035,FAC-006,2026-02-05,Delivery & confidence,88.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0035-1,STU-0035,FAC-006,2026-02-05,Visual design,83.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0035-1,STU-0035,FAC-006,2026-02-05,Question handling,82.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0035-2,STU-0035,FAC-006,2026-03-12,Content clarity,74.0,No,Improve pacing and use one clearer real-world example.
+PRE-0035-2,STU-0035,FAC-006,2026-03-12,Technical depth,80.9,No,Improve pacing and use one clearer real-world example.
+PRE-0035-2,STU-0035,FAC-006,2026-03-12,Delivery & confidence,76.0,No,Improve pacing and use one clearer real-world example.
+PRE-0035-2,STU-0035,FAC-006,2026-03-12,Visual design,87.0,No,Improve pacing and use one clearer real-world example.
+PRE-0035-2,STU-0035,FAC-006,2026-03-12,Question handling,92.1,No,Improve pacing and use one clearer real-world example.
+PRE-0035-3,STU-0035,FAC-006,2026-04-16,Content clarity,66.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0035-3,STU-0035,FAC-006,2026-04-16,Technical depth,78.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0035-3,STU-0035,FAC-006,2026-04-16,Delivery & confidence,64.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0035-3,STU-0035,FAC-006,2026-04-16,Visual design,82.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0035-3,STU-0035,FAC-006,2026-04-16,Question handling,63.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0036-1,STU-0036,FAC-001,2026-02-05,Content clarity,53.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0036-1,STU-0036,FAC-001,2026-02-05,Technical depth,63.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0036-1,STU-0036,FAC-001,2026-02-05,Delivery & confidence,54.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0036-1,STU-0036,FAC-001,2026-02-05,Visual design,48.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0036-1,STU-0036,FAC-001,2026-02-05,Question handling,55.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0036-2,STU-0036,FAC-001,2026-03-12,Content clarity,56.6,No,Improve pacing and use one clearer real-world example.
+PRE-0036-2,STU-0036,FAC-001,2026-03-12,Technical depth,57.6,No,Improve pacing and use one clearer real-world example.
+PRE-0036-2,STU-0036,FAC-001,2026-03-12,Delivery & confidence,66.8,No,Improve pacing and use one clearer real-world example.
+PRE-0036-2,STU-0036,FAC-001,2026-03-12,Visual design,57.7,No,Improve pacing and use one clearer real-world example.
+PRE-0036-2,STU-0036,FAC-001,2026-03-12,Question handling,53.1,No,Improve pacing and use one clearer real-world example.
+PRE-0036-3,STU-0036,FAC-001,2026-04-16,Content clarity,57.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0036-3,STU-0036,FAC-001,2026-04-16,Technical depth,62.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0036-3,STU-0036,FAC-001,2026-04-16,Delivery & confidence,69.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0036-3,STU-0036,FAC-001,2026-04-16,Visual design,52.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0036-3,STU-0036,FAC-001,2026-04-16,Question handling,54.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0037-1,STU-0037,FAC-002,2026-02-05,Content clarity,65.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0037-1,STU-0037,FAC-002,2026-02-05,Technical depth,51.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0037-1,STU-0037,FAC-002,2026-02-05,Delivery & confidence,57.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0037-1,STU-0037,FAC-002,2026-02-05,Visual design,59.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0037-1,STU-0037,FAC-002,2026-02-05,Question handling,63.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0037-2,STU-0037,FAC-002,2026-03-12,Content clarity,73.5,No,Improve pacing and use one clearer real-world example.
+PRE-0037-2,STU-0037,FAC-002,2026-03-12,Technical depth,75.3,No,Improve pacing and use one clearer real-world example.
+PRE-0037-2,STU-0037,FAC-002,2026-03-12,Delivery & confidence,76.1,No,Improve pacing and use one clearer real-world example.
+PRE-0037-2,STU-0037,FAC-002,2026-03-12,Visual design,68.7,No,Improve pacing and use one clearer real-world example.
+PRE-0037-2,STU-0037,FAC-002,2026-03-12,Question handling,72.5,No,Improve pacing and use one clearer real-world example.
+PRE-0037-3,STU-0037,FAC-002,2026-04-16,Content clarity,78.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0037-3,STU-0037,FAC-002,2026-04-16,Technical depth,68.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0037-3,STU-0037,FAC-002,2026-04-16,Delivery & confidence,78.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0037-3,STU-0037,FAC-002,2026-04-16,Visual design,78.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0037-3,STU-0037,FAC-002,2026-04-16,Question handling,73.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0038-1,STU-0038,FAC-003,2026-02-05,Content clarity,51.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0038-1,STU-0038,FAC-003,2026-02-05,Technical depth,44.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0038-1,STU-0038,FAC-003,2026-02-05,Delivery & confidence,48.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0038-1,STU-0038,FAC-003,2026-02-05,Visual design,48.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0038-1,STU-0038,FAC-003,2026-02-05,Question handling,35,Yes,Improve pacing and use one clearer real-world example.
+PRE-0038-2,STU-0038,FAC-003,2026-03-12,Content clarity,49.0,No,Improve pacing and use one clearer real-world example.
+PRE-0038-2,STU-0038,FAC-003,2026-03-12,Technical depth,51.6,No,Improve pacing and use one clearer real-world example.
+PRE-0038-2,STU-0038,FAC-003,2026-03-12,Delivery & confidence,49.6,No,Improve pacing and use one clearer real-world example.
+PRE-0038-2,STU-0038,FAC-003,2026-03-12,Visual design,42.7,No,Improve pacing and use one clearer real-world example.
+PRE-0038-2,STU-0038,FAC-003,2026-03-12,Question handling,42.4,No,Improve pacing and use one clearer real-world example.
+PRE-0038-3,STU-0038,FAC-003,2026-04-16,Content clarity,52.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0038-3,STU-0038,FAC-003,2026-04-16,Technical depth,68.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0038-3,STU-0038,FAC-003,2026-04-16,Delivery & confidence,52.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0038-3,STU-0038,FAC-003,2026-04-16,Visual design,64.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0038-3,STU-0038,FAC-003,2026-04-16,Question handling,59.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0039-1,STU-0039,FAC-004,2026-02-05,Content clarity,93.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0039-1,STU-0039,FAC-004,2026-02-05,Technical depth,87.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0039-1,STU-0039,FAC-004,2026-02-05,Delivery & confidence,86.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0039-1,STU-0039,FAC-004,2026-02-05,Visual design,97.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0039-1,STU-0039,FAC-004,2026-02-05,Question handling,90.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0039-2,STU-0039,FAC-004,2026-03-12,Content clarity,81.4,No,Improve pacing and use one clearer real-world example.
+PRE-0039-2,STU-0039,FAC-004,2026-03-12,Technical depth,91.5,No,Improve pacing and use one clearer real-world example.
+PRE-0039-2,STU-0039,FAC-004,2026-03-12,Delivery & confidence,86.7,No,Improve pacing and use one clearer real-world example.
+PRE-0039-2,STU-0039,FAC-004,2026-03-12,Visual design,79.1,No,Improve pacing and use one clearer real-world example.
+PRE-0039-2,STU-0039,FAC-004,2026-03-12,Question handling,90.7,No,Improve pacing and use one clearer real-world example.
+PRE-0039-3,STU-0039,FAC-004,2026-04-16,Content clarity,78.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0039-3,STU-0039,FAC-004,2026-04-16,Technical depth,90.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0039-3,STU-0039,FAC-004,2026-04-16,Delivery & confidence,77.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0039-3,STU-0039,FAC-004,2026-04-16,Visual design,84.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0039-3,STU-0039,FAC-004,2026-04-16,Question handling,80.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0040-1,STU-0040,FAC-005,2026-02-05,Content clarity,79.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0040-1,STU-0040,FAC-005,2026-02-05,Technical depth,72.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0040-1,STU-0040,FAC-005,2026-02-05,Delivery & confidence,89.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0040-1,STU-0040,FAC-005,2026-02-05,Visual design,81.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0040-1,STU-0040,FAC-005,2026-02-05,Question handling,84.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0040-2,STU-0040,FAC-005,2026-03-12,Content clarity,59.1,No,Improve pacing and use one clearer real-world example.
+PRE-0040-2,STU-0040,FAC-005,2026-03-12,Technical depth,62.9,No,Improve pacing and use one clearer real-world example.
+PRE-0040-2,STU-0040,FAC-005,2026-03-12,Delivery & confidence,61.7,No,Improve pacing and use one clearer real-world example.
+PRE-0040-2,STU-0040,FAC-005,2026-03-12,Visual design,51.2,No,Improve pacing and use one clearer real-world example.
+PRE-0040-2,STU-0040,FAC-005,2026-03-12,Question handling,47.8,No,Improve pacing and use one clearer real-world example.
+PRE-0040-3,STU-0040,FAC-005,2026-04-16,Content clarity,63.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0040-3,STU-0040,FAC-005,2026-04-16,Technical depth,68.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0040-3,STU-0040,FAC-005,2026-04-16,Delivery & confidence,56.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0040-3,STU-0040,FAC-005,2026-04-16,Visual design,52.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0040-3,STU-0040,FAC-005,2026-04-16,Question handling,63.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0041-1,STU-0041,FAC-006,2026-02-05,Content clarity,58.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0041-1,STU-0041,FAC-006,2026-02-05,Technical depth,58.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0041-1,STU-0041,FAC-006,2026-02-05,Delivery & confidence,62.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0041-1,STU-0041,FAC-006,2026-02-05,Visual design,67.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0041-1,STU-0041,FAC-006,2026-02-05,Question handling,65.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0041-2,STU-0041,FAC-006,2026-03-12,Content clarity,62.3,No,Improve pacing and use one clearer real-world example.
+PRE-0041-2,STU-0041,FAC-006,2026-03-12,Technical depth,66.8,No,Improve pacing and use one clearer real-world example.
+PRE-0041-2,STU-0041,FAC-006,2026-03-12,Delivery & confidence,60.9,No,Improve pacing and use one clearer real-world example.
+PRE-0041-2,STU-0041,FAC-006,2026-03-12,Visual design,58.2,No,Improve pacing and use one clearer real-world example.
+PRE-0041-2,STU-0041,FAC-006,2026-03-12,Question handling,58.7,No,Improve pacing and use one clearer real-world example.
+PRE-0041-3,STU-0041,FAC-006,2026-04-16,Content clarity,60.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0041-3,STU-0041,FAC-006,2026-04-16,Technical depth,57.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0041-3,STU-0041,FAC-006,2026-04-16,Delivery & confidence,45.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0041-3,STU-0041,FAC-006,2026-04-16,Visual design,46.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0041-3,STU-0041,FAC-006,2026-04-16,Question handling,46.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0042-1,STU-0042,FAC-001,2026-02-05,Content clarity,78.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0042-1,STU-0042,FAC-001,2026-02-05,Technical depth,66.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0042-1,STU-0042,FAC-001,2026-02-05,Delivery & confidence,77.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0042-1,STU-0042,FAC-001,2026-02-05,Visual design,79.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0042-1,STU-0042,FAC-001,2026-02-05,Question handling,73.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0042-2,STU-0042,FAC-001,2026-03-12,Content clarity,84.7,No,Improve pacing and use one clearer real-world example.
+PRE-0042-2,STU-0042,FAC-001,2026-03-12,Technical depth,76.5,No,Improve pacing and use one clearer real-world example.
+PRE-0042-2,STU-0042,FAC-001,2026-03-12,Delivery & confidence,80.9,No,Improve pacing and use one clearer real-world example.
+PRE-0042-2,STU-0042,FAC-001,2026-03-12,Visual design,82.1,No,Improve pacing and use one clearer real-world example.
+PRE-0042-2,STU-0042,FAC-001,2026-03-12,Question handling,73.9,No,Improve pacing and use one clearer real-world example.
+PRE-0042-3,STU-0042,FAC-001,2026-04-16,Content clarity,67.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0042-3,STU-0042,FAC-001,2026-04-16,Technical depth,69.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0042-3,STU-0042,FAC-001,2026-04-16,Delivery & confidence,61.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0042-3,STU-0042,FAC-001,2026-04-16,Visual design,66.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0042-3,STU-0042,FAC-001,2026-04-16,Question handling,54.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0043-1,STU-0043,FAC-002,2026-02-05,Content clarity,72.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0043-1,STU-0043,FAC-002,2026-02-05,Technical depth,56.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0043-1,STU-0043,FAC-002,2026-02-05,Delivery & confidence,65.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0043-1,STU-0043,FAC-002,2026-02-05,Visual design,65.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0043-1,STU-0043,FAC-002,2026-02-05,Question handling,67.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0043-2,STU-0043,FAC-002,2026-03-12,Content clarity,68.2,No,Improve pacing and use one clearer real-world example.
+PRE-0043-2,STU-0043,FAC-002,2026-03-12,Technical depth,52.1,No,Improve pacing and use one clearer real-world example.
+PRE-0043-2,STU-0043,FAC-002,2026-03-12,Delivery & confidence,67.0,No,Improve pacing and use one clearer real-world example.
+PRE-0043-2,STU-0043,FAC-002,2026-03-12,Visual design,52.5,No,Improve pacing and use one clearer real-world example.
+PRE-0043-2,STU-0043,FAC-002,2026-03-12,Question handling,60.3,No,Improve pacing and use one clearer real-world example.
+PRE-0043-3,STU-0043,FAC-002,2026-04-16,Content clarity,55.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0043-3,STU-0043,FAC-002,2026-04-16,Technical depth,65.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0043-3,STU-0043,FAC-002,2026-04-16,Delivery & confidence,73.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0043-3,STU-0043,FAC-002,2026-04-16,Visual design,61.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0043-3,STU-0043,FAC-002,2026-04-16,Question handling,54.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0044-1,STU-0044,FAC-003,2026-02-05,Content clarity,97.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0044-1,STU-0044,FAC-003,2026-02-05,Technical depth,84.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0044-1,STU-0044,FAC-003,2026-02-05,Delivery & confidence,88.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0044-1,STU-0044,FAC-003,2026-02-05,Visual design,82.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0044-1,STU-0044,FAC-003,2026-02-05,Question handling,92.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0044-2,STU-0044,FAC-003,2026-03-12,Content clarity,67.3,No,Improve pacing and use one clearer real-world example.
+PRE-0044-2,STU-0044,FAC-003,2026-03-12,Technical depth,73.7,No,Improve pacing and use one clearer real-world example.
+PRE-0044-2,STU-0044,FAC-003,2026-03-12,Delivery & confidence,73.9,No,Improve pacing and use one clearer real-world example.
+PRE-0044-2,STU-0044,FAC-003,2026-03-12,Visual design,76.6,No,Improve pacing and use one clearer real-world example.
+PRE-0044-2,STU-0044,FAC-003,2026-03-12,Question handling,69.4,No,Improve pacing and use one clearer real-world example.
+PRE-0044-3,STU-0044,FAC-003,2026-04-16,Content clarity,92.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0044-3,STU-0044,FAC-003,2026-04-16,Technical depth,92.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0044-3,STU-0044,FAC-003,2026-04-16,Delivery & confidence,82.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0044-3,STU-0044,FAC-003,2026-04-16,Visual design,87.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0044-3,STU-0044,FAC-003,2026-04-16,Question handling,91.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0045-1,STU-0045,FAC-004,2026-02-05,Content clarity,80.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0045-1,STU-0045,FAC-004,2026-02-05,Technical depth,80.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0045-1,STU-0045,FAC-004,2026-02-05,Delivery & confidence,68.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0045-1,STU-0045,FAC-004,2026-02-05,Visual design,82.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0045-1,STU-0045,FAC-004,2026-02-05,Question handling,76.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0045-2,STU-0045,FAC-004,2026-03-12,Content clarity,65.9,No,Improve pacing and use one clearer real-world example.
+PRE-0045-2,STU-0045,FAC-004,2026-03-12,Technical depth,76.0,No,Improve pacing and use one clearer real-world example.
+PRE-0045-2,STU-0045,FAC-004,2026-03-12,Delivery & confidence,65.1,No,Improve pacing and use one clearer real-world example.
+PRE-0045-2,STU-0045,FAC-004,2026-03-12,Visual design,66.0,No,Improve pacing and use one clearer real-world example.
+PRE-0045-2,STU-0045,FAC-004,2026-03-12,Question handling,76.0,No,Improve pacing and use one clearer real-world example.
+PRE-0045-3,STU-0045,FAC-004,2026-04-16,Content clarity,95.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0045-3,STU-0045,FAC-004,2026-04-16,Technical depth,87.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0045-3,STU-0045,FAC-004,2026-04-16,Delivery & confidence,79.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0045-3,STU-0045,FAC-004,2026-04-16,Visual design,83.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0045-3,STU-0045,FAC-004,2026-04-16,Question handling,88.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0046-1,STU-0046,FAC-005,2026-02-05,Content clarity,58.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0046-1,STU-0046,FAC-005,2026-02-05,Technical depth,69.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0046-1,STU-0046,FAC-005,2026-02-05,Delivery & confidence,56.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0046-1,STU-0046,FAC-005,2026-02-05,Visual design,58.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0046-1,STU-0046,FAC-005,2026-02-05,Question handling,63.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0046-2,STU-0046,FAC-005,2026-03-12,Content clarity,68.4,No,Improve pacing and use one clearer real-world example.
+PRE-0046-2,STU-0046,FAC-005,2026-03-12,Technical depth,79.2,No,Improve pacing and use one clearer real-world example.
+PRE-0046-2,STU-0046,FAC-005,2026-03-12,Delivery & confidence,82.0,No,Improve pacing and use one clearer real-world example.
+PRE-0046-2,STU-0046,FAC-005,2026-03-12,Visual design,80.3,No,Improve pacing and use one clearer real-world example.
+PRE-0046-2,STU-0046,FAC-005,2026-03-12,Question handling,67.3,No,Improve pacing and use one clearer real-world example.
+PRE-0046-3,STU-0046,FAC-005,2026-04-16,Content clarity,75.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0046-3,STU-0046,FAC-005,2026-04-16,Technical depth,72.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0046-3,STU-0046,FAC-005,2026-04-16,Delivery & confidence,67.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0046-3,STU-0046,FAC-005,2026-04-16,Visual design,65.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0046-3,STU-0046,FAC-005,2026-04-16,Question handling,76.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0047-1,STU-0047,FAC-006,2026-02-05,Content clarity,68.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0047-1,STU-0047,FAC-006,2026-02-05,Technical depth,61.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0047-1,STU-0047,FAC-006,2026-02-05,Delivery & confidence,61.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0047-1,STU-0047,FAC-006,2026-02-05,Visual design,66.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0047-1,STU-0047,FAC-006,2026-02-05,Question handling,74.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0047-2,STU-0047,FAC-006,2026-03-12,Content clarity,68.2,No,Improve pacing and use one clearer real-world example.
+PRE-0047-2,STU-0047,FAC-006,2026-03-12,Technical depth,71.9,No,Improve pacing and use one clearer real-world example.
+PRE-0047-2,STU-0047,FAC-006,2026-03-12,Delivery & confidence,74.7,No,Improve pacing and use one clearer real-world example.
+PRE-0047-2,STU-0047,FAC-006,2026-03-12,Visual design,81.7,No,Improve pacing and use one clearer real-world example.
+PRE-0047-2,STU-0047,FAC-006,2026-03-12,Question handling,84.3,No,Improve pacing and use one clearer real-world example.
+PRE-0047-3,STU-0047,FAC-006,2026-04-16,Content clarity,96.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0047-3,STU-0047,FAC-006,2026-04-16,Technical depth,83.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0047-3,STU-0047,FAC-006,2026-04-16,Delivery & confidence,95.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0047-3,STU-0047,FAC-006,2026-04-16,Visual design,86.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0047-3,STU-0047,FAC-006,2026-04-16,Question handling,96.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0048-1,STU-0048,FAC-001,2026-02-05,Content clarity,43.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0048-1,STU-0048,FAC-001,2026-02-05,Technical depth,44.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0048-1,STU-0048,FAC-001,2026-02-05,Delivery & confidence,50.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0048-1,STU-0048,FAC-001,2026-02-05,Visual design,39.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0048-1,STU-0048,FAC-001,2026-02-05,Question handling,57.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0048-2,STU-0048,FAC-001,2026-03-12,Content clarity,56.7,No,Improve pacing and use one clearer real-world example.
+PRE-0048-2,STU-0048,FAC-001,2026-03-12,Technical depth,53.6,No,Improve pacing and use one clearer real-world example.
+PRE-0048-2,STU-0048,FAC-001,2026-03-12,Delivery & confidence,64.6,No,Improve pacing and use one clearer real-world example.
+PRE-0048-2,STU-0048,FAC-001,2026-03-12,Visual design,60.3,No,Improve pacing and use one clearer real-world example.
+PRE-0048-2,STU-0048,FAC-001,2026-03-12,Question handling,53.3,No,Improve pacing and use one clearer real-world example.
+PRE-0048-3,STU-0048,FAC-001,2026-04-16,Content clarity,50.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0048-3,STU-0048,FAC-001,2026-04-16,Technical depth,40.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0048-3,STU-0048,FAC-001,2026-04-16,Delivery & confidence,56.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0048-3,STU-0048,FAC-001,2026-04-16,Visual design,46.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0048-3,STU-0048,FAC-001,2026-04-16,Question handling,46.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0049-1,STU-0049,FAC-002,2026-02-05,Content clarity,79.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0049-1,STU-0049,FAC-002,2026-02-05,Technical depth,74.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0049-1,STU-0049,FAC-002,2026-02-05,Delivery & confidence,65.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0049-1,STU-0049,FAC-002,2026-02-05,Visual design,73.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0049-1,STU-0049,FAC-002,2026-02-05,Question handling,71.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0049-2,STU-0049,FAC-002,2026-03-12,Content clarity,72.0,No,Improve pacing and use one clearer real-world example.
+PRE-0049-2,STU-0049,FAC-002,2026-03-12,Technical depth,63.3,No,Improve pacing and use one clearer real-world example.
+PRE-0049-2,STU-0049,FAC-002,2026-03-12,Delivery & confidence,58.7,No,Improve pacing and use one clearer real-world example.
+PRE-0049-2,STU-0049,FAC-002,2026-03-12,Visual design,62.7,No,Improve pacing and use one clearer real-world example.
+PRE-0049-2,STU-0049,FAC-002,2026-03-12,Question handling,71.5,No,Improve pacing and use one clearer real-world example.
+PRE-0049-3,STU-0049,FAC-002,2026-04-16,Content clarity,68.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0049-3,STU-0049,FAC-002,2026-04-16,Technical depth,79.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0049-3,STU-0049,FAC-002,2026-04-16,Delivery & confidence,62.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0049-3,STU-0049,FAC-002,2026-04-16,Visual design,62.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0049-3,STU-0049,FAC-002,2026-04-16,Question handling,79.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0050-1,STU-0050,FAC-003,2026-02-05,Content clarity,55.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0050-1,STU-0050,FAC-003,2026-02-05,Technical depth,47.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0050-1,STU-0050,FAC-003,2026-02-05,Delivery & confidence,50.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0050-1,STU-0050,FAC-003,2026-02-05,Visual design,57.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0050-1,STU-0050,FAC-003,2026-02-05,Question handling,42.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0050-2,STU-0050,FAC-003,2026-03-12,Content clarity,65.1,No,Improve pacing and use one clearer real-world example.
+PRE-0050-2,STU-0050,FAC-003,2026-03-12,Technical depth,63.7,No,Improve pacing and use one clearer real-world example.
+PRE-0050-2,STU-0050,FAC-003,2026-03-12,Delivery & confidence,73.2,No,Improve pacing and use one clearer real-world example.
+PRE-0050-2,STU-0050,FAC-003,2026-03-12,Visual design,65.5,No,Improve pacing and use one clearer real-world example.
+PRE-0050-2,STU-0050,FAC-003,2026-03-12,Question handling,57.5,No,Improve pacing and use one clearer real-world example.
+PRE-0050-3,STU-0050,FAC-003,2026-04-16,Content clarity,36.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0050-3,STU-0050,FAC-003,2026-04-16,Technical depth,43.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0050-3,STU-0050,FAC-003,2026-04-16,Delivery & confidence,45.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0050-3,STU-0050,FAC-003,2026-04-16,Visual design,39.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0050-3,STU-0050,FAC-003,2026-04-16,Question handling,35.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0051-1,STU-0051,FAC-004,2026-02-05,Content clarity,45.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0051-1,STU-0051,FAC-004,2026-02-05,Technical depth,57.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0051-1,STU-0051,FAC-004,2026-02-05,Delivery & confidence,49.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0051-1,STU-0051,FAC-004,2026-02-05,Visual design,60.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0051-1,STU-0051,FAC-004,2026-02-05,Question handling,51.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0051-2,STU-0051,FAC-004,2026-03-12,Content clarity,62.0,No,Improve pacing and use one clearer real-world example.
+PRE-0051-2,STU-0051,FAC-004,2026-03-12,Technical depth,71.4,No,Improve pacing and use one clearer real-world example.
+PRE-0051-2,STU-0051,FAC-004,2026-03-12,Delivery & confidence,57.3,No,Improve pacing and use one clearer real-world example.
+PRE-0051-2,STU-0051,FAC-004,2026-03-12,Visual design,64.5,No,Improve pacing and use one clearer real-world example.
+PRE-0051-2,STU-0051,FAC-004,2026-03-12,Question handling,66.9,No,Improve pacing and use one clearer real-world example.
+PRE-0051-3,STU-0051,FAC-004,2026-04-16,Content clarity,56.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0051-3,STU-0051,FAC-004,2026-04-16,Technical depth,59.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0051-3,STU-0051,FAC-004,2026-04-16,Delivery & confidence,55.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0051-3,STU-0051,FAC-004,2026-04-16,Visual design,57.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0051-3,STU-0051,FAC-004,2026-04-16,Question handling,61.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0052-1,STU-0052,FAC-005,2026-02-05,Content clarity,87.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0052-1,STU-0052,FAC-005,2026-02-05,Technical depth,100,Yes,Improve pacing and use one clearer real-world example.
+PRE-0052-1,STU-0052,FAC-005,2026-02-05,Delivery & confidence,93.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0052-1,STU-0052,FAC-005,2026-02-05,Visual design,83.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0052-1,STU-0052,FAC-005,2026-02-05,Question handling,87.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0052-2,STU-0052,FAC-005,2026-03-12,Content clarity,92.5,No,Improve pacing and use one clearer real-world example.
+PRE-0052-2,STU-0052,FAC-005,2026-03-12,Technical depth,98.8,No,Improve pacing and use one clearer real-world example.
+PRE-0052-2,STU-0052,FAC-005,2026-03-12,Delivery & confidence,84.5,No,Improve pacing and use one clearer real-world example.
+PRE-0052-2,STU-0052,FAC-005,2026-03-12,Visual design,88.2,No,Improve pacing and use one clearer real-world example.
+PRE-0052-2,STU-0052,FAC-005,2026-03-12,Question handling,81.7,No,Improve pacing and use one clearer real-world example.
+PRE-0052-3,STU-0052,FAC-005,2026-04-16,Content clarity,79.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0052-3,STU-0052,FAC-005,2026-04-16,Technical depth,78.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0052-3,STU-0052,FAC-005,2026-04-16,Delivery & confidence,92.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0052-3,STU-0052,FAC-005,2026-04-16,Visual design,89.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0052-3,STU-0052,FAC-005,2026-04-16,Question handling,86.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0053-1,STU-0053,FAC-006,2026-02-05,Content clarity,63.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0053-1,STU-0053,FAC-006,2026-02-05,Technical depth,61.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0053-1,STU-0053,FAC-006,2026-02-05,Delivery & confidence,65.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0053-1,STU-0053,FAC-006,2026-02-05,Visual design,57.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0053-1,STU-0053,FAC-006,2026-02-05,Question handling,54.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0053-2,STU-0053,FAC-006,2026-03-12,Content clarity,55.6,No,Improve pacing and use one clearer real-world example.
+PRE-0053-2,STU-0053,FAC-006,2026-03-12,Technical depth,74.2,No,Improve pacing and use one clearer real-world example.
+PRE-0053-2,STU-0053,FAC-006,2026-03-12,Delivery & confidence,69.9,No,Improve pacing and use one clearer real-world example.
+PRE-0053-2,STU-0053,FAC-006,2026-03-12,Visual design,55.8,No,Improve pacing and use one clearer real-world example.
+PRE-0053-2,STU-0053,FAC-006,2026-03-12,Question handling,57.8,No,Improve pacing and use one clearer real-world example.
+PRE-0053-3,STU-0053,FAC-006,2026-04-16,Content clarity,42.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0053-3,STU-0053,FAC-006,2026-04-16,Technical depth,38.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0053-3,STU-0053,FAC-006,2026-04-16,Delivery & confidence,50.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0053-3,STU-0053,FAC-006,2026-04-16,Visual design,52.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0053-3,STU-0053,FAC-006,2026-04-16,Question handling,45.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0054-1,STU-0054,FAC-001,2026-02-05,Content clarity,79.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0054-1,STU-0054,FAC-001,2026-02-05,Technical depth,71.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0054-1,STU-0054,FAC-001,2026-02-05,Delivery & confidence,80.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0054-1,STU-0054,FAC-001,2026-02-05,Visual design,71.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0054-1,STU-0054,FAC-001,2026-02-05,Question handling,79.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0054-2,STU-0054,FAC-001,2026-03-12,Content clarity,69.1,No,Improve pacing and use one clearer real-world example.
+PRE-0054-2,STU-0054,FAC-001,2026-03-12,Technical depth,76.5,No,Improve pacing and use one clearer real-world example.
+PRE-0054-2,STU-0054,FAC-001,2026-03-12,Delivery & confidence,62.2,No,Improve pacing and use one clearer real-world example.
+PRE-0054-2,STU-0054,FAC-001,2026-03-12,Visual design,75.7,No,Improve pacing and use one clearer real-world example.
+PRE-0054-2,STU-0054,FAC-001,2026-03-12,Question handling,60.1,No,Improve pacing and use one clearer real-world example.
+PRE-0054-3,STU-0054,FAC-001,2026-04-16,Content clarity,60.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0054-3,STU-0054,FAC-001,2026-04-16,Technical depth,54.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0054-3,STU-0054,FAC-001,2026-04-16,Delivery & confidence,64.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0054-3,STU-0054,FAC-001,2026-04-16,Visual design,66.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0054-3,STU-0054,FAC-001,2026-04-16,Question handling,55.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0055-1,STU-0055,FAC-002,2026-02-05,Content clarity,92.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0055-1,STU-0055,FAC-002,2026-02-05,Technical depth,89.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0055-1,STU-0055,FAC-002,2026-02-05,Delivery & confidence,93.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0055-1,STU-0055,FAC-002,2026-02-05,Visual design,89.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0055-1,STU-0055,FAC-002,2026-02-05,Question handling,83.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0055-2,STU-0055,FAC-002,2026-03-12,Content clarity,84.4,No,Improve pacing and use one clearer real-world example.
+PRE-0055-2,STU-0055,FAC-002,2026-03-12,Technical depth,88.6,No,Improve pacing and use one clearer real-world example.
+PRE-0055-2,STU-0055,FAC-002,2026-03-12,Delivery & confidence,78.1,No,Improve pacing and use one clearer real-world example.
+PRE-0055-2,STU-0055,FAC-002,2026-03-12,Visual design,86.1,No,Improve pacing and use one clearer real-world example.
+PRE-0055-2,STU-0055,FAC-002,2026-03-12,Question handling,97.2,No,Improve pacing and use one clearer real-world example.
+PRE-0055-3,STU-0055,FAC-002,2026-04-16,Content clarity,93.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0055-3,STU-0055,FAC-002,2026-04-16,Technical depth,84.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0055-3,STU-0055,FAC-002,2026-04-16,Delivery & confidence,82.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0055-3,STU-0055,FAC-002,2026-04-16,Visual design,85.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0055-3,STU-0055,FAC-002,2026-04-16,Question handling,86.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0056-1,STU-0056,FAC-003,2026-02-05,Content clarity,43.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0056-1,STU-0056,FAC-003,2026-02-05,Technical depth,50.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0056-1,STU-0056,FAC-003,2026-02-05,Delivery & confidence,44.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0056-1,STU-0056,FAC-003,2026-02-05,Visual design,57.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0056-1,STU-0056,FAC-003,2026-02-05,Question handling,58.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0056-2,STU-0056,FAC-003,2026-03-12,Content clarity,52.5,No,Improve pacing and use one clearer real-world example.
+PRE-0056-2,STU-0056,FAC-003,2026-03-12,Technical depth,43.9,No,Improve pacing and use one clearer real-world example.
+PRE-0056-2,STU-0056,FAC-003,2026-03-12,Delivery & confidence,51.6,No,Improve pacing and use one clearer real-world example.
+PRE-0056-2,STU-0056,FAC-003,2026-03-12,Visual design,51.5,No,Improve pacing and use one clearer real-world example.
+PRE-0056-2,STU-0056,FAC-003,2026-03-12,Question handling,53.9,No,Improve pacing and use one clearer real-world example.
+PRE-0056-3,STU-0056,FAC-003,2026-04-16,Content clarity,56.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0056-3,STU-0056,FAC-003,2026-04-16,Technical depth,56.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0056-3,STU-0056,FAC-003,2026-04-16,Delivery & confidence,60.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0056-3,STU-0056,FAC-003,2026-04-16,Visual design,53.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0056-3,STU-0056,FAC-003,2026-04-16,Question handling,59.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0057-1,STU-0057,FAC-004,2026-02-05,Content clarity,67.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0057-1,STU-0057,FAC-004,2026-02-05,Technical depth,66.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0057-1,STU-0057,FAC-004,2026-02-05,Delivery & confidence,80.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0057-1,STU-0057,FAC-004,2026-02-05,Visual design,80.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0057-1,STU-0057,FAC-004,2026-02-05,Question handling,66.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0057-2,STU-0057,FAC-004,2026-03-12,Content clarity,68.8,No,Improve pacing and use one clearer real-world example.
+PRE-0057-2,STU-0057,FAC-004,2026-03-12,Technical depth,83.8,No,Improve pacing and use one clearer real-world example.
+PRE-0057-2,STU-0057,FAC-004,2026-03-12,Delivery & confidence,73.7,No,Improve pacing and use one clearer real-world example.
+PRE-0057-2,STU-0057,FAC-004,2026-03-12,Visual design,80.7,No,Improve pacing and use one clearer real-world example.
+PRE-0057-2,STU-0057,FAC-004,2026-03-12,Question handling,86.5,No,Improve pacing and use one clearer real-world example.
+PRE-0057-3,STU-0057,FAC-004,2026-04-16,Content clarity,67.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0057-3,STU-0057,FAC-004,2026-04-16,Technical depth,70.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0057-3,STU-0057,FAC-004,2026-04-16,Delivery & confidence,74.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0057-3,STU-0057,FAC-004,2026-04-16,Visual design,71.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0057-3,STU-0057,FAC-004,2026-04-16,Question handling,80.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0058-1,STU-0058,FAC-005,2026-02-05,Content clarity,85.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0058-1,STU-0058,FAC-005,2026-02-05,Technical depth,89.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0058-1,STU-0058,FAC-005,2026-02-05,Delivery & confidence,75.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0058-1,STU-0058,FAC-005,2026-02-05,Visual design,77.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0058-1,STU-0058,FAC-005,2026-02-05,Question handling,83.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0058-2,STU-0058,FAC-005,2026-03-12,Content clarity,69.9,No,Improve pacing and use one clearer real-world example.
+PRE-0058-2,STU-0058,FAC-005,2026-03-12,Technical depth,83.0,No,Improve pacing and use one clearer real-world example.
+PRE-0058-2,STU-0058,FAC-005,2026-03-12,Delivery & confidence,73.8,No,Improve pacing and use one clearer real-world example.
+PRE-0058-2,STU-0058,FAC-005,2026-03-12,Visual design,87.2,No,Improve pacing and use one clearer real-world example.
+PRE-0058-2,STU-0058,FAC-005,2026-03-12,Question handling,71.2,No,Improve pacing and use one clearer real-world example.
+PRE-0058-3,STU-0058,FAC-005,2026-04-16,Content clarity,78.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0058-3,STU-0058,FAC-005,2026-04-16,Technical depth,75.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0058-3,STU-0058,FAC-005,2026-04-16,Delivery & confidence,80.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0058-3,STU-0058,FAC-005,2026-04-16,Visual design,68.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0058-3,STU-0058,FAC-005,2026-04-16,Question handling,70.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0059-1,STU-0059,FAC-006,2026-02-05,Content clarity,60.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0059-1,STU-0059,FAC-006,2026-02-05,Technical depth,57.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0059-1,STU-0059,FAC-006,2026-02-05,Delivery & confidence,56.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0059-1,STU-0059,FAC-006,2026-02-05,Visual design,57.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0059-1,STU-0059,FAC-006,2026-02-05,Question handling,49.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0059-2,STU-0059,FAC-006,2026-03-12,Content clarity,64.2,No,Improve pacing and use one clearer real-world example.
+PRE-0059-2,STU-0059,FAC-006,2026-03-12,Technical depth,74.4,No,Improve pacing and use one clearer real-world example.
+PRE-0059-2,STU-0059,FAC-006,2026-03-12,Delivery & confidence,61.8,No,Improve pacing and use one clearer real-world example.
+PRE-0059-2,STU-0059,FAC-006,2026-03-12,Visual design,72.3,No,Improve pacing and use one clearer real-world example.
+PRE-0059-2,STU-0059,FAC-006,2026-03-12,Question handling,77.7,No,Improve pacing and use one clearer real-world example.
+PRE-0059-3,STU-0059,FAC-006,2026-04-16,Content clarity,49.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0059-3,STU-0059,FAC-006,2026-04-16,Technical depth,46.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0059-3,STU-0059,FAC-006,2026-04-16,Delivery & confidence,56.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0059-3,STU-0059,FAC-006,2026-04-16,Visual design,48.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0059-3,STU-0059,FAC-006,2026-04-16,Question handling,53.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0060-1,STU-0060,FAC-001,2026-02-05,Content clarity,62.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0060-1,STU-0060,FAC-001,2026-02-05,Technical depth,55.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0060-1,STU-0060,FAC-001,2026-02-05,Delivery & confidence,59.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0060-1,STU-0060,FAC-001,2026-02-05,Visual design,68.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0060-1,STU-0060,FAC-001,2026-02-05,Question handling,68.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0060-2,STU-0060,FAC-001,2026-03-12,Content clarity,58.4,No,Improve pacing and use one clearer real-world example.
+PRE-0060-2,STU-0060,FAC-001,2026-03-12,Technical depth,54.6,No,Improve pacing and use one clearer real-world example.
+PRE-0060-2,STU-0060,FAC-001,2026-03-12,Delivery & confidence,64.6,No,Improve pacing and use one clearer real-world example.
+PRE-0060-2,STU-0060,FAC-001,2026-03-12,Visual design,60.6,No,Improve pacing and use one clearer real-world example.
+PRE-0060-2,STU-0060,FAC-001,2026-03-12,Question handling,71.1,No,Improve pacing and use one clearer real-world example.
+PRE-0060-3,STU-0060,FAC-001,2026-04-16,Content clarity,70.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0060-3,STU-0060,FAC-001,2026-04-16,Technical depth,59.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0060-3,STU-0060,FAC-001,2026-04-16,Delivery & confidence,65.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0060-3,STU-0060,FAC-001,2026-04-16,Visual design,56.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0060-3,STU-0060,FAC-001,2026-04-16,Question handling,69.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0061-1,STU-0061,FAC-002,2026-02-05,Content clarity,50.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0061-1,STU-0061,FAC-002,2026-02-05,Technical depth,52.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0061-1,STU-0061,FAC-002,2026-02-05,Delivery & confidence,49.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0061-1,STU-0061,FAC-002,2026-02-05,Visual design,61.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0061-1,STU-0061,FAC-002,2026-02-05,Question handling,64.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0061-2,STU-0061,FAC-002,2026-03-12,Content clarity,76.9,No,Improve pacing and use one clearer real-world example.
+PRE-0061-2,STU-0061,FAC-002,2026-03-12,Technical depth,72.7,No,Improve pacing and use one clearer real-world example.
+PRE-0061-2,STU-0061,FAC-002,2026-03-12,Delivery & confidence,89.7,No,Improve pacing and use one clearer real-world example.
+PRE-0061-2,STU-0061,FAC-002,2026-03-12,Visual design,72.5,No,Improve pacing and use one clearer real-world example.
+PRE-0061-2,STU-0061,FAC-002,2026-03-12,Question handling,86.5,No,Improve pacing and use one clearer real-world example.
+PRE-0061-3,STU-0061,FAC-002,2026-04-16,Content clarity,68.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0061-3,STU-0061,FAC-002,2026-04-16,Technical depth,68.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0061-3,STU-0061,FAC-002,2026-04-16,Delivery & confidence,66.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0061-3,STU-0061,FAC-002,2026-04-16,Visual design,62.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0061-3,STU-0061,FAC-002,2026-04-16,Question handling,70.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0062-1,STU-0062,FAC-003,2026-02-05,Content clarity,62.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0062-1,STU-0062,FAC-003,2026-02-05,Technical depth,69.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0062-1,STU-0062,FAC-003,2026-02-05,Delivery & confidence,60.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0062-1,STU-0062,FAC-003,2026-02-05,Visual design,69.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0062-1,STU-0062,FAC-003,2026-02-05,Question handling,69.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0062-2,STU-0062,FAC-003,2026-03-12,Content clarity,70.9,No,Improve pacing and use one clearer real-world example.
+PRE-0062-2,STU-0062,FAC-003,2026-03-12,Technical depth,72.1,No,Improve pacing and use one clearer real-world example.
+PRE-0062-2,STU-0062,FAC-003,2026-03-12,Delivery & confidence,73.4,No,Improve pacing and use one clearer real-world example.
+PRE-0062-2,STU-0062,FAC-003,2026-03-12,Visual design,65.2,No,Improve pacing and use one clearer real-world example.
+PRE-0062-2,STU-0062,FAC-003,2026-03-12,Question handling,78.2,No,Improve pacing and use one clearer real-world example.
+PRE-0062-3,STU-0062,FAC-003,2026-04-16,Content clarity,79.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0062-3,STU-0062,FAC-003,2026-04-16,Technical depth,82.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0062-3,STU-0062,FAC-003,2026-04-16,Delivery & confidence,93.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0062-3,STU-0062,FAC-003,2026-04-16,Visual design,95.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0062-3,STU-0062,FAC-003,2026-04-16,Question handling,93.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0063-1,STU-0063,FAC-004,2026-02-05,Content clarity,73.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0063-1,STU-0063,FAC-004,2026-02-05,Technical depth,72.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0063-1,STU-0063,FAC-004,2026-02-05,Delivery & confidence,71.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0063-1,STU-0063,FAC-004,2026-02-05,Visual design,70.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0063-1,STU-0063,FAC-004,2026-02-05,Question handling,77.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0063-2,STU-0063,FAC-004,2026-03-12,Content clarity,78.2,No,Improve pacing and use one clearer real-world example.
+PRE-0063-2,STU-0063,FAC-004,2026-03-12,Technical depth,80.0,No,Improve pacing and use one clearer real-world example.
+PRE-0063-2,STU-0063,FAC-004,2026-03-12,Delivery & confidence,74.0,No,Improve pacing and use one clearer real-world example.
+PRE-0063-2,STU-0063,FAC-004,2026-03-12,Visual design,73.5,No,Improve pacing and use one clearer real-world example.
+PRE-0063-2,STU-0063,FAC-004,2026-03-12,Question handling,70.5,No,Improve pacing and use one clearer real-world example.
+PRE-0063-3,STU-0063,FAC-004,2026-04-16,Content clarity,49.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0063-3,STU-0063,FAC-004,2026-04-16,Technical depth,53.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0063-3,STU-0063,FAC-004,2026-04-16,Delivery & confidence,50.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0063-3,STU-0063,FAC-004,2026-04-16,Visual design,63.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0063-3,STU-0063,FAC-004,2026-04-16,Question handling,55.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0064-1,STU-0064,FAC-005,2026-02-05,Content clarity,86.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0064-1,STU-0064,FAC-005,2026-02-05,Technical depth,78.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0064-1,STU-0064,FAC-005,2026-02-05,Delivery & confidence,72.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0064-1,STU-0064,FAC-005,2026-02-05,Visual design,80.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0064-1,STU-0064,FAC-005,2026-02-05,Question handling,71.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0064-2,STU-0064,FAC-005,2026-03-12,Content clarity,72.6,No,Improve pacing and use one clearer real-world example.
+PRE-0064-2,STU-0064,FAC-005,2026-03-12,Technical depth,66.5,No,Improve pacing and use one clearer real-world example.
+PRE-0064-2,STU-0064,FAC-005,2026-03-12,Delivery & confidence,57.6,No,Improve pacing and use one clearer real-world example.
+PRE-0064-2,STU-0064,FAC-005,2026-03-12,Visual design,62.0,No,Improve pacing and use one clearer real-world example.
+PRE-0064-2,STU-0064,FAC-005,2026-03-12,Question handling,60.3,No,Improve pacing and use one clearer real-world example.
+PRE-0064-3,STU-0064,FAC-005,2026-04-16,Content clarity,61.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0064-3,STU-0064,FAC-005,2026-04-16,Technical depth,61.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0064-3,STU-0064,FAC-005,2026-04-16,Delivery & confidence,45.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0064-3,STU-0064,FAC-005,2026-04-16,Visual design,53.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0064-3,STU-0064,FAC-005,2026-04-16,Question handling,55.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0065-1,STU-0065,FAC-006,2026-02-05,Content clarity,75.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0065-1,STU-0065,FAC-006,2026-02-05,Technical depth,68.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0065-1,STU-0065,FAC-006,2026-02-05,Delivery & confidence,82.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0065-1,STU-0065,FAC-006,2026-02-05,Visual design,86.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0065-1,STU-0065,FAC-006,2026-02-05,Question handling,71.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0065-2,STU-0065,FAC-006,2026-03-12,Content clarity,84.1,No,Improve pacing and use one clearer real-world example.
+PRE-0065-2,STU-0065,FAC-006,2026-03-12,Technical depth,93.1,No,Improve pacing and use one clearer real-world example.
+PRE-0065-2,STU-0065,FAC-006,2026-03-12,Delivery & confidence,80.8,No,Improve pacing and use one clearer real-world example.
+PRE-0065-2,STU-0065,FAC-006,2026-03-12,Visual design,93.0,No,Improve pacing and use one clearer real-world example.
+PRE-0065-2,STU-0065,FAC-006,2026-03-12,Question handling,79.7,No,Improve pacing and use one clearer real-world example.
+PRE-0065-3,STU-0065,FAC-006,2026-04-16,Content clarity,82.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0065-3,STU-0065,FAC-006,2026-04-16,Technical depth,84.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0065-3,STU-0065,FAC-006,2026-04-16,Delivery & confidence,90.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0065-3,STU-0065,FAC-006,2026-04-16,Visual design,95.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0065-3,STU-0065,FAC-006,2026-04-16,Question handling,95.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0066-1,STU-0066,FAC-001,2026-02-05,Content clarity,43.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0066-1,STU-0066,FAC-001,2026-02-05,Technical depth,35,Yes,Improve pacing and use one clearer real-world example.
+PRE-0066-1,STU-0066,FAC-001,2026-02-05,Delivery & confidence,41.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0066-1,STU-0066,FAC-001,2026-02-05,Visual design,52.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0066-1,STU-0066,FAC-001,2026-02-05,Question handling,38.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0066-2,STU-0066,FAC-001,2026-03-12,Content clarity,58.8,No,Improve pacing and use one clearer real-world example.
+PRE-0066-2,STU-0066,FAC-001,2026-03-12,Technical depth,58.0,No,Improve pacing and use one clearer real-world example.
+PRE-0066-2,STU-0066,FAC-001,2026-03-12,Delivery & confidence,72.3,No,Improve pacing and use one clearer real-world example.
+PRE-0066-2,STU-0066,FAC-001,2026-03-12,Visual design,62.1,No,Improve pacing and use one clearer real-world example.
+PRE-0066-2,STU-0066,FAC-001,2026-03-12,Question handling,55.3,No,Improve pacing and use one clearer real-world example.
+PRE-0066-3,STU-0066,FAC-001,2026-04-16,Content clarity,47.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0066-3,STU-0066,FAC-001,2026-04-16,Technical depth,56.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0066-3,STU-0066,FAC-001,2026-04-16,Delivery & confidence,49.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0066-3,STU-0066,FAC-001,2026-04-16,Visual design,48.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0066-3,STU-0066,FAC-001,2026-04-16,Question handling,61.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0067-1,STU-0067,FAC-002,2026-02-05,Content clarity,72.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0067-1,STU-0067,FAC-002,2026-02-05,Technical depth,86.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0067-1,STU-0067,FAC-002,2026-02-05,Delivery & confidence,70.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0067-1,STU-0067,FAC-002,2026-02-05,Visual design,77.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0067-1,STU-0067,FAC-002,2026-02-05,Question handling,71.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0067-2,STU-0067,FAC-002,2026-03-12,Content clarity,54.4,No,Improve pacing and use one clearer real-world example.
+PRE-0067-2,STU-0067,FAC-002,2026-03-12,Technical depth,48.0,No,Improve pacing and use one clearer real-world example.
+PRE-0067-2,STU-0067,FAC-002,2026-03-12,Delivery & confidence,50.7,No,Improve pacing and use one clearer real-world example.
+PRE-0067-2,STU-0067,FAC-002,2026-03-12,Visual design,59.9,No,Improve pacing and use one clearer real-world example.
+PRE-0067-2,STU-0067,FAC-002,2026-03-12,Question handling,49.0,No,Improve pacing and use one clearer real-world example.
+PRE-0067-3,STU-0067,FAC-002,2026-04-16,Content clarity,79.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0067-3,STU-0067,FAC-002,2026-04-16,Technical depth,83.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0067-3,STU-0067,FAC-002,2026-04-16,Delivery & confidence,75.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0067-3,STU-0067,FAC-002,2026-04-16,Visual design,73.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0067-3,STU-0067,FAC-002,2026-04-16,Question handling,68.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0068-1,STU-0068,FAC-003,2026-02-05,Content clarity,75.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0068-1,STU-0068,FAC-003,2026-02-05,Technical depth,69.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0068-1,STU-0068,FAC-003,2026-02-05,Delivery & confidence,68.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0068-1,STU-0068,FAC-003,2026-02-05,Visual design,70.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0068-1,STU-0068,FAC-003,2026-02-05,Question handling,77.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0068-2,STU-0068,FAC-003,2026-03-12,Content clarity,59.2,No,Improve pacing and use one clearer real-world example.
+PRE-0068-2,STU-0068,FAC-003,2026-03-12,Technical depth,63.0,No,Improve pacing and use one clearer real-world example.
+PRE-0068-2,STU-0068,FAC-003,2026-03-12,Delivery & confidence,54.9,No,Improve pacing and use one clearer real-world example.
+PRE-0068-2,STU-0068,FAC-003,2026-03-12,Visual design,53.2,No,Improve pacing and use one clearer real-world example.
+PRE-0068-2,STU-0068,FAC-003,2026-03-12,Question handling,67.2,No,Improve pacing and use one clearer real-world example.
+PRE-0068-3,STU-0068,FAC-003,2026-04-16,Content clarity,76.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0068-3,STU-0068,FAC-003,2026-04-16,Technical depth,61.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0068-3,STU-0068,FAC-003,2026-04-16,Delivery & confidence,60.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0068-3,STU-0068,FAC-003,2026-04-16,Visual design,60.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0068-3,STU-0068,FAC-003,2026-04-16,Question handling,61.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0069-1,STU-0069,FAC-004,2026-02-05,Content clarity,80.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0069-1,STU-0069,FAC-004,2026-02-05,Technical depth,89.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0069-1,STU-0069,FAC-004,2026-02-05,Delivery & confidence,95.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0069-1,STU-0069,FAC-004,2026-02-05,Visual design,91.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0069-1,STU-0069,FAC-004,2026-02-05,Question handling,82.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0069-2,STU-0069,FAC-004,2026-03-12,Content clarity,92.4,No,Improve pacing and use one clearer real-world example.
+PRE-0069-2,STU-0069,FAC-004,2026-03-12,Technical depth,77.8,No,Improve pacing and use one clearer real-world example.
+PRE-0069-2,STU-0069,FAC-004,2026-03-12,Delivery & confidence,84.6,No,Improve pacing and use one clearer real-world example.
+PRE-0069-2,STU-0069,FAC-004,2026-03-12,Visual design,89.8,No,Improve pacing and use one clearer real-world example.
+PRE-0069-2,STU-0069,FAC-004,2026-03-12,Question handling,89.7,No,Improve pacing and use one clearer real-world example.
+PRE-0069-3,STU-0069,FAC-004,2026-04-16,Content clarity,92.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0069-3,STU-0069,FAC-004,2026-04-16,Technical depth,95.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0069-3,STU-0069,FAC-004,2026-04-16,Delivery & confidence,100,Yes,Improve pacing and use one clearer real-world example.
+PRE-0069-3,STU-0069,FAC-004,2026-04-16,Visual design,90.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0069-3,STU-0069,FAC-004,2026-04-16,Question handling,94.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0070-1,STU-0070,FAC-005,2026-02-05,Content clarity,72.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0070-1,STU-0070,FAC-005,2026-02-05,Technical depth,71.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0070-1,STU-0070,FAC-005,2026-02-05,Delivery & confidence,77.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0070-1,STU-0070,FAC-005,2026-02-05,Visual design,80.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0070-1,STU-0070,FAC-005,2026-02-05,Question handling,74.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0070-2,STU-0070,FAC-005,2026-03-12,Content clarity,85.1,No,Improve pacing and use one clearer real-world example.
+PRE-0070-2,STU-0070,FAC-005,2026-03-12,Technical depth,68.7,No,Improve pacing and use one clearer real-world example.
+PRE-0070-2,STU-0070,FAC-005,2026-03-12,Delivery & confidence,73.3,No,Improve pacing and use one clearer real-world example.
+PRE-0070-2,STU-0070,FAC-005,2026-03-12,Visual design,74.3,No,Improve pacing and use one clearer real-world example.
+PRE-0070-2,STU-0070,FAC-005,2026-03-12,Question handling,68.1,No,Improve pacing and use one clearer real-world example.
+PRE-0070-3,STU-0070,FAC-005,2026-04-16,Content clarity,57.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0070-3,STU-0070,FAC-005,2026-04-16,Technical depth,68.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0070-3,STU-0070,FAC-005,2026-04-16,Delivery & confidence,65.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0070-3,STU-0070,FAC-005,2026-04-16,Visual design,58.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0070-3,STU-0070,FAC-005,2026-04-16,Question handling,55.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0071-1,STU-0071,FAC-006,2026-02-05,Content clarity,72.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0071-1,STU-0071,FAC-006,2026-02-05,Technical depth,61.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0071-1,STU-0071,FAC-006,2026-02-05,Delivery & confidence,71.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0071-1,STU-0071,FAC-006,2026-02-05,Visual design,59.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0071-1,STU-0071,FAC-006,2026-02-05,Question handling,59.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0071-2,STU-0071,FAC-006,2026-03-12,Content clarity,68.4,No,Improve pacing and use one clearer real-world example.
+PRE-0071-2,STU-0071,FAC-006,2026-03-12,Technical depth,67.5,No,Improve pacing and use one clearer real-world example.
+PRE-0071-2,STU-0071,FAC-006,2026-03-12,Delivery & confidence,63.0,No,Improve pacing and use one clearer real-world example.
+PRE-0071-2,STU-0071,FAC-006,2026-03-12,Visual design,66.8,No,Improve pacing and use one clearer real-world example.
+PRE-0071-2,STU-0071,FAC-006,2026-03-12,Question handling,78.9,No,Improve pacing and use one clearer real-world example.
+PRE-0071-3,STU-0071,FAC-006,2026-04-16,Content clarity,80.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0071-3,STU-0071,FAC-006,2026-04-16,Technical depth,71.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0071-3,STU-0071,FAC-006,2026-04-16,Delivery & confidence,68.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0071-3,STU-0071,FAC-006,2026-04-16,Visual design,69.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0071-3,STU-0071,FAC-006,2026-04-16,Question handling,80.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0072-1,STU-0072,FAC-001,2026-02-05,Content clarity,41.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0072-1,STU-0072,FAC-001,2026-02-05,Technical depth,47.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0072-1,STU-0072,FAC-001,2026-02-05,Delivery & confidence,54.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0072-1,STU-0072,FAC-001,2026-02-05,Visual design,44.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0072-1,STU-0072,FAC-001,2026-02-05,Question handling,56.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0072-2,STU-0072,FAC-001,2026-03-12,Content clarity,55.6,No,Improve pacing and use one clearer real-world example.
+PRE-0072-2,STU-0072,FAC-001,2026-03-12,Technical depth,70.7,No,Improve pacing and use one clearer real-world example.
+PRE-0072-2,STU-0072,FAC-001,2026-03-12,Delivery & confidence,58.2,No,Improve pacing and use one clearer real-world example.
+PRE-0072-2,STU-0072,FAC-001,2026-03-12,Visual design,64.6,No,Improve pacing and use one clearer real-world example.
+PRE-0072-2,STU-0072,FAC-001,2026-03-12,Question handling,62.3,No,Improve pacing and use one clearer real-world example.
+PRE-0072-3,STU-0072,FAC-001,2026-04-16,Content clarity,42.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0072-3,STU-0072,FAC-001,2026-04-16,Technical depth,48.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0072-3,STU-0072,FAC-001,2026-04-16,Delivery & confidence,56.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0072-3,STU-0072,FAC-001,2026-04-16,Visual design,40.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0072-3,STU-0072,FAC-001,2026-04-16,Question handling,42.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0073-1,STU-0073,FAC-002,2026-02-05,Content clarity,70.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0073-1,STU-0073,FAC-002,2026-02-05,Technical depth,66.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0073-1,STU-0073,FAC-002,2026-02-05,Delivery & confidence,60.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0073-1,STU-0073,FAC-002,2026-02-05,Visual design,75.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0073-1,STU-0073,FAC-002,2026-02-05,Question handling,62.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0073-2,STU-0073,FAC-002,2026-03-12,Content clarity,63.5,No,Improve pacing and use one clearer real-world example.
+PRE-0073-2,STU-0073,FAC-002,2026-03-12,Technical depth,52.0,No,Improve pacing and use one clearer real-world example.
+PRE-0073-2,STU-0073,FAC-002,2026-03-12,Delivery & confidence,61.9,No,Improve pacing and use one clearer real-world example.
+PRE-0073-2,STU-0073,FAC-002,2026-03-12,Visual design,61.8,No,Improve pacing and use one clearer real-world example.
+PRE-0073-2,STU-0073,FAC-002,2026-03-12,Question handling,47.1,No,Improve pacing and use one clearer real-world example.
+PRE-0073-3,STU-0073,FAC-002,2026-04-16,Content clarity,55.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0073-3,STU-0073,FAC-002,2026-04-16,Technical depth,46.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0073-3,STU-0073,FAC-002,2026-04-16,Delivery & confidence,53.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0073-3,STU-0073,FAC-002,2026-04-16,Visual design,49.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0073-3,STU-0073,FAC-002,2026-04-16,Question handling,47.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0074-1,STU-0074,FAC-003,2026-02-05,Content clarity,62.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0074-1,STU-0074,FAC-003,2026-02-05,Technical depth,61.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0074-1,STU-0074,FAC-003,2026-02-05,Delivery & confidence,64.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0074-1,STU-0074,FAC-003,2026-02-05,Visual design,64.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0074-1,STU-0074,FAC-003,2026-02-05,Question handling,67.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0074-2,STU-0074,FAC-003,2026-03-12,Content clarity,70.5,No,Improve pacing and use one clearer real-world example.
+PRE-0074-2,STU-0074,FAC-003,2026-03-12,Technical depth,66.6,No,Improve pacing and use one clearer real-world example.
+PRE-0074-2,STU-0074,FAC-003,2026-03-12,Delivery & confidence,66.2,No,Improve pacing and use one clearer real-world example.
+PRE-0074-2,STU-0074,FAC-003,2026-03-12,Visual design,67.0,No,Improve pacing and use one clearer real-world example.
+PRE-0074-2,STU-0074,FAC-003,2026-03-12,Question handling,81.8,No,Improve pacing and use one clearer real-world example.
+PRE-0074-3,STU-0074,FAC-003,2026-04-16,Content clarity,83.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0074-3,STU-0074,FAC-003,2026-04-16,Technical depth,89.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0074-3,STU-0074,FAC-003,2026-04-16,Delivery & confidence,95.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0074-3,STU-0074,FAC-003,2026-04-16,Visual design,94.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0074-3,STU-0074,FAC-003,2026-04-16,Question handling,92.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0075-1,STU-0075,FAC-004,2026-02-05,Content clarity,82.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0075-1,STU-0075,FAC-004,2026-02-05,Technical depth,95.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0075-1,STU-0075,FAC-004,2026-02-05,Delivery & confidence,83.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0075-1,STU-0075,FAC-004,2026-02-05,Visual design,82.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0075-1,STU-0075,FAC-004,2026-02-05,Question handling,98.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0075-2,STU-0075,FAC-004,2026-03-12,Content clarity,62.9,No,Improve pacing and use one clearer real-world example.
+PRE-0075-2,STU-0075,FAC-004,2026-03-12,Technical depth,70.5,No,Improve pacing and use one clearer real-world example.
+PRE-0075-2,STU-0075,FAC-004,2026-03-12,Delivery & confidence,63.7,No,Improve pacing and use one clearer real-world example.
+PRE-0075-2,STU-0075,FAC-004,2026-03-12,Visual design,68.8,No,Improve pacing and use one clearer real-world example.
+PRE-0075-2,STU-0075,FAC-004,2026-03-12,Question handling,64.5,No,Improve pacing and use one clearer real-world example.
+PRE-0075-3,STU-0075,FAC-004,2026-04-16,Content clarity,87.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0075-3,STU-0075,FAC-004,2026-04-16,Technical depth,69.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0075-3,STU-0075,FAC-004,2026-04-16,Delivery & confidence,78.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0075-3,STU-0075,FAC-004,2026-04-16,Visual design,74.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0075-3,STU-0075,FAC-004,2026-04-16,Question handling,72.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0076-1,STU-0076,FAC-005,2026-02-05,Content clarity,79.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0076-1,STU-0076,FAC-005,2026-02-05,Technical depth,69.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0076-1,STU-0076,FAC-005,2026-02-05,Delivery & confidence,73.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0076-1,STU-0076,FAC-005,2026-02-05,Visual design,79.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0076-1,STU-0076,FAC-005,2026-02-05,Question handling,76.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0076-2,STU-0076,FAC-005,2026-03-12,Content clarity,87.6,No,Improve pacing and use one clearer real-world example.
+PRE-0076-2,STU-0076,FAC-005,2026-03-12,Technical depth,81.7,No,Improve pacing and use one clearer real-world example.
+PRE-0076-2,STU-0076,FAC-005,2026-03-12,Delivery & confidence,91.5,No,Improve pacing and use one clearer real-world example.
+PRE-0076-2,STU-0076,FAC-005,2026-03-12,Visual design,94.8,No,Improve pacing and use one clearer real-world example.
+PRE-0076-2,STU-0076,FAC-005,2026-03-12,Question handling,77.0,No,Improve pacing and use one clearer real-world example.
+PRE-0076-3,STU-0076,FAC-005,2026-04-16,Content clarity,86.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0076-3,STU-0076,FAC-005,2026-04-16,Technical depth,93.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0076-3,STU-0076,FAC-005,2026-04-16,Delivery & confidence,98.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0076-3,STU-0076,FAC-005,2026-04-16,Visual design,83.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0076-3,STU-0076,FAC-005,2026-04-16,Question handling,88.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0077-1,STU-0077,FAC-006,2026-02-05,Content clarity,79.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0077-1,STU-0077,FAC-006,2026-02-05,Technical depth,78.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0077-1,STU-0077,FAC-006,2026-02-05,Delivery & confidence,78.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0077-1,STU-0077,FAC-006,2026-02-05,Visual design,69.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0077-1,STU-0077,FAC-006,2026-02-05,Question handling,63.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0077-2,STU-0077,FAC-006,2026-03-12,Content clarity,68.6,No,Improve pacing and use one clearer real-world example.
+PRE-0077-2,STU-0077,FAC-006,2026-03-12,Technical depth,88.2,No,Improve pacing and use one clearer real-world example.
+PRE-0077-2,STU-0077,FAC-006,2026-03-12,Delivery & confidence,70.9,No,Improve pacing and use one clearer real-world example.
+PRE-0077-2,STU-0077,FAC-006,2026-03-12,Visual design,82.7,No,Improve pacing and use one clearer real-world example.
+PRE-0077-2,STU-0077,FAC-006,2026-03-12,Question handling,74.1,No,Improve pacing and use one clearer real-world example.
+PRE-0077-3,STU-0077,FAC-006,2026-04-16,Content clarity,76.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0077-3,STU-0077,FAC-006,2026-04-16,Technical depth,57.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0077-3,STU-0077,FAC-006,2026-04-16,Delivery & confidence,75.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0077-3,STU-0077,FAC-006,2026-04-16,Visual design,71.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0077-3,STU-0077,FAC-006,2026-04-16,Question handling,77.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0078-1,STU-0078,FAC-001,2026-02-05,Content clarity,69.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0078-1,STU-0078,FAC-001,2026-02-05,Technical depth,61.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0078-1,STU-0078,FAC-001,2026-02-05,Delivery & confidence,57.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0078-1,STU-0078,FAC-001,2026-02-05,Visual design,62.1,Yes,Improve pacing and use one clearer real-world example.
+PRE-0078-1,STU-0078,FAC-001,2026-02-05,Question handling,66.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0078-2,STU-0078,FAC-001,2026-03-12,Content clarity,58.6,No,Improve pacing and use one clearer real-world example.
+PRE-0078-2,STU-0078,FAC-001,2026-03-12,Technical depth,54.9,No,Improve pacing and use one clearer real-world example.
+PRE-0078-2,STU-0078,FAC-001,2026-03-12,Delivery & confidence,57.3,No,Improve pacing and use one clearer real-world example.
+PRE-0078-2,STU-0078,FAC-001,2026-03-12,Visual design,47.6,No,Improve pacing and use one clearer real-world example.
+PRE-0078-2,STU-0078,FAC-001,2026-03-12,Question handling,56.9,No,Improve pacing and use one clearer real-world example.
+PRE-0078-3,STU-0078,FAC-001,2026-04-16,Content clarity,47.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0078-3,STU-0078,FAC-001,2026-04-16,Technical depth,42.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0078-3,STU-0078,FAC-001,2026-04-16,Delivery & confidence,49.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0078-3,STU-0078,FAC-001,2026-04-16,Visual design,53.6,Yes,Improve pacing and use one clearer real-world example.
+PRE-0078-3,STU-0078,FAC-001,2026-04-16,Question handling,59.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0079-1,STU-0079,FAC-002,2026-02-05,Content clarity,48.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0079-1,STU-0079,FAC-002,2026-02-05,Technical depth,63.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0079-1,STU-0079,FAC-002,2026-02-05,Delivery & confidence,49.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0079-1,STU-0079,FAC-002,2026-02-05,Visual design,45.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0079-1,STU-0079,FAC-002,2026-02-05,Question handling,59.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0079-2,STU-0079,FAC-002,2026-03-12,Content clarity,52.9,No,Improve pacing and use one clearer real-world example.
+PRE-0079-2,STU-0079,FAC-002,2026-03-12,Technical depth,44.4,No,Improve pacing and use one clearer real-world example.
+PRE-0079-2,STU-0079,FAC-002,2026-03-12,Delivery & confidence,60.7,No,Improve pacing and use one clearer real-world example.
+PRE-0079-2,STU-0079,FAC-002,2026-03-12,Visual design,46.6,No,Improve pacing and use one clearer real-world example.
+PRE-0079-2,STU-0079,FAC-002,2026-03-12,Question handling,45.5,No,Improve pacing and use one clearer real-world example.
+PRE-0079-3,STU-0079,FAC-002,2026-04-16,Content clarity,37.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0079-3,STU-0079,FAC-002,2026-04-16,Technical depth,35.9,Yes,Improve pacing and use one clearer real-world example.
+PRE-0079-3,STU-0079,FAC-002,2026-04-16,Delivery & confidence,36.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0079-3,STU-0079,FAC-002,2026-04-16,Visual design,45.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0079-3,STU-0079,FAC-002,2026-04-16,Question handling,42.2,Yes,Improve pacing and use one clearer real-world example.
+PRE-0080-1,STU-0080,FAC-003,2026-02-05,Content clarity,84.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0080-1,STU-0080,FAC-003,2026-02-05,Technical depth,75.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0080-1,STU-0080,FAC-003,2026-02-05,Delivery & confidence,88.7,Yes,Improve pacing and use one clearer real-world example.
+PRE-0080-1,STU-0080,FAC-003,2026-02-05,Visual design,73.3,Yes,Improve pacing and use one clearer real-world example.
+PRE-0080-1,STU-0080,FAC-003,2026-02-05,Question handling,81.8,Yes,Improve pacing and use one clearer real-world example.
+PRE-0080-2,STU-0080,FAC-003,2026-03-12,Content clarity,80.2,No,Improve pacing and use one clearer real-world example.
+PRE-0080-2,STU-0080,FAC-003,2026-03-12,Technical depth,66.2,No,Improve pacing and use one clearer real-world example.
+PRE-0080-2,STU-0080,FAC-003,2026-03-12,Delivery & confidence,66.0,No,Improve pacing and use one clearer real-world example.
+PRE-0080-2,STU-0080,FAC-003,2026-03-12,Visual design,72.7,No,Improve pacing and use one clearer real-world example.
+PRE-0080-2,STU-0080,FAC-003,2026-03-12,Question handling,76.8,No,Improve pacing and use one clearer real-world example.
+PRE-0080-3,STU-0080,FAC-003,2026-04-16,Content clarity,64.5,Yes,Improve pacing and use one clearer real-world example.
+PRE-0080-3,STU-0080,FAC-003,2026-04-16,Technical depth,69.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0080-3,STU-0080,FAC-003,2026-04-16,Delivery & confidence,66.0,Yes,Improve pacing and use one clearer real-world example.
+PRE-0080-3,STU-0080,FAC-003,2026-04-16,Visual design,55.4,Yes,Improve pacing and use one clearer real-world example.
+PRE-0080-3,STU-0080,FAC-003,2026-04-16,Question handling,58.9,Yes,Improve pacing and use one clearer real-world example.

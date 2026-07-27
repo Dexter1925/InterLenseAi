@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Evaluation Portal - InternLens AI{% endblock %}
+
+{% block content %}
+<div class="row g-4 align-items-center mb-4">
+    <div class="col-12 col-md-6">
+        <h2 class="text-white fw-black uppercase tracking-wider m-0">Evaluator Review Terminal</h2>
+        <p class="text-xs text-zinc-500 uppercase font-mono m-0">ASSESSMENT CORRIDOR & GRADING SHEETS</p>
+    </div>
+    
+    <div class="col-12 col-md-6 d-flex justify-content-md-end gap-2">
+        <div class="p-3 bg-zinc-950 border border-zinc-850 text-center py-2 px-3">
+            <span class="text-[9px] text-zinc-500 uppercase font-mono">Pending Grades</span>
+            <span class="d-block text-brand-primary fw-black font-mono text-sm">{{ pending_count }}</span>
+        </div>
+        <div class="p-3 bg-zinc-950 border border-zinc-850 text-center py-2 px-3">
+            <span class="text-[9px] text-zinc-500 uppercase font-mono">Evaluations Completed</span>
+            <span class="d-block text-success fw-black font-mono text-sm">{{ graded_count }}</span>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-12">
+        <div class="glass-card">
+            <h5 class="text-xs text-white uppercase tracking-widest fw-black mb-3">PENDING EVALUATIONS TASK LIST</h5>
+            
+            {% if submissions %}
+                <div class="space-y-4">
+                    {% for s in submissions %}
+                    <div class="p-4 border border-zinc-800 bg-black/30 mb-3">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <span class="badge badge-brand text-[8px] font-mono">{{ s.classroom_name }}</span>
+                                <h4 class="text-white text-sm fw-black uppercase m-0 mt-1">{{ s.task_title }}</h4>
+                                <p class="text-xs text-zinc-400 m-0 mt-1">Submitted by: <strong class="text-white uppercase">{{ s.student_username }}</strong> ({{ s.student_email }})</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="text-[9px] text-zinc-500 font-mono uppercase d-block">Submitted: {{ s.submitted_at }}</span>
+                                {% if s.status == 'PENDING' %}
+                                    <span class="badge bg-warning/15 text-warning border border-warning/30 rounded-none text-[8px] font-bold mt-1">WAITING FOR EVALUATION</span>
+                                {% else %}
+                                    <span class="badge bg-success/15 text-success border border-success/30 rounded-none text-[8px] font-bold mt-1">EVALUATED</span>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="p-3 bg-black/40 border border-zinc-850 d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i data-lucide="file-text" class="text-brand-primary" style="width:20px;"></i>
+                                <div>
+                                    <span class="text-white text-xs font-bold d-block">{{ s.file_name }}</span>
+                                    <span class="text-[9px] text-zinc-500 font-mono uppercase">Size: {{ s.size or '1.4 MB' }}</span>
+                                </div>
+                            </div>
+                            
+                            {% if s.file_path %}
+                            <a href="{{ url_for('download_file', filename=s.file_name) }}" class="btn btn-outline-brand text-[9px] py-1.5 px-2">
+                                <i data-lucide="download" class="d-inline-block align-middle me-1" style="width:12px;"></i> Download File
+                            </a>
+                            {% else %}
+                            <span class="text-[9px] text-zinc-500 italic font-mono uppercase">Internal Asset</span>
+                            {% endif %}
+                        </div>
+
+                        <!-- Grading submission form -->
+                        {% if s.status == 'PENDING' %}
+                        <form action="{{ url_for('grade_submission', submission_id=s.id) }}" method="POST" class="border-top border-zinc-800 pt-3 mt-3">
+                            <div class="row g-3">
+                                <div class="col-12 col-md-3 col-xl-2">
+                                    <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Evaluation Mark (0-100)</label>
+                                    <input type="number" name="marks" class="form-control text-xs font-bold font-mono" min="0" max="100" placeholder="e.g. 85" required>
+                                </div>
+                                <div class="col-12 col-md-3 col-xl-2">
+                                    <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Status Review</label>
+                                    <select name="status" class="form-select text-xs font-bold uppercase tracking-wider">
+                                        <option value="APPROVED">Approve Submission</option>
+                                        <option value="REJECTED">Reject Submission</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-8">
+                                    <label class="form-label text-[10px] uppercase font-black text-zinc-400 tracking-wider">Evaluator Constructive Feedback</label>
+                                    <input type="text" name="comment" class="form-control text-xs" placeholder="Review analysis or action item points for the student cohort..." required>
+                                </div>
+                            </div>
+                            <div class="text-end mt-3">
+                                <button type="submit" class="btn btn-brand text-xs py-2 px-4">Record Assessment</button>
+                            </div>
+                        </form>
+                        {% else %}
+                        <div class="border-top border-zinc-800 pt-3 mt-3">
+                            <div class="row">
+                                <div class="col-4 col-md-2">
+                                    <span class="text-[10px] text-zinc-500 uppercase font-mono d-block">Awarded Mark:</span>
+                                    <span class="text-sm text-brand-primary font-black font-mono">{{ s.marks }}/100</span>
+                                </div>
+                                <div class="col-8 col-md-10">
+                                    <span class="text-[10px] text-zinc-500 uppercase font-mono d-block">Evaluator Assessment Feedback:</span>
+                                    <span class="text-xs text-white italic">"{{ s.evaluator_comment }}"</span>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="text-center py-5 bg-black/20 border border-dashed border-zinc-800">
+                    <i data-lucide="check-circle-2" class="text-zinc-600 mb-2" style="width:36px; height: 36px;"></i>
+                    <p class="text-xs text-zinc-500 font-mono italic uppercase m-0">No active student submissions waiting in queue</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
